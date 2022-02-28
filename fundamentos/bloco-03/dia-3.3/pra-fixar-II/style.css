@@ -1,0 +1,5 @@
+div:hover {
+    border: green;
+    border-width: large;
+    border-style: double;
+}
