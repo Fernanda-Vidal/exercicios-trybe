@@ -14,6 +14,6 @@ li:active {
     font-family: sans-serif;
 }
 
-ul {
+ol, ul {
     list-style: none;
 }
