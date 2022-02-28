@@ -3,3 +3,23 @@ div:hover {
     border-width: large;
     border-style: double;
 }
+
+div:first-of-type {
+    color: blue;
+}
+
+div:nth-of-type(2) {
+    color: green;
+}
+
+div:nth-of-type(3) {
+    color: rosybrown;
+}
+
+div:nth-of-type(4) {
+    color: rgb(100,050, 050);
+}
+
+div:nth-of-type(5) {
+    color: rgb(150,250, 150);
+}
