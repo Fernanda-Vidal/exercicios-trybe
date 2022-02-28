@@ -13,8 +13,16 @@
 }
 
 .baloon {
+    position: absolute;
+    z-index: 1;
+} 
 
-}
+p {
+    position: absolute;
+    z-index: 2;
+    bottom: 595px;
+    right: 617px;
+    }
 
 .speach {
     font-size: 25px;
