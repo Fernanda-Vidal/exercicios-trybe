@@ -19,10 +19,18 @@ h1 {
     border: 1px solid black;
 }
 
-ol,ul li {
+li {
    font-size: 20px;
     }
 
-ol,ul li em {
+li em {
     font-weight: bold;
+}
+
+ul:nth-child(6) li:nth-child(1), ul:nth-child(6) li:nth-of-type(2), ul:nth-child(6) li:nth-of-type(3){
+    color: blue;
+}
+
+java ul:nth-child(6) li:nth-child(1), ul:nth-child(6) li:nth-of-type(2), ul:nth-child(6) li:nth-of-type(3) {
+    background-color: pink;
 }
