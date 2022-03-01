@@ -18,3 +18,11 @@ h1 {
     font-size: 40px;
     border: 1px solid black;
 }
+
+ol,ul li {
+   font-size: 20px;
+    }
+
+ol,ul li em {
+    font-weight: bold;
+}
