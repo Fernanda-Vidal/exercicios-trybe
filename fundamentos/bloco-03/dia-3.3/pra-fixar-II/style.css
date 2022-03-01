@@ -1,6 +1,8 @@
 div:hover {
     border: green;
- }
+    border-style: double;
+    border-width: larger;
+     }
 
 div:first-of-type {
     color: blue;
@@ -21,4 +23,3 @@ div:nth-of-type(4) {
 div:last-of-type {
     color: rgb(150,250, 150);
    }
-
