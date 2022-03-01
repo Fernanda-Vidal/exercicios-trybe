@@ -34,3 +34,27 @@ ul:nth-child(6) li:nth-child(1), ul:nth-child(6) li:nth-of-type(2), ul:nth-child
 java ul:nth-child(6) li:nth-child(1), ul:nth-child(6) li:nth-of-type(2), ul:nth-child(6) li:nth-of-type(3) {
     background-color: pink;
 }
+
+a:hover {
+    font-weight: bold;
+}
+
+ul li:nth-child(1) a:hover{
+    color: orange;
+}
+
+ul li:nth-child(2) a:hover {
+    color: green;
+}
+
+ul li:nth-child(3) a:hover {
+    color: black;
+}
+
+ul li:nth-child(4) a:hover {
+    color: yellow;
+}
+
+ul li:nth-child(5) a:hover {
+    color: #2fc18c;
+}
