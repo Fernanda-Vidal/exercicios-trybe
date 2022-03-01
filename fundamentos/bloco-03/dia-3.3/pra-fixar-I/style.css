@@ -1,0 +1,19 @@
+h1 {
+    text-align:center ;
+}
+
+p {
+    text-align: center;
+}
+
+li:hover {
+    background-color: aquamarine;
+}
+
+li:active {
+    font-family: sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
