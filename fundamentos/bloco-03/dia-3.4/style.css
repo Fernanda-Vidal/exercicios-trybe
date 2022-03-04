@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    color: rgb(020, 200, 155);
+}
+
+header {
+    border: yellow solid;
+    background-color: yellow;
+}
+
+section {
+    
+}
+
+footer {
+    border: blue solid;
+}
+
+blockquote {
+    border: yellow solid;
+}
+
+.tabela {
+   margin-left: 50%;
+   border: orange solid;
+}
+
+.artigo {
+    float: left; 
+    margin-right: auto;
+    border: orangered solid;
+}
