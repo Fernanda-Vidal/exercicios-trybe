@@ -35,7 +35,8 @@
 // }
 
 Exercício 4:
-const periodo = "manhã";
+
+const periodo = "noite";
 
 if (periodo == "manhã"){
     console.log("positive");
@@ -46,3 +47,6 @@ else if (periodo == "tarde"){
 else {
     console.log("zero");
 }
+
+Exercício 5:
+
