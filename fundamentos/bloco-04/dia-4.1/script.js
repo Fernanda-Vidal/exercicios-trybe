@@ -34,19 +34,29 @@
 //     console.log(num3)
 // }
 
-Exercício 4:
+// Exercício 4:
 
-const periodo = "noite";
+// const periodo = "noite";
 
-if (periodo == "manhã"){
-    console.log("positive");
-} 
-else if (periodo == "tarde"){
-    console.log("negative");
-}
-else {
-    console.log("zero");
-}
+// if (periodo == "manhã"){
+//     console.log("positive");
+// } 
+// else if (periodo == "tarde"){
+//     console.log("negative");
+// }
+// else {
+//     console.log("zero");
+// }
 
 Exercício 5:
 
+const ladoA = 60;
+const ladoB = 60;
+const ladoC = 60;
+
+if (ladoA + ladoB + ladoC === 180) {
+    console.log(true);
+}
+else {
+    console.log(false);
+};
