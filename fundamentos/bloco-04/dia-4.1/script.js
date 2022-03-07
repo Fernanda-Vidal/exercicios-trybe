@@ -48,18 +48,21 @@
 //     console.log("zero");
 // }
 
-Exercício 5:
+// Exercício 5:
 
-const ladoA = 60;
-const ladoB = 60;
-const ladoC = -60;
+// const ladoA = 60;
+// const ladoB = 60;
+// const ladoC = -60;
 
-if (ladoA + ladoB + ladoC === 180) {
-    console.log(true);
-}
-else if (ladoA + ladoB + ladoC > 180) {
-    console.log(false);
-}
-else {
-    console.log("Valores de angulos inválidos")
-};
+// if (ladoA + ladoB + ladoC === 180) {
+//     console.log(true);
+// }
+// else if (ladoA + ladoB + ladoC > 180) {
+//     console.log(false);
+// }
+// else {
+//     console.log("Valores de angulos inválidos")
+// };
+
+Exercício 6:
+
