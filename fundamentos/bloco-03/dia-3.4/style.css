@@ -1,11 +1,11 @@
 body {
-    background-color: black;
+    background-color: #e6f9af;
     color: rgb(020, 200, 155);
 }
 
 header {
-    border: yellow solid;
-    background-color: yellow;
+    border: #5b8e7d solid;
+    background-color: #5b8e7d;
 }
 
 section {
@@ -13,20 +13,29 @@ section {
 }
 
 footer {
-    border: blue solid;
+    border: #5b8e7d solid;
+    background-color: #5b8e7d;
+    color: white;
 }
 
 blockquote {
-    border: yellow solid;
+    border: #9b9b7a solid;
+    background-color: #9b9b7a;
+    color: white;
 }
 
 .tabela {
    margin-left: 50%;
-   border: orange solid;
+   border: #9b9b7a solid;
+   background-color: #9b9b7a;
+   color: white;
 }
 
 .artigo {
     float: left; 
     margin-right: auto;
-    border: orangered solid;
+    border: #9b9b7a solid;
+    background-color: #9b9b7a;
+    color: white;
 }
+
