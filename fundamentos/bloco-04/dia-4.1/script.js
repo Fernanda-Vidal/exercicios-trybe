@@ -64,5 +64,72 @@
 //     console.log("Valores de angulos inválidos")
 // };
 
-Exercício 6:
+// ***********Exercício 6:
 
+// let peca = {
+//     queen = "Anda reto e em diagonal";
+//     king = "Anda reto e em diagonal, somente uma casa por vez";
+//     rook = "Anda reto";
+//     bishop = "Anda em diagonal";
+//     knight = "Anda em L";
+//     pawn = "Anda somente para a frente, somente uma casa por vez. Excepcionalmente na primeira rodada, pode andar duas casas. Só pode comer na diagonal.";
+// }
+
+
+// let upperCaseQueen = queen.toLocaleUpperCase();
+// let upperCaseKing = king.toUpperCase();
+// let upperCaseRook = rook.toUpperCase();
+// let upperCaseBishop = bishop.toUpperCase();
+// let upperCaseKnight = knight.toUpperCase();
+// let upperCasePawn = pawn.toUpperCase();
+
+// console.log(upperCaseQueen);
+// console.log(upperCaseKing);
+
+// switch(peca){
+//     case "queen":
+//         console.log
+// }
+
+// **********Exercício 6 NÃO RESOLVIDO.
+
+// **********Exercício 7:
+
+// let nota = 75;
+
+// if (nota >= 90 || nota =< 100) {
+//     console.log(A);
+// }
+// else if (nota >= 80 || nota < 90) {
+//     console.log(B);
+// }
+// else if (nota >= 70 || nota < 80) {
+//     console.log(C);
+// }
+// else if (nota >= 60 || nota < 70) {
+//     console.log(D);
+// }
+// else if (nota >= 50 || nota < 60) {
+//     console.log(E);
+// }
+// else if (nota < 50) {
+//     console.log(F);
+// }
+// else {
+//     console.log("Nota inválida.");
+// }
+
+// **********Exercício 7 NÃO RESOLVIDO.
+
+// Exercício 8:
+
+const num1 = 1;
+const num2 = 3;
+const num3 = 2;
+
+if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0){
+    console.log(true);
+}
+else {
+    console.log(false);
+}
