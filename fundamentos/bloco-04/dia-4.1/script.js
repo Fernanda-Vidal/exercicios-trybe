@@ -9,7 +9,7 @@
 // console.log(a % b);
 
 // Exercício 2:
-// const num1 = 200;
+// const num1 = 100;
 // const num2 = 30;
 
 // if (num1 > num2) {
@@ -20,19 +20,19 @@
 // }
 
 // Exercicío 3:
-// const num1 = 20;
-// const num2 = 30;
-// const num3 = 150;
+const num1 = 2000;
+const num2 = 30;
+const num3 = 150000;
 
-// if (num1 > num2 && num1 > num3) {
-//     console.log(num1);
-// } 
-// else if (num2 > num1 && num2 > num3) {
-//     console.log(num2);
-// }
-// else {
-//     console.log(num3)
-// }
+if (num1 > num2 && num1 > num3) {
+    console.log(num1);
+} 
+else if (num2 > num1 && num2 > num3) {
+    console.log(num2);
+}
+else {
+    console.log(num3)
+}
 
 // Exercício 4:
 
@@ -136,13 +136,13 @@
 
 // Exercício 9:
 
-const num1 = 2;
-const num2 = 2;
-const num3 = 7;
+// const num1 = 2;
+// const num2 = 2;
+// const num3 = 7;
 
-if (num1 % 2 != 0 || num2 % 2 != 0 || num3 % 2 != 0){
-    console.log(true);
-}
-else {
-    console.log(false);
-}
+// if (num1 % 2 != 0 || num2 % 2 != 0 || num3 % 2 != 0){
+//     console.log(true);
+// }
+// else {
+//     console.log(false);
+// }
