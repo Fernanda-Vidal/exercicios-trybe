@@ -96,56 +96,56 @@
 
 
 
-Exercício 7: Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F.
+// Exercício 7: Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F.
 
-let nota = 75;
+// let nota = 75;
 
-if (nota >= 90 && nota <= 100) {
-    console.log("A");
-}
-else if (nota >= 80 && nota < 90) {
-    console.log("B");
-}
-else if (nota >= 70 && nota < 80) {
-    console.log("C");
-}
-else if (nota >= 60 && nota < 70) {
-    console.log("D");
-}
-else if (nota >= 50 && nota < 60) {
-    console.log("E");
-}
-else if (nota < 50 && nota >= 0) {
-    console.log("F");
-}
-else {
-    console.log("Nota inválida");
-}
+// if (nota >= 90 && nota <= 100) {
+//     console.log("A");
+// }
+// else if (nota >= 80 && nota < 90) {
+//     console.log("B");
+// }
+// else if (nota >= 70 && nota < 80) {
+//     console.log("C");
+// }
+// else if (nota >= 60 && nota < 70) {
+//     console.log("D");
+// }
+// else if (nota >= 50 && nota < 60) {
+//     console.log("E");
+// }
+// else if (nota < 50 && nota >= 0) {
+//     console.log("F");
+// }
+// else {
+//     console.log("Nota inválida");
+// }
 
+// Exercício 8: Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false.
 
-    Exercício 8:
+// const num1 = 1;
+// const num2 = 3;
+// const num3 = 1;
 
-const num1 = 1;
-const num2 = 3;
-const num3 = 2;
+// if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
+//     console.log(true);
+// }
+// else {
+//     console.log(false);
+// }
 
-if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
-    console.log(true);
-}
-else {
-    console.log(false);
-}
+// Exercício 9: Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false.
 
-Exercício 9:
+// const num1 = 1;
+// const num2 = 2;
+// const num3 = 2;
 
-const num1 = 2;
-const num2 = 2;
-const num3 = 7;
+// if (num1 % 2 != 0 || num2 % 2 != 0 || num3 % 2 != 0) {
+//     console.log(true);
+// }
+// else {
+//     console.log(false);
+// }
 
-if (num1 % 2 != 0 || num2 % 2 != 0 || num3 % 2 != 0) {
-    console.log(true);
-}
-else {
-    console.log(false);
-}
-
+Exercício 10: Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
