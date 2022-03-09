@@ -1,4 +1,4 @@
-// Exercício 1:Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b , definidas no começo com os valores que serão operados.
+// Exercício 1:Faça cinco programas, um para cada operação aritmética básica.Seu programa deve ter duas constantes, a e b, definidas no começo com os valores que serão operados.
 // const a = 18;
 // const b = 4;
 
@@ -8,7 +8,7 @@
 // console.log(a / b);
 // console.log(a % b);
 
-// Exercício 2: Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
+// Exercício 2: Faça um programa que retorne o maior de dois números.Defina no começo do programa duas constantes com os valores que serão comparados.
 // const num1 = 100;
 // const num2 = 30;
 
@@ -16,17 +16,17 @@
 //     console.log(num1);
 // }
 // else {
-//     console.log (num2);
+//     console.log(num2);
 // }
 
-// Exercício 3: Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
+// Exercício 3: Faça um programa que retorne o maior de três números.Defina no começo do programa três constantes com os valores que serão comparados.
 // const num1 = 2000;
 // const num2 = 30;
 // const num3 = 150000;
 
 // if (num1 > num2 && num1 > num3) {
 //     console.log(num1);
-// } 
+// }
 // else if (num2 > num1 && num2 > num3) {
 //     console.log(num2);
 // }
@@ -38,18 +38,18 @@
 
 // const periodo = "noite";
 
-// if (periodo == "manhã"){
+// if (periodo == "manhã") {
 //     console.log("positive");
-// } 
-// else if (periodo == "tarde"){
+// }
+// else if (periodo == "tarde") {
 //     console.log("negative");
 // }
 // else {
 //     console.log("zero");
 // }
 
-// Exercício 5: Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
-// 
+// Exercício 5: Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo.Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário.Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
+
 // const ladoA = 60;
 // const ladoB = 60;
 // const ladoC = -60;
@@ -86,7 +86,7 @@
 //         break;
 
 //     case "knight":
-//     console.log("Anda em L");
+//         console.log("Anda em L");
 //         break;
 
 //     case "pawn":
@@ -94,9 +94,7 @@
 //         break;
 // }
 
-
-
-// Exercício 7: Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F.
+// Exercício 7: Escreva um programa que converte uma nota dada em porcentagem(de 0 a 100) em conceitos de A a F.
 
 // let nota = 75;
 
@@ -122,7 +120,7 @@
 //     console.log("Nota inválida");
 // }
 
-// Exercício 8: Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false.
+// Exercício 8: Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par.Caso contrário, ele retorna false.
 
 // const num1 = 1;
 // const num2 = 3;
@@ -135,7 +133,7 @@
 //     console.log(false);
 // }
 
-// Exercício 9: Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false.
+// Exercício 9: Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for ímpar.Caso contrário, ele retorna false.
 
 // const num1 = 1;
 // const num2 = 2;
@@ -148,4 +146,21 @@
 //     console.log(false);
 // }
 
-Exercício 10: Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+// Exercício 10: Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda.A partir dos valores, calcule quanto de lucro(valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+
+const custoProduto = 10;
+const valorVenda = 20;
+
+let imposto = custoProduto * 0.2;
+let custoTotal = custoProduto + imposto;
+let lucro = valorVenda - custoTotal;
+
+if (custoProduto >= 0 && valorVenda >= 0) {
+    console.log(lucro*1000);
+}
+else {
+    console.log("Erro!");
+}
+
+
+
