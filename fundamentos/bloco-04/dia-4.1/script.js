@@ -148,19 +148,73 @@
 
 // Exercício 10: Escreva um programa que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda.A partir dos valores, calcule quanto de lucro(valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
 
-const custoProduto = 10;
-const valorVenda = 20;
+// const custoProduto = 10;
+// const valorVenda = 20;
 
-let imposto = custoProduto * 0.2;
-let custoTotal = custoProduto + imposto;
-let lucro = valorVenda - custoTotal;
+// let imposto = custoProduto * 0.2;
+// let custoTotal = custoProduto + imposto;
+// let lucro = valorVenda - custoTotal;
 
-if (custoProduto >= 0 && valorVenda >= 0) {
-    console.log(lucro*1000);
+// if (custoProduto >= 0 && valorVenda >= 0) {
+//     console.log(lucro*1000);
+// }
+// else {
+//     console.log("Erro!");
+// }
+
+// Exercícios 11: Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+
+let salarioBruto = 5000;
+let inss;
+let ir;
+let salarioLiquido;
+
+
+console.log(salarioBruto);
+console.log(inss);
+console.log(salarioLiquido);
+
+if (salarioBruto <= 1556.94){
+    inss = salarioBruto * 0.008;
+}
+else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92){
+    inss = salarioBruto * 0.009;
+}
+else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82){
+    inss = salarioBruto * 0.11;
 }
 else {
-    console.log("Erro!");
+    inss = 570.88;
 }
 
+let salarioBase = salarioBruto - inss;
+
+console.log(salarioBase);
+
+if (salarioBase <= 1903.98){
+    ir = 0;
+    salarioLiquido = salarioBase - ir;
+    console.log(salarioLiquido)
+}
+else if (salarioBase >= 1903.99 && salarioBase <= 2826.65){
+    ir = salarioBase * 0.075 - 142.80;
+    salarioLiquido = salarioBase - ir;
+    console.log(salarioLiquido);
+}
+else if (salarioBase >= 2826.66 && salarioBase <= 3751.05){
+    ir = salarioBase * 0,15 - 354,80;
+    salarioLiquido = salarioBase - ir;
+    console.log(salarioLiquido);
+}
+else if (salarioBase >= 3751.06 && salarioBase <= 4664.68){
+    ir = salarioBase * 0,225 - 636.13;
+    salarioLiquido = salarioBase - ir;
+    console.log(salarioLiquido);
+}
+else {
+    ir = salarioBase * 0,275 - 869,36;
+    salarioLiquido = salarioBase - ir;
+    console.log(salarioLiquido);
+}
 
 
