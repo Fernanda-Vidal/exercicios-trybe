@@ -71,3 +71,11 @@ for(num = 1; num <= 25; num += 1){
     arrayNum.push(num);
 }
 console.log(arrayNum);
+
+// 9) Utilizando o array criado no exercício anterior imprima o resultado da divisão
+// de cada um dos elementos por 2.
+let divisao = [];
+for(let a = 0; a < arrayNum.length; a += 1){
+    divisao.push(arrayNum[a] / 2);
+}
+console.log(divisao);
