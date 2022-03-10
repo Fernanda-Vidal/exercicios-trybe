@@ -18,3 +18,9 @@ player['bestInTheWorld'] = [2006, 2007, 2008, 2009, 2010, 2018];
 
 console.log(player);
 
+// 4 - Acesse a chave bestInTheWorld e faça um console.log no seguinte formato: "A jogadora Marta Silva
+//  foi eleita a melhor do mundo por 6 vezes".
+let numero = (Object.keys(player.bestInTheWorld).length);
+console.log(numero);
+
+console.log('A jogadora ' + player.name + ' ' + player.lastName + ' ' + 'foi eleita a melhor do mundo por ' + numero + ' vezes.')
