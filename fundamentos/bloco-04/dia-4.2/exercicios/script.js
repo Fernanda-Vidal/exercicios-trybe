@@ -41,14 +41,8 @@ else{
 let maiorNumero = numbers[0];
 for(let indice = 0; indice < numbers.length; indice += 1){
     if (maiorNumero < numbers[indice]){
-        maiorNumero = "até aqui, ok"
+        maiorNumero = numbers[indice];
 }
 }
    console.log(maiorNumero);
     
-    // if (maiorNumero < numbers[indice]){
-    //     maiorNumero = numbers[indice];
-    // }
-
-
-// console.log(maiorNumero);
