@@ -44,10 +44,26 @@ console.log(modulo(354, 2));
 // comparados.
 function maiorNumero(num1, num2) {
     if (num1 > num2) {
-        return(num1);
+        return (num1);
     }
     else {
-        return(num2);
+        return (num2);
     };
 }
 console.log(maiorNumero(10, 20));
+
+// 3-Faça um programa que retorne o maior de três números. Defina no
+//  começo do programa três constantes com os valores que serão
+//  comparados.
+function maiorDeTres(num1, num2, num3) {
+    if (num1 > num2 && num1 > num3) {
+        return (num1);
+    }
+    else if (num2 > num1 && num2 > num3) {
+        return (num2);
+    }
+    else {
+        return (num3);
+    }
+}
+console.log(maiorDeTres(1000, 2000000, 30));
