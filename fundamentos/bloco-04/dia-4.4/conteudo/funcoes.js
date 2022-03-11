@@ -67,3 +67,20 @@ function maiorDeTres(num1, num2, num3) {
     }
 }
 console.log(maiorDeTres(1000, 2000000, 30));
+
+// 4-Faça um programa que, dado um valor definido numa constante, retorne 
+// "positive" se esse valor for positivo, "negative" se for negativo e "zero" 
+// caso contrário.
+
+function booleano(constante){
+    if (constante > 0){
+        return "Positive";
+    }
+    else if (constante < 0){
+        return "Negative";
+    }
+    else{
+        return "Zero";
+    }
+}
+console.log(booleano(0));
