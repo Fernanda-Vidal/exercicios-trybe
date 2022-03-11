@@ -72,15 +72,33 @@ console.log(maiorDeTres(1000, 2000000, 30));
 // "positive" se esse valor for positivo, "negative" se for negativo e "zero" 
 // caso contrário.
 
-function booleano(constante){
-    if (constante > 0){
+function booleano(constante) {
+    if (constante > 0) {
         return "Positive";
     }
-    else if (constante < 0){
+    else if (constante < 0) {
         return "Negative";
     }
-    else{
+    else {
         return "Zero";
     }
 }
 console.log(booleano(0));
+
+// 5-Faça um programa que defina três constantes com os valores dos três ângulos internos 
+// de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo 
+// e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma 
+// mensagem de erro.
+
+function triangulo(par1, par2, par3) {
+    if (par1 < 0 || par2 < 0 || par3 < 0) {
+        return "Erro!";
+    }
+    else if (par1 + par2 + par3 === 180) {
+        return "True";
+    }
+    else {
+        return "False";
+    }
+}
+console.log(triangulo(60, 60, -60));
