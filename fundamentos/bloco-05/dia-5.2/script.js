@@ -7,10 +7,18 @@ function acessarElemento(cor){
     acessarElemento('green');
 
     // 3)Acesse o primeiroFilhoDoFilho e adicione um texto a ele.
-
 function adicionaTexto(){
     let filhoPrimeiro = document.getElementById('primeiroFilho');
     filhoPrimeiro.innerText = "Comunicado importante!";
-
 }
 adicionaTexto();
+
+// 4)Acesse o primeiroFilho a partir de pai.
+console.log(document.getElementById('pai').firstElementChild);
+
+// 5)Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta. 
+console.log(document.getElementById('elementoOndeVoceEsta').previousElementSibling);
+
+// 6)Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+console.log(document.getElementById('elementoOndeVoceEsta').nextSibling);
+
