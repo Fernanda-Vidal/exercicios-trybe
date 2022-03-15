@@ -22,3 +22,8 @@ console.log(document.getElementById('elementoOndeVoceEsta').previousElementSibli
 // 6)Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
 console.log(document.getElementById('elementoOndeVoceEsta').nextSibling);
 
+// 7)Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+console.log(document.getElementById('elementoOndeVoceEsta').nextElementSibling);
+
+// 8)Agora acesse o terceiroFilho a partir de pai.
+console.log(document.getElementById('pai').children[2]);
