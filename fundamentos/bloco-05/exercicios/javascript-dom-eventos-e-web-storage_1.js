@@ -31,3 +31,10 @@ function letrasMaiusculas (elemento){
 }
 letrasMaiusculas('p');
 
+function exibeConteudo(elemento){
+    let conteudo = document.getElementsByTagName(elemento);
+    for (let i = 0; i < conteudo.length; i += 1){
+        console.log(conteudo[i].innerText);
+    }
+}
+exibeConteudo('p');
