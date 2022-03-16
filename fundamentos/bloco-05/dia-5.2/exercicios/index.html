@@ -60,7 +60,7 @@
 
 <body>
     <script>
-        // Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
+    //1 Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
         let selecionaBody = document.getElementsByTagName('body')[0];
         function criaFilho(elemento){
             let cria = document.createElement(elemento);
@@ -69,7 +69,7 @@
         }
         criaFilho("h1");
 
-    //1 Adicione a tag main com a classe main-content como filho da tag body;
+    //2 Adicione a tag main com a classe main-content como filho da tag body;
     function adicionaElemento(seletor, elemento, classes){
         let cria1 = document.createElement(elemento);
         cria1.classList = classes;
@@ -77,23 +77,23 @@
     }
     adicionaElemento(selecionaBody, 'main', 'main-content');
 
-    //2 Adicione a tag section com a classe center-content como filho da tag main 
+    //3 Adicione a tag section com a classe center-content como filho da tag main 
     // criada no passo 2;
     let selecionaMain = document.getElementsByTagName('main')[0];
     adicionaElemento(selecionaMain, 'section', 'center-content');
 
-    //3 Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+    //4 Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
     let selecionaSection = document.getElementsByTagName('section')[0];
     adicionaElemento(selecionaSection,'p');
     document.getElementsByTagName('p')[0].innerText = "Bem-Vindos ao estudo do nosso querido DOM."
 
-    //4 Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+    //5 Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
     adicionaElemento(selecionaMain, 'section', 'left-content');
 
-    //5 Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+    //6 Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
     adicionaElemento(selecionaMain, 'section', 'right-content');
 
-    //6 Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe 
+    //7 Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe 
     // small-image . Esse elemento deve ser filho do section criado no passo 5;
     let selecionaClassRightContent = document.getElementsByClassName('right-content')[0];
     function adicionaImagem (seletor, elemento, classe){
@@ -103,7 +103,32 @@
     }
     adicionaImagem(selecionaClassRightContent, 'img', 'small-image');
     document.getElementsByClassName('small-image')[0].src = 'https://picsum.photos/200';
+
+    //8 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois ,
+    // três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+    adicionaElemento(selecionaClassRightContent, 'ul')
+    let selecionaUl = document.getElementsByTagName('ul')[0];
     
+    function adicionaTexto(seletor, elemento, insereTexto){
+        let texto = document.createElement(elemento);
+        texto.innerText = insereTexto;
+        seletor.append(texto);
+    }
+    adicionaTexto(selecionaUl, 'li', 'um');
+    adicionaTexto(selecionaUl, 'li', 'dois');
+    adicionaTexto(selecionaUl, 'li', 'três');
+    adicionaTexto(selecionaUl, 'li', 'quatro');
+    adicionaTexto(selecionaUl, 'li', 'cinco');
+    adicionaTexto(selecionaUl, 'li', 'seis');
+    adicionaTexto(selecionaUl, 'li', 'sete');
+    adicionaTexto(selecionaUl, 'li', 'oito');
+    adicionaTexto(selecionaUl, 'li', 'nove');
+    adicionaTexto(selecionaUl, 'li', 'dez');
+
+    // Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+    adicionaElemento(selecionaMain, 'h3');
+    adicionaElemento(selecionaMain, 'h3');
+    adicionaElemento(selecionaMain, 'h3')    
 
     </script>
 </body>
