@@ -56,6 +56,7 @@
         }
     </style>
 </head>
+<img src="" alt="" srcset="">
 
 <body>
     <script>
@@ -68,22 +69,41 @@
         }
         criaFilho("h1");
 
-        // Adicione a tag main com a classe main-content como filho da tag body;
-    function adicionaPrincipal(seletor, elemento, classes){
+    //1 Adicione a tag main com a classe main-content como filho da tag body;
+    function adicionaElemento(seletor, elemento, classes){
         let cria1 = document.createElement(elemento);
         cria1.classList = classes;
        seletor.append(cria1);
     }
-    adicionaPrincipal(selecionaBody, 'main', 'main-content');
+    adicionaElemento(selecionaBody, 'main', 'main-content');
 
-    // Adicione a tag section com a classe center-content como filho da tag main 
+    //2 Adicione a tag section com a classe center-content como filho da tag main 
     // criada no passo 2;
     let selecionaMain = document.getElementsByTagName('main')[0];
-    adicionaPrincipal(selecionaMain, 'section', 'center-content');
+    adicionaElemento(selecionaMain, 'section', 'center-content');
 
-    // Adicione a tag section com a classe center-content como filho da tag main criada no 
-    // passo 2;
+    //3 Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+    let selecionaSection = document.getElementsByTagName('section')[0];
+    adicionaElemento(selecionaSection,'p');
+    document.getElementsByTagName('p')[0].innerText = "Bem-Vindos ao estudo do nosso querido DOM."
 
+    //4 Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+    adicionaElemento(selecionaMain, 'section', 'left-content');
+
+    //5 Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+    adicionaElemento(selecionaMain, 'section', 'right-content');
+
+    //6 Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe 
+    // small-image . Esse elemento deve ser filho do section criado no passo 5;
+    let selecionaClassRightContent = document.getElementsByClassName('right-content')[0];
+    function adicionaImagem (seletor, elemento, classe){
+        let image1 = document.createElement(elemento)
+        image1.classList = classe;
+        seletor.append(image1);
+    }
+    adicionaImagem(selecionaClassRightContent, 'img', 'small-image');
+    document.getElementsByClassName('small-image')[0].src = 'https://picsum.photos/200';
+    
 
     </script>
 </body>
