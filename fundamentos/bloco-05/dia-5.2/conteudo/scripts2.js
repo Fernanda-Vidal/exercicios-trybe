@@ -31,7 +31,25 @@ document.getElementsByTagName('section')[4].parentElement.parentElement.nextElem
 
 // III - Removendo elementos
 
-// Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e 
-// primeiroFilhoDoFilho.
+// Remova todos os elementos filhos de paiDoPai exceto pai , 
+// elementoOndeVoceEsta e primeiroFilhoDoFilho.
+let aRemover = document.getElementsByTagName('section');
+
+for(let i = 0; i < aRemover.length; i += 1){
+    let removeElemento = aRemover[i];
+
+    if(removeElemento.innerText.includes('elementoOndeVoceEsta'){
+        continue
+    } else {
+        removeElemento.remove()
+    }
 
 
+
+
+
+// ainda não!!!!!!!!!!!!!
+
+
+let primeiroFilho = document.getElementById('primeiroFilho');
+aRemover.removeChild(primeiroFilho);
