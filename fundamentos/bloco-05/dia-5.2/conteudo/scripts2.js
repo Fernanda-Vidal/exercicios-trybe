@@ -1,11 +1,12 @@
 // 1)Crie um irmão para elementoOndeVoceEsta.
-function criaIrmao (elemento){
-    let enderecoIrmao = document.getElementById(elemento).parentElement;
-    let irmao = document.createElement('id');
-    irmao.innerText = "teste5555555555";
-    enderecoIrmao.appendChild(irmao);
+function criaIrmao (){
+    let enderecoIrmao = document.getElementById('pai');
+    let criaIrmao = document.createElement('section');
+    criaIrmao.innerText = 'Testando';
+    criaIrmao.classList = 'nova';
+    enderecoIrmao.append(criaIrmao);
 }
-criaIrmao('elementoOndeVoceEsta');
+criaIrmao();
 
 // 2)Crie um filho para elementoOndeVoceEsta.
 function criaFilho(){
@@ -33,23 +34,18 @@ document.getElementsByTagName('section')[4].parentElement.parentElement.nextElem
 
 // Remova todos os elementos filhos de paiDoPai exceto pai , 
 // elementoOndeVoceEsta e primeiroFilhoDoFilho.
-let aRemover = document.getElementsByTagName('section');
-
-for(let i = 0; i < aRemover.length; i += 1){
-    let removeElemento = aRemover[i];
-
-    if(removeElemento.innerText.includes('elementoOndeVoceEsta'){
-        continue
-    } else {
-        removeElemento.remove()
-    }
-
-
-
-
-
-// ainda não!!!!!!!!!!!!!
-
-
+let localRemover = document.getElementById('pai')
+let novoLocalRem = document.getElementById('elementoOndeVoceEsta')
 let primeiroFilho = document.getElementById('primeiroFilho');
-aRemover.removeChild(primeiroFilho);
+
+let segRemove = document.getElementById('segundoEUltimoFilhoDoFilho');
+
+let terceiroRemov = document.getElementById('terceiroFilho');
+let quartoRemov = document.getElementById('quartoEUltimoFilho');
+let quintoRemove = document.getElementsByClassName('nova')[0];
+
+localRemover.removeChild(primeiroFilho);
+novoLocalRem.removeChild(segRemove);
+localRemover.removeChild(terceiroRemov);
+localRemover.removeChild(quartoRemov);
+localRemover.removeChild(quintoRemove);
