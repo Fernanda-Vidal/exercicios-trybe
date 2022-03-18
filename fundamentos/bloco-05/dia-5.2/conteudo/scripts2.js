@@ -34,8 +34,8 @@ document.getElementsByTagName('section')[4].parentElement.parentElement.nextElem
 
 // Remova todos os elementos filhos de paiDoPai exceto pai , 
 // elementoOndeVoceEsta e primeiroFilhoDoFilho.
-let localRemover = document.getElementById('pai')
-let novoLocalRem = document.getElementById('elementoOndeVoceEsta')
+let localRemover = document.getElementById('pai');
+let novoLocalRem = document.getElementById('elementoOndeVoceEsta');
 let primeiroFilho = document.getElementById('primeiroFilho');
 
 let segRemove = document.getElementById('segundoEUltimoFilhoDoFilho');
@@ -44,7 +44,7 @@ let terceiroRemov = document.getElementById('terceiroFilho');
 let quartoRemov = document.getElementById('quartoEUltimoFilho');
 let quintoRemove = document.getElementsByClassName('nova')[0];
 
-localRemover.removeChild(primeiroFilho);
+locaqlRemover.removeChild(primeiroFilho);
 novoLocalRem.removeChild(segRemove);
 localRemover.removeChild(terceiroRemov);
 localRemover.removeChild(quartoRemov);
