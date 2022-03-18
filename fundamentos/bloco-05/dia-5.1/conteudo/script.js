@@ -1,6 +1,15 @@
-document.querySelectorAll("h1")[0].style.color = "green";
-document.getElementsByClassName("emergency-tasks")[0].style.color = "orange";
-document.getElementById("footer-container").style.color = "blue";
-document.getElementsByTagName("h3")[3].style.color = "pink";
-document.querySelector("body").style.color = "yellow";
-// Porque o querySelector alterou a cor do meu segundo h3? Não deveria ser o primeiro elemento da tag informada?
+let titulo = document.querySelectorAll("h1")[0];
+titulo.style.backgroundColor = "#2FC18C";
+titulo.style.color = "white";
+
+
+document.querySelector(".emergency-tasks").style.backgroundColor = "#f19c79";
+let tarja = document.querySelectorAll("h3");
+tarja[0].style.backgroundColor = "#9d4edd";
+tarja[1].style.backgroundColor = "#9d4edd";
+
+document.querySelector('.no-emergency-tasks').style.backgroundColor = "#ffe14c"
+tarja[2].style.backgroundColor = "black";
+tarja[3].style.backgroundColor = "black";
+
+document.getElementById("footer-container").style.backgroundColor = "#233d4d";

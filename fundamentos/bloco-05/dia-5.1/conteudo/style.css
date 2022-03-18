@@ -9,7 +9,7 @@
   
   #header-container {
     color: white;
-    padding: 20px;;
+    padding: 20px;
   }
   
   .emergency-tasks {
@@ -26,13 +26,12 @@
     color: white;
     margin-top: 10px;
     padding: 10px;
-    display: inline-block;
   }
   
   .no-emergency-tasks {
     display: inline-block;
     height: 400px;
-    width: 400px;;
+    width: 400px;
   }
   
   .no-emergency-tasks div {
