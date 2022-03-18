@@ -35,6 +35,12 @@ input.addEventListener('input', switchText);
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
 
+function meuSpotrybefy(){
+  window.location.href = "https://fernanda-Vidal.github.io/";
+}
+
+myWebpage.addEventListener('dblclick', meuSpotrybefy)
+
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
