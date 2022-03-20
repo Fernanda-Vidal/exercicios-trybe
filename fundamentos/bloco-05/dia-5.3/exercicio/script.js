@@ -116,3 +116,12 @@ function addTask (tarefa){
     selecionaDiv[0].appendChild(criaSpan);
 }
 addTask("cozinhar");
+
+// Exercício 8:
+function addLegend(cor){
+    let selecionaDiv = document.getElementsByClassName('my-tasks');
+    let criaDiv = document.createElement('div');
+    criaDiv.style.backgroundColor = cor;
+    selecionaDiv[0].appendChild(criaDiv)
+}
+addLegend('pink');
