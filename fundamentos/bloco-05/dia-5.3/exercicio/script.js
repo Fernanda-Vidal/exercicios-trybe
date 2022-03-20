@@ -42,15 +42,15 @@ function dayCalendar() {
 dayCalendar();
 
 // Exercício 2:
-function criaBotao(stringFeriados) {
+function criaBotao(stringFeriados,addId) {
     let selecionaDiv = document.getElementsByClassName('buttons-container')[0];
     let botao = document.createElement('button');
-    botao.id = "btn-holiday";
+    botao.id = addId;
     botao.innerText = stringFeriados;
     botao.addEventListener('click', mudaCor);
     selecionaDiv.appendChild(botao);
 }
-criaBotao('Feriados');
+criaBotao('Feriados', "btn-holiday");
 
 // Exercício 3 :
 function mudaCor() {
@@ -72,3 +72,7 @@ function mudaCor() {
 })
 }
 mudaCor();
+
+// Exercício 4:
+criaBotao('Sexta-feira', 'btn-friday');
+
