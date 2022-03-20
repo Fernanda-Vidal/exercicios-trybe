@@ -100,7 +100,7 @@ mudaTexto([4, 11, 18, 25]);
 
 // Exercício 6:
 function zoom(event){
-    event.target.style.fontSize = '30px'
+    event.target.style.fontSize = '50px'
     
 }
 
@@ -122,6 +122,23 @@ function addLegend(cor){
     let selecionaDiv = document.getElementsByClassName('my-tasks');
     let criaDiv = document.createElement('div');
     criaDiv.style.backgroundColor = cor;
-    selecionaDiv[0].appendChild(criaDiv)
+    criaDiv.classList = 'task';
+    selecionaDiv[0].appendChild(criaDiv);
 }
 addLegend('pink');
+
+// Exercício 9:
+function switchClass(){
+    let selectedTask = document.getElementsByClassName('task selected');
+    let task = document.querySelector('.task');
+
+    task.addEventListener('click', function(event){
+        if (selectedTask.length === 0){
+            event.target.classList = 'task selected';
+        }
+        else {
+            event.target.classList = 'task';
+        }
+    })
+}
+switchClass();
