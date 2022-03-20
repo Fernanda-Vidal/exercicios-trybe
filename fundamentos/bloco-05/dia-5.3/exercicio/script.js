@@ -25,6 +25,9 @@ function dayCalendar() {
         let createDay = document.createElement('li');
         createDay.innerText = armaz;
         createDay.classList.add("day");
+        createDay.addEventListener('mouseover', zoom);
+        createDay.addEventListener('mouseout', removeZoom);
+
 
         if (armaz === 24 || armaz === 31) {
             createDay.classList.add('holiday');
@@ -94,3 +97,13 @@ selecionaBotao.addEventListener('click', function(){
 }
 
 mudaTexto([4, 11, 18, 25]);
+
+// Exercício 6:
+function zoom(event){
+    event.target.style.fontSize = '30px'
+    
+}
+
+function removeZoom(event){
+    event.target.style.fontSize = '';
+}
