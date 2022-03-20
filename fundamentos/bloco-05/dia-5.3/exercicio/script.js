@@ -107,3 +107,12 @@ function zoom(event){
 function removeZoom(event){
     event.target.style.fontSize = '';
 }
+
+// Exercício 7:
+function addTask (tarefa){
+    let selecionaDiv = document.getElementsByClassName('my-tasks');
+    let criaSpan = document.createElement('span');
+    criaSpan.innerText = tarefa;
+    selecionaDiv[0].appendChild(criaSpan);
+}
+addTask("cozinhar");
