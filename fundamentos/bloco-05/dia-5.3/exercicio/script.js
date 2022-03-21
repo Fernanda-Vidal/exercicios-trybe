@@ -26,8 +26,7 @@ function dayCalendar() {
         createDay.innerText = armaz;
         createDay.classList.add("day");
         createDay.addEventListener('mouseover', zoom);
-        createDay.addEventListener('mouseout', removeZoom);
-
+        createDay.addEventListener('mouseout', removeZoom);    
 
         if (armaz === 24 || armaz === 31) {
             createDay.classList.add('holiday');
@@ -142,3 +141,24 @@ function switchClass(){
     })
 }
 switchClass();
+
+// Exercício 10:
+function addColor(){
+    let days = document.querySelector('#days');
+    let selectedTask = document.getElementsByClassName('task selected');
+    let taskDiv = document.getElementsByClassName('task');
+    let taskColor = taskDiv[0].style.backgroundColor;
+    
+    days.addEventListener('click', function(event){
+        let eventTargetColor = event.target.style.color;
+
+        if(selectedTask.length > 0 && eventTargetColor !== taskColor){
+            let color = selectedTask[0].style.backgroundColor;
+            event.target.style.color = color;
+        }
+        else if (eventTargetColor === taskColor && selectedTask.length !== 0){
+           event.target.style.color = 'rgb(119,119,119)';
+        }                                            
+    })
+}
+addColor();
