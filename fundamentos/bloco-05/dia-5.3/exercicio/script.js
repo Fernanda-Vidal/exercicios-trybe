@@ -162,3 +162,34 @@ function addColor(){
     })
 }
 addColor();
+
+// Bônus:
+
+// let compromissos = {
+//     chave:'',
+// };
+
+// function adicionaCompromisso(){
+//     compromissos.chave = document.getElementById('task-input').value;
+//     localStorage.setItem(compromissos.chave; JSON.stringify(compromissos));
+//     document.getElementById('task-input').value = ''; 
+// }
+// adicionaCompromisso();
+
+// function addEventListener (){
+// let botao = document.getElementById('btn-add');
+//  botao.addEventListener('click', adicionaCompromisso);
+// }
+
+// function criaElemento(){
+//     let addCompromisso = document.getElementsByClassName('input-container');
+//     let meusCompromissos = document.createElement(ul);
+// addCompromisso.appendChild(meusCompromissos);
+
+// let lista = document.createElement('li');
+// lista.innerText
+// meusCompromissos.appendChild(lista);
+
+    
+
+// }
