@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Concurso TrybeTrip</h1>
+        </div>
+
+    </header>
+    <form>
+        <main>
+            <section class="container">
+                <div>
+                    <fieldset>
+                    <label for="informa">
+                        Nome: <input type="text" name="identificacao" id="informa" class="allInput" minlength="10" maxlength="40" required>
+                    </label>
+                </div>
+</fieldset>
+<fieldset>             
+<div>
+                    <label for="email">
+                        E-mail: <input type="email" name="identificacao" id="email" class="allInput" minlength="10" maxlength="50" >
+                    </label>
+                </div>
+            </section>
+        </fieldset>  
+        
+            <section class="container"> 
+         
+                <label for="option1">
+                    <input type="radio" name="identificacao" id="option1"> Cidade
+                </label>
+                <label for="option2">
+                    <input type="radio" name="identificacao" id="option2"> Campo
+                </label>
+                <label for="option3">
+                    <input type="radio" name="identificacao" id="option3"> Praia
+                </label>
+                <label for="option4">
+                    <input type="radio" name="identificacao" id="option4"> Montanhas
+                </label>
+          
+            </section>
+           
+            <div class="container">
+                <fieldset>
+                <label for="descricao">
+                    <textarea name="" id="descricao" class="allInput" cols="55" rows="10"
+                        placeholder="Conte-nos porque você deve ganhar" minlength="30" maxlength="500"></textarea>
+                </label>
+            </fieldset>
+            </div>
+            <div class="container">
+                <label for="data">
+                    Qual a melhor data para realizar sua viagem? <input type="date" id="data" placeholder="dd/mm/aaaa">
+                </label>
+            </div>
+            <section class="container">
+            <div>
+                <label for="de-acordo1">
+                    <input type="checkbox" value="" name="de acordo" id="de-acordo1" class="agreement"> Gostaria de receber outras
+                    incríveis oportunidades oferecidas pela Trybe?
+                </label>
+            </div>
+            <div>
+                <label for="de-acordo2">
+                    <input type="checkbox" value="" name="de acordo" id="de-acordo2" class="agreement" required> Concordo que imagens
+                    das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                </label>
+            </div>
+        </section>
+        <section> 
+            <button type="submit" class="btn" id="btn-submit">Participar</button>
+            <button type="reset" class="btn" id="btn-clear">Apagar</button>
+</section>
+        </main>
+    </form>
+
+<script src="main.js"></script>
+</body>
+
+</html>
