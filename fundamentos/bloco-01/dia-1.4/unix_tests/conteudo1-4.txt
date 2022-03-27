@@ -1,0 +1,36 @@
+
+ 3766  ls
+ 3767  mkdir dia-1.4
+ 3768  ls
+ 3769  cd dia-1.4
+ 3770  code .
+ 3771  ls
+ 3772  touch
+ 3773  touch unix_tests
+ 3774  ls
+ 3775  mkdir unix_tests
+ 3776  cd unix_tests
+ 3777  ls
+ 3778  touch skills2.txt
+ 3779  ls
+ 3780  cat skills2.txt
+ 3781  cat > skills2.txt
+ 3782  cat skills2.txt
+ 3783  cat skills2.txt | wc -l
+ 3784  sort < skills2.txt > top_skills.txt
+ 3785  cat top_skills.txt
+ 3786  cat > phrases2.txt
+ 3787  cat phrases2.txt
+ 3788  cat phrases2.txt | wc -l
+ 3789  grep br phrases.txt | wc -l
+ 3790  grep br phrases2.txt | wc -l
+ 3791  grep br -i  phrases2.txt | wc -l
+ 3792  grep br -iv  phrases2.txt | wc -l
+ 3793  nano phrases2.txt
+ 3794  cat phrases2.txt
+ 3795  cat > countries.txt
+ 3796  cp countries.txt bunch_of_things.txt
+ 3797  cat phrases2.txt >> bunch_of_things.txt
+ 3798  sort bunch_of_things.txt -o bunch_of_things.txt
+ 3799  cat bunch_of_things.txt
+ 3801  history | tail - 500 > conteudo1-4.txt

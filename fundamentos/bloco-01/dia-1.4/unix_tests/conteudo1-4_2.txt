@@ -1,0 +1,150 @@
+ 3664  ls
+ 3665  git status
+ 3666  git branch
+ 3667  git status
+ 3668  git add .
+ 3669  git status
+ 3670  git commit -m "Adiciona bloco 6, dia 6.1"
+ 3671  git status
+ 3672  git push
+ 3673  history
+ 3674  cd Desktop/trybe/Repositorios/exercicios-trybe/fundamentos
+ 3675  git checkout -b exercicios/6.2
+ 3676  cd bloco-06
+ 3677  ls
+ 3678  mkdir dia-6.2
+ 3679  ls
+ 3680  cd dia-6.2
+ 3681  ls
+ 3682  mkdir exercicios
+ 3683  ls
+ 3684  cd exercicios
+ 3685  cd ..
+ 3686  cd dia-6.1
+ 3687  cd exercicios
+ 3688  ls
+ 3689  code .
+ 3690  cd ..
+ 3691  cd dia-6.2
+ 3692  cd exercicios
+ 3693  ls
+ 3694  code .
+ 3695  git status
+ 3696  ls
+ 3697  cd ..
+ 3698  ls
+ 3699  mkdir dia-6.3
+ 3700  ls
+ 3701  cd dia-6.3
+ 3702  ls
+ 3703  mkdir conteudo
+ 3704  mkfir exercicios
+ 3705  mkdir exercicios
+ 3706  ls
+ 3707  cd conteudo
+ 3708  ls
+ 3709  touch conteudo.html
+ 3710  ls
+ 3711  code .
+ 3712  git status
+ 3713  git add .
+ 3714  git status
+ 3715  ls
+ 3716  cd ..
+ 3717  cd trybe/Repositorios
+ 3718  ls
+ 3719  git clone git@github.com:Fernanda-Vidal/exercicios-trybe.git
+ 3720  ls
+ 3721  cd exercicios-trybe
+ 3722  cd fundamentos
+ 3723  cd bloco-06/dia-6.1/exercicios/
+ 3724  ls
+ 3725  cd ../../..
+ 3726  cd .. 
+ 3727  cd ..
+ 3728  cd Desktop
+ 3729  cd trybe/dia-6.2
+ 3730  ls
+ 3731  code .
+ 3732  ls
+ 3733  cd ..
+ 3734  ls
+ 3735  cd Repositorios
+ 3736  cd exercicios-trybe/fundamentos/bloco-06
+ 3737  ls
+ 3738  git checkout -b exercícios/6.2
+ 3739  ls
+ 3740  git status
+ 3741  git add .
+ 3742  git status
+ 3743  git commit -m "Adiciona dia 6.2"
+ 3744  git status
+ 3745  git push
+ 3746  git push -u origin exercícios/6.2
+ 3747  git status
+ 3748  cd Desktop/trybe/dia-6.3
+ 3749  ls
+ 3750  code .
+ 3751  ls
+ 3752  cd exercicios
+ 3753  code .
+ 3754  ls
+ 3755  ls -la
+ 3756  git clone git@github.com:tryber/exercise-tech-gallery.git
+ 3757  git branch
+ 3758  ls
+ 3759  cd exercise-tech-gallery
+ 3760  ls
+ 3761  git branch
+ 3762  git checkout tech-gallery
+ 3763  ls
+ 3764  code .
+ 3765  cd ..
+ 3766  ls
+ 3767  mkdir dia-1.4
+ 3768  ls
+ 3769  cd dia-1.4
+ 3770  code .
+ 3771  ls
+ 3772  touch
+ 3773  touch unix_tests
+ 3774  ls
+ 3775  mkdir unix_tests
+ 3776  cd unix_tests
+ 3777  ls
+ 3778  touch skills2.txt
+ 3779  ls
+ 3780  cat skills2.txt
+ 3781  cat > skills2.txt
+ 3782  cat skills2.txt
+ 3783  cat skills2.txt | wc -l
+ 3784  sort < skills2.txt > top_skills.txt
+ 3785  cat top_skills.txt
+ 3786  cat > phrases2.txt
+ 3787  cat phrases2.txt
+ 3788  cat phrases2.txt | wc -l
+ 3789  grep br phrases.txt | wc -l
+ 3790  grep br phrases2.txt | wc -l
+ 3791  grep br -i  phrases2.txt | wc -l
+ 3792  grep br -iv  phrases2.txt | wc -l
+ 3793  nano phrases2.txt
+ 3794  cat phrases2.txt
+ 3795  cat > countries.txt
+ 3796  cp countries.txt bunch_of_things.txt
+ 3797  cat phrases2.txt >> bunch_of_things.txt
+ 3798  sort bunch_of_things.txt -o bunch_of_things.txt
+ 3799  cat bunch_of_things.txt
+ 3800  history | tail - 700 > conteudo1-4.txt
+ 3801  history | tail - 500 > conteudo1-4.txt
+ 3802  history | tail -n 500 > conteudo1-4.txt
+ 3803  ls -l
+ 3804  chmod a+rw bunch_of_things.txt
+ 3805  ls -l
+ 3806  chmod a-r bunch_of_things.txt
+ 3807  ls -l
+ 3808  chmod a+r bunch_of_things.txt
+ 3809  chmod a+w bunch_of_things.txt
+ 3810  ls -l
+ 3811  chmod 644 bunch_of_things.txt
+ 3812  ls -ls
+ 3813  history | tail -n 150 > conteudo1-4/2.txt
