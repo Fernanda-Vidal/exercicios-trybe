@@ -1,0 +1,100 @@
+ 3746  git push -u origin exercícios/6.2
+ 3747  git status
+ 3748  cd Desktop/trybe/dia-6.3
+ 3749  ls
+ 3750  code .
+ 3751  ls
+ 3752  cd exercicios
+ 3753  code .
+ 3754  ls
+ 3755  ls -la
+ 3756  git clone git@github.com:tryber/exercise-tech-gallery.git
+ 3757  git branch
+ 3758  ls
+ 3759  cd exercise-tech-gallery
+ 3760  ls
+ 3761  git branch
+ 3762  git checkout tech-gallery
+ 3763  ls
+ 3764  code .
+ 3765  cd ..
+ 3766  ls
+ 3767  mkdir dia-1.4
+ 3768  ls
+ 3769  cd dia-1.4
+ 3770  code .
+ 3771  ls
+ 3772  touch
+ 3773  touch unix_tests
+ 3774  ls
+ 3775  mkdir unix_tests
+ 3776  cd unix_tests
+ 3777  ls
+ 3778  touch skills2.txt
+ 3779  ls
+ 3780  cat skills2.txt
+ 3781  cat > skills2.txt
+ 3782  cat skills2.txt
+ 3783  cat skills2.txt | wc -l
+ 3784  sort < skills2.txt > top_skills.txt
+ 3785  cat top_skills.txt
+ 3786  cat > phrases2.txt
+ 3787  cat phrases2.txt
+ 3788  cat phrases2.txt | wc -l
+ 3789  grep br phrases.txt | wc -l
+ 3790  grep br phrases2.txt | wc -l
+ 3791  grep br -i  phrases2.txt | wc -l
+ 3792  grep br -iv  phrases2.txt | wc -l
+ 3793  nano phrases2.txt
+ 3794  cat phrases2.txt
+ 3795  cat > countries.txt
+ 3796  cp countries.txt bunch_of_things.txt
+ 3797  cat phrases2.txt >> bunch_of_things.txt
+ 3798  sort bunch_of_things.txt -o bunch_of_things.txt
+ 3799  cat bunch_of_things.txt
+ 3800  history | tail - 700 > conteudo1-4.txt
+ 3801  history | tail - 500 > conteudo1-4.txt
+ 3802  history | tail -n 500 > conteudo1-4.txt
+ 3803  ls -l
+ 3804  chmod a+rw bunch_of_things.txt
+ 3805  ls -l
+ 3806  chmod a-r bunch_of_things.txt
+ 3807  ls -l
+ 3808  chmod a+r bunch_of_things.txt
+ 3809  chmod a+w bunch_of_things.txt
+ 3810  ls -l
+ 3811  chmod 644 bunch_of_things.txt
+ 3812  ls -ls
+ 3813  history | tail -n 150 > conteudo1-4/2.txt
+ 3814  history | tail -n 150 > conteudo1-4_2.txt
+ 3815  ls
+ 3816  # Exercício 1\nps
+ 3817  ps
+ 3818  [sleep](https://linux.die.net/man/3/sleep) {: .external-link target="_blank" rel="noreferrer noopener" } 30 [&](https://linuxhandbook.com/run-process-background/) {: .external-link target="_blank" rel="noreferrer noopener" }
+ 3819  sleep 30 &
+ 3820  ps | grep sleep\nkill 1
+ 3821  sleep 30 &
+ 3822  ps | grep sleep
+ 3823  kill 1
+ 3824  sleep 30 &
+ 3825  kill 309646
+ 3826  sleep 30
+ 3827  bg
+ 3828  sleep 300 &
+ 3829  sleep 200
+ 3830  sleep 100
+ 3831  jobs
+ 3832  fg %1
+ 3833  jobs
+ 3834  bg %3
+ 3835  jobs
+ 3836  ps
+ 3837  kill 309686
+ 3838  kill 309717
+ 3839  jobs
+ 3840  ps | grep sleep
+ 3841  killall sleep
+ 3842  jobs
+ 3843  fg %1
+ 3844  kill 309686
+ 3845  fg %2
