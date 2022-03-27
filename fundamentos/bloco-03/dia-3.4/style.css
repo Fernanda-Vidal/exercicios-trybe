@@ -1,41 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #e6f9af;
-    color: rgb(020, 200, 155);
+    background-color: #344e41;
+    color: #3a5a40;
 }
 
-header {
-    border: #5b8e7d solid;
-    background-color: #5b8e7d;
+.nav{
+    text-decoration: none;
+    color: #344e41;
 }
 
-section {
-    
+a:hover{
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-family: sans-serif;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.container{
+    background-color: #dad7cd;
+    border: 1px solid #dad7cd;
+    border-radius: 5px;
+    margin: 10px;
+    width: 80%;
+    padding: 10px;
+    text-align: justify;
+}
+
+.img {
+    border-radius: 10px;
+    background-color: #344e41;
+    padding: 5px;
+}
+
+.referencias {
+    padding: 20px;
 }
 
 footer {
-    border: #5b8e7d solid;
-    background-color: #5b8e7d;
-    color: white;
+    color: #dad7cd;
+    text-align: right;
+    padding: 15px;
 }
 
-blockquote {
-    border: #9b9b7a solid;
-    background-color: #9b9b7a;
-    color: white;
+table {
+    border: 1px solid black;
+    padding: 10px;
 }
 
-.tabela {
-   margin-left: 50%;
-   border: #9b9b7a solid;
-   background-color: #9b9b7a;
-   color: white;
+.coluna {
+    border-right: 1px solid black;
+    padding-right: 10px;
 }
 
-.artigo {
-    float: left; 
-    margin-right: auto;
-    border: #9b9b7a solid;
-    background-color: #9b9b7a;
-    color: white;
+.table {
+    border: 1px solid black;
+    width: 444 px;
 }
-
