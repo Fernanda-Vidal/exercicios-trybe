@@ -11,12 +11,13 @@ for (let i = fatorial; i > 0; i -= 1) {
 
 console.log(resultado);
 
+
 // 2- Agora, desenvolva um algoritmo que é capaz de inverter uma palavra. Por exemplo,
 // a palavra "banana" seria invertida para "ananab". Utilize a string abaixo como
 // exemplo, depois troque por outras para verificar se seu algoritmo está funcionando
 // corretamente.
 
-let word = 'fernanda';
+let word = 'tryber';
 let newWord = "";
 
 for (let i = word.length - 1; i >= 0; i -= 1) {
@@ -61,7 +62,7 @@ for(let numeroAtual = 4; numeroAtual <= n; numeroAtual += 1){
     }
 }
 
-console.log(numerosPrimos);
+// console.log(numerosPrimos);
 
 let maior = 2;
 for(let i = 0; i < numerosPrimos.length; i += 1){
