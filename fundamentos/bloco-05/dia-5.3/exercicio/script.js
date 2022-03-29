@@ -164,32 +164,21 @@ function addColor(){
 addColor();
 
 // Bônus:
+// NÃO FUNCIONA!!
 
-// let compromissos = {
-//     chave:'',
-// };
+let getButton = document.getElementById('btn-add');
+let getUL = document.getElementsByClassName('task-list');
 
-// function adicionaCompromisso(){
-//     compromissos.chave = document.getElementById('task-input').value;
-//     localStorage.setItem(compromissos.chave; JSON.stringify(compromissos));
-//     document.getElementById('task-input').value = ''; 
-// }
-// adicionaCompromisso();
+function addCommitment(){
+    let newLi = document.createElement('li');
+    let getInput = document.getElementById('task-input');
+    newLi.innerText = getInput.value;
 
-// function addEventListener (){
-// let botao = document.getElementById('btn-add');
-//  botao.addEventListener('click', adicionaCompromisso);
-// }
-
-// function criaElemento(){
-//     let addCompromisso = document.getElementsByClassName('input-container');
-//     let meusCompromissos = document.createElement(ul);
-// addCompromisso.appendChild(meusCompromissos);
-
-// let lista = document.createElement('li');
-// lista.innerText
-// meusCompromissos.appendChild(lista);
-
+    if(getInput.value !== ''){   
+        getUL.appendChild(newLi);
+    }
     
+    document.getElementById('task-input').value = '';
+}
 
-// }
+getButton.addEventListener('click', addCommitment);
