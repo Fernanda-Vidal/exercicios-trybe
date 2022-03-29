@@ -166,19 +166,40 @@ addColor();
 // Bônus:
 // NÃO FUNCIONA!!
 
-let getButton = document.getElementById('btn-add');
-let getUL = document.getElementsByClassName('task-list');
+const getButton = document.getElementById('btn-add');
+const getUL = document.getElementsByClassName('task-list');
+const getInput = document.getElementById('task-input');
 
-function addCommitment(){
+function addCommitmentInDOM(){
+    const commitment = JSON.parse(localStorage.getItem('compromisso'));
+    const tamanhoCompro = commitment.length - 1;
+    const textoCompro = commitment[tamanhoCompro]; 
     let newLi = document.createElement('li');
-    let getInput = document.getElementById('task-input');
-    newLi.innerText = getInput.value;
-
-    if(getInput.value !== ''){   
-        getUL.appendChild(newLi);
+    newLi.innerText = textoCompro; 
+    getUL.appendChild(newLi);
     }
     
-    document.getElementById('task-input').value = '';
+    
+function addCommitToLocalStorage() {
+    const oldList = JSON.parse(localStorage.getItem('compromisso'));
+    const textoCompro = getInput.value;
+    oldList.push(textoCompro);
+    localStorage.setItem('compromisso', JSON.stringify(oldList));
+    addCommitmentInDOM();
+  }
+
+  function initialRenderization() {
+    if (localStorage.getItem('compromisso') === null) {
+      localStorage.setItem('compromisso', JSON.stringify([]));
+    } else {
+      const commitment = JSON.parse(localStorage.getItem('compromisso'));
+      const tamanhoCompro = commitment.length - 1;
+      for (let index = 0; index <= tamanhoCompro; index += 1) {
+        const listElement = document.createElement('li');
+        listElement.innerText = phrasesList[index];
+        list.appendChild(listElement);
+      }
+    }
 }
 
 getButton.addEventListener('click', addCommitment);
