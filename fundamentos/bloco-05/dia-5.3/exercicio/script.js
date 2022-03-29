@@ -166,15 +166,15 @@ addColor();
 // Bônus:
 const getButton = document.getElementById('btn-add');
 const getUL = document.getElementsByClassName('task-list');
-const getInput = document.getElementById('task-input');
-// let newLi = document.createElement('li');
-// newLi.innerText = getInput.value;
 
 function addCommitment(){
-    let newLi = document.createElement('li');
-    newLi.innerText = getInput.value;
+    const getInput = document.getElementById('task-input');
     
-    getUL[0].appendChild(newLi);
+    if(getInput.value){
+        let newLi = document.createElement('li');
+        newLi.innerText = getInput.value;
+        getUL[0].appendChild(newLi);
+    }
     document.getElementById('task-input').value = '';
 
 }
