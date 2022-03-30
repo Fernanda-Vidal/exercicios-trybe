@@ -164,21 +164,19 @@ function addColor(){
 addColor();
 
 // Bônus:
-// NÃO FUNCIONA!!
-
-let getButton = document.getElementById('btn-add');
-let getUL = document.getElementsByClassName('task-list');
+const getButton = document.getElementById('btn-add');
+const getUL = document.getElementsByClassName('task-list');
 
 function addCommitment(){
-    let newLi = document.createElement('li');
-    let getInput = document.getElementById('task-input');
-    newLi.innerText = getInput.value;
-
-    if(getInput.value !== ''){   
-        getUL.appendChild(newLi);
-    }
+    const getInput = document.getElementById('task-input');
     
+    if(getInput.value){
+        let newLi = document.createElement('li');
+        newLi.innerText = getInput.value;
+        getUL[0].appendChild(newLi);
+    }
     document.getElementById('task-input').value = '';
+
 }
 
 getButton.addEventListener('click', addCommitment);
