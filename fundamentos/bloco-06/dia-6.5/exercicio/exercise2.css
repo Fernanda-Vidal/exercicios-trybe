@@ -1,0 +1,113 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  @media screen and (max-width: 400px){
+      body{
+          background-color: aliceblue;
+          color: violet;
+          margin: 5%;
+          padding: 3%;
+          max-width: 300px;
+          text-align: justify;
+          /* border: 1px solid black; */
+      }
+
+      header{
+        font-size: larger;
+        text-align: justify;
+      }
+
+      h1{
+        font-size: 2em;
+        text-decoration: underline;
+      }
+
+      nav div ul li{
+        display: inline;
+        padding: 3%;
+      }
+
+      li:hover{
+      font-weight: bold;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .aside-two {
+        order: 1;
+      }
+
+  }
+
+  @media screen and (min-width: 401px) and (max-width: 695px) {
+    body{
+      background-color: aliceblue;
+      color: violet;
+      margin: 5%;
+      padding: 3%;
+      max-width: 550 px;
+      text-align: justify;
+      border: 1px solid red;
+  }
+
+  h1{
+    font-size: 2em;
+    text-decoration: underline;
+    
+  }
+
+  li:hover{
+  font-weight: bold;
+  }
+
+  .agrupa-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-header{
+    /* flex-direction: column; */
+  }
+
+  }
+
+  @media screen and (min-width: 695px) {
+    body{
+      background-color: aliceblue;
+      color: violet;
+      margin: 5%;
+      padding: 3%;
+      max-width: 695 px;
+      text-align: justify;
+      display: flex;
+      justify-content: center;
+  }
+
+  p{
+    max-width: 695px;
+  }
+
+  h1{
+    font-size: 2em;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  /* nav {
+    display: flex;
+
+  } */
+
+  li:hover{
+  font-weight: bold;
+  }
+
+  }
