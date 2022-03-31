@@ -1,0 +1,141 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .container {
+    display: flex;
+  }
+   
+  p {
+    padding: 10px;
+  }
+  
+  /* Small */
+  @media screen and (max-width: 400px){
+      body{
+          background-color: aliceblue;
+          color: violet;
+          margin: 5%;
+          padding: 3%;
+          max-width: 100%;
+          text-align: justify;
+      }
+
+      h1{
+        font-size: 1em;
+        text-decoration: underline;
+      }
+
+      nav ul li{
+        display: none;
+      }
+
+      li:hover{
+      font-weight: bold;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #container-aside {
+        display: none;
+      }
+
+      header div p{
+        font-size: 30px;
+      }
+
+  }
+
+  /* Medium */
+  @media screen and (min-width: 401px) and (max-width: 695px) {
+    body{
+      background-color: aliceblue;
+      color: violet;
+      margin: 5%;
+      padding: 3%;
+      max-width: 550 px;
+      text-align: justify;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+   h1{
+    font-size: 1.8em;
+    text-decoration: underline;
+    
+  }
+
+  li:hover{
+  font-weight: bold;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  ul li{
+    list-style: none;
+    padding: 5px;
+    ;
+  }
+
+  #container-aside{
+    display: flex;
+  }
+  }
+
+  /* Big */
+  @media screen and (min-width: 695px) {
+    body{
+      background-color: aliceblue;
+      color: violet;
+      margin: 5%;
+      padding: 3%;
+      max-width: 550 px;
+      text-align: justify;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+   h1{
+    font-size: 1.8em;
+    text-decoration: underline;
+    
+  }
+
+  li:hover{
+  font-weight: bold;
+  }
+
+
+  ul li{
+    padding: 5px;
+    ;
+  }
+
+  #container-aside{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aside-two ul li{
+    list-style: none;
+  }
+
+  }
