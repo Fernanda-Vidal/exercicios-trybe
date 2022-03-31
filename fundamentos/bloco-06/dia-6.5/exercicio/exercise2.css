@@ -5,31 +5,33 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  .container {
+    display: flex;
+  }
+   
+  p {
+    padding: 10px;
+  }
   
+  /* Small */
   @media screen and (max-width: 400px){
       body{
           background-color: aliceblue;
           color: violet;
           margin: 5%;
           padding: 3%;
-          max-width: 300px;
+          max-width: 100%;
           text-align: justify;
-          /* border: 1px solid black; */
-      }
-
-      header{
-        font-size: larger;
-        text-align: justify;
       }
 
       h1{
-        font-size: 2em;
+        font-size: 1em;
         text-decoration: underline;
       }
 
-      nav div ul li{
-        display: inline;
-        padding: 3%;
+      nav ul li{
+        display: none;
       }
 
       li:hover{
@@ -41,12 +43,17 @@ html {
         flex-direction: column;
       }
 
-      .aside-two {
-        order: 1;
+      #container-aside {
+        display: none;
+      }
+
+      header div p{
+        font-size: 30px;
       }
 
   }
 
+  /* Medium */
   @media screen and (min-width: 401px) and (max-width: 695px) {
     body{
       background-color: aliceblue;
@@ -55,11 +62,15 @@ html {
       padding: 3%;
       max-width: 550 px;
       text-align: justify;
-      border: 1px solid red;
   }
 
-  h1{
-    font-size: 2em;
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+   h1{
+    font-size: 1.8em;
     text-decoration: underline;
     
   }
@@ -68,46 +79,63 @@ html {
   font-weight: bold;
   }
 
-  .agrupa-container{
+  nav ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
   }
 
-  .container-header{
-    /* flex-direction: column; */
+  ul li{
+    list-style: none;
+    padding: 5px;
+    ;
   }
 
+  #container-aside{
+    display: flex;
+  }
   }
 
+  /* Big */
   @media screen and (min-width: 695px) {
     body{
       background-color: aliceblue;
       color: violet;
       margin: 5%;
       padding: 3%;
-      max-width: 695 px;
+      max-width: 550 px;
       text-align: justify;
-      display: flex;
-      justify-content: center;
   }
 
-  p{
-    max-width: 695px;
-  }
-
-  h1{
-    font-size: 2em;
-    text-decoration: underline;
-    text-align: center;
-  }
-
-  /* nav {
+  .container {
     display: flex;
-
-  } */
+    flex-direction: column;
+  }
+ 
+   h1{
+    font-size: 1.8em;
+    text-decoration: underline;
+    
+  }
 
   li:hover{
   font-weight: bold;
+  }
+
+
+  ul li{
+    padding: 5px;
+    ;
+  }
+
+  #container-aside{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aside-two ul li{
+    list-style: none;
   }
 
   }
