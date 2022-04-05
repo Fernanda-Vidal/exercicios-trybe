@@ -53,24 +53,23 @@ const verifyIsNumber = (value1, value2) => {
 //   Para fixar:
 // Não deu certo!!!!!!!!!!!!!!
 
-// const customer = {
-//     firstName: 'Roberto',
-//     age: 22,
-//     job: 'Teacher',
-//   };
+const customer = {
+  firstName: 'Roberto',
+  age: 22,
+  job: 'Teacher',
+};
 
-// function addKey(objeto, chave, valor){
-//     let getObject = objeto;
-//     let newKey = chave;
-//     let propriedade = valor;
-    
+function addKey(objeto, chave, valor){
+  let getObject = objeto;
+  let newKey = chave;
+  let propriedade = valor; 
    
-//  getObject[newKey] = propriedade;
+ getObject[newKey] = propriedade;
+ 
+ return getObject;
+}
 
-//  return getObject;
-// }
-
-// console.log(addKey('customer', 'naturalidade', 'sãoPaulo'));
+console.log(addKey(customer, 'naturalidade', 'sãoPaulo'));
 
 
 // ----------------------------------------------------------
@@ -85,12 +84,12 @@ const coolestTvShow = {
     seasons: 6,
   };
 
+  // Sem Object.Keys()
 //   for(keys in coolestTvShow){
 //       console.log(keys);
 //   }
 
 console.log(Object.keys(coolestTvShow));
-
 
 
 const student1 = {
@@ -116,11 +115,6 @@ const student1 = {
         console.log(`${getObject[i]}, Nível: ${student[getObject[i]]}`);
     }
   }
-// Porque deste jeito aparece uma propriedade Indefined no fim? 
-//   console.log(showHabilities(student1));
-//   console.log(showHabilities(student2));
-
-// E deste jeito não? acredito que é por causa do console.log 2x, mas pq o return não completa o laço?
   console.log('Estudante 1');
   showHabilities(student1);
 
@@ -140,11 +134,11 @@ const coolestTvShow = {
     seasons: 6,
   };
 
+  // Sem o Object.values():
 //   for (const property in coolestTvShow) {
 //     console.log(coolestTvShow[property]);
 //   }
   
-
   console.log(Object.values(coolestTvShow));
 
 
@@ -163,8 +157,11 @@ const coolestTvShow = {
   
 //     return skills;
 //   };
+
+// console.log(listSkillsValuesWithFor(student));
   
   const listSkillsValuesWithValues = (student) => Object.values(student);
+  console.log(listSkillsValuesWithValues(student));
   
 //   // Sem Object.values
 //   console.log(listSkillsValuesWithFor(student));
@@ -175,7 +172,7 @@ const coolestTvShow = {
 
   // -------------------------------------------------------------
 // PARTE IV
-// Object.entries 
+// Object.entries - retorna array de arrays[chave, valor];
 
 const coolestTvShow = {
   name: "BoJack Horseman",
@@ -296,7 +293,7 @@ const person = {
 const lastName = {
   lastName: 'Silva',
 };
-
+// SINTAXE CORRETA PARA QUE NÃO OCORRA CÓPIA SOMENTE DA REFERÊNCIA!!!
 const newPerson = Object.assign({},person,lastName);
 newPerson.name = 'Gilberto';
 console.log(newPerson);
