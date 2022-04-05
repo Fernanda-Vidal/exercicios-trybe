@@ -16,13 +16,14 @@
   <p id='result'></p>
   <script>
       function verifica(valor1, valor2){
-        if (valor1 === '' || valor2 === '') {
-        throw new Error('Preencha todos os campos!');
-        }
-
-        if (isNaN(valor1) || isNan(valor2)) {
-        throw new Error('O valor deve ser um número!');
-        }
+          if (valor1 === '' || valor2 === '') {
+              throw new Error('Preencha todos os campos!');
+            }
+          
+            if (isNaN(valor1) || isNaN(valor2)) {
+            throw new Error('O valor deve ser um número!');
+            }
+            
     }
 
 
@@ -30,14 +31,14 @@
         try {
         const value1 = document.getElementById('value1').value;
         const value2 = document.getElementById('value2').value;
-        verifica(value1,value2);
+        verifica(value1, value2);
         const result = parseInt(value1) + parseInt(value2);
         document.getElementById('result').innerHTML = `Resultado: ${result}`;
         document.getElementById('value1').value = '';
         document.getElementById('value2').value = '';
       } 
       catch (error) {
-        result.innerHTML = error.message;
+        document.getElementById('result').innerHTML = error.message;
         document.getElementById('value1').value = '';
         document.getElementById('value2').value = '';
       }
