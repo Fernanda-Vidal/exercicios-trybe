@@ -46,10 +46,14 @@ const checkUp = (gabarito, resposta) => {
 
     let pontos = 0;
     for (let i = 0; i < gabarito.length; i += 1) {
-            if (gabarito[i] === resposta[i]) {
+    	     if (resposta[i] === 'N.A') {
+            	pontos += 0;
+            }
+            else if (gabarito[i] === resposta[i]) {
                 pontos += 1;
             }
-            else if (gabarito[i] !== resposta[i]) {
+            else {
+            (gabarito[i] !== resposta[i]) 
                 pontos -= 0.5;
             }
 
