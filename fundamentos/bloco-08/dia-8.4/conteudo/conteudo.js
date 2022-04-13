@@ -1,124 +1,124 @@
-// // Array.reduce
+// Array.reduce
 
-// //  Apenas com o for :
-// const numbers = [32, 15, 3, 2, -5, 56, 10];
-// let sumNumbers = 0;
-// // A variável 'acumula', a cada iteração do for, o resultado da operação feita lá!
+//  Apenas com o for :
+const numbers = [32, 15, 3, 2, -5, 56, 10];
+let sumNumbers = 0;
+// A variável 'acumula', a cada iteração do for, o resultado da operação feita lá!
 
-// for (let index = 0; index < numbers.length; index += 1) {
-//   sumNumbers += numbers[index];
-// }
-// console.log(sumNumbers); // 113
+for (let index = 0; index < numbers.length; index += 1) {
+  sumNumbers += numbers[index];
+}
+console.log(sumNumbers); // 113
 
-// // Com .reduce :
-// const numbers = [32, 15, 3, 2, -5, 56, 10];
+// Com .reduce :
+const numbers = [32, 15, 3, 2, -5, 56, 10];
 
-// const sumNumbers = numbers.reduce((result, number) => result + number); // O parâmetro `result` é o acumulador. Ele recebe, do `reduce`, o retorno da função a cada iteração.
-// console.log(sumNumbers); // 113
+const sumNumbers = numbers.reduce((result, number) => result + number); // O parâmetro `result` é o acumulador. Ele recebe, do `reduce`, o retorno da função a cada iteração.
+console.log(sumNumbers); // 113
 
-// // Ou seja:
+// Ou seja:
 
-// const getSum = (result, number) => result + number;
-// const sumNumbers = numbers.reduce(getSum);
-// console.log(sumNumbers); // 113
+const getSum = (result, number) => result + number;
+const sumNumbers = numbers.reduce(getSum);
+console.log(sumNumbers); // 113
 
-// // O retorno é salvo no primeiro parâmetro , result . É como se você estivesse fazendo igual à primeira função, sumNumbers = sumNumbers + numbers[index] , mas nesse caso seria result = result + number ;
+// O retorno é salvo no primeiro parâmetro , result . É como se você estivesse fazendo igual à primeira função, sumNumbers = sumNumbers + numbers[index] , mas nesse caso seria result = result + number ;
 
-// const collection = [1, 2, 3, 4, 5];
+const collection = [1, 2, 3, 4, 5];
 
-// const getSum = (accumulator, number) => {
-//   console.log(accumulator); // 1 3 6 10
-//   return accumulator + number;
-// };
+const getSum = (accumulator, number) => {
+  console.log(accumulator); // 1 3 6 10
+  return accumulator + number;
+};
 
-// const sumNumbers = collection.reduce(getSum);
-// console.log(sumNumbers); // 15
+const sumNumbers = collection.reduce(getSum);
+console.log(sumNumbers); // 15
 
-// // O reduce possui uma outra diferença: você pode passar um segundo parâmetro para o reduce, logo após a função . Veja a seguir, será usado o último exemplo dado da soma dos números:
+// O reduce possui uma outra diferença: você pode passar um segundo parâmetro para o reduce, logo após a função . Veja a seguir, será usado o último exemplo dado da soma dos números:
 
-// const numbers = [32, 15, 3, 2, -5, 56, 10];
+const numbers = [32, 15, 3, 2, -5, 56, 10];
 
-// const getSum = (result, number) => {
-//   console.log(result); // 32 47 50 52 47 103
-//   return result + number;
-// };
+const getSum = (result, number) => {
+  console.log(result); // 32 47 50 52 47 103
+  return result + number;
+};
 
-// const sumNumbers = numbers.reduce(getSum);
-// console.log(sumNumbers); // 113
+const sumNumbers = numbers.reduce(getSum);
+console.log(sumNumbers); // 113
 
-// // Com a alteração:
-// const numbers = [32, 15, 3, 2, -5, 56, 10];
+// Com a alteração:
+const numbers = [32, 15, 3, 2, -5, 56, 10];
 
-// const getSum = (result, number) => {
-//   console.log(result); // 0 32 47 50 52 47 103
-//   return result + number;
-//   };
-// const sumNumbers = numbers.reduce(getSum, 0); // Parâmetro adicionado ao reduce: o "0"
-// console.log(sumNumbers); // 113
+const getSum = (result, number) => {
+  console.log(result); // 0 32 47 50 52 47 103
+  return result + number;
+  };
+const sumNumbers = numbers.reduce(getSum, 0); // Parâmetro adicionado ao reduce: o "0"
+console.log(sumNumbers); // 113
 
-// // Pode ver que mudou em nada o resultado da função. Mas veja que o primeiro valor do result não foi 32 , mas sim 0 .
-// // Agora mude o 0 para 10 ou qualquer outro valor.
+// Pode ver que mudou em nada o resultado da função. Mas veja que o primeiro valor do result não foi 32 , mas sim 0 .
+// Agora mude o 0 para 10 ou qualquer outro valor.
 
-// const numbers = [32, 15, 3, 2, -5, 56, 10];
+const numbers = [32, 15, 3, 2, -5, 56, 10];
 
-// const getSum = (result, number) => {
-//   console.log(result); // 10 42 57 60 62 57 113
-//   return result + number;
-//   };
-// const sumNumbers = numbers.reduce(getSum, 10);
-// console.log(sumNumbers); // 123
+const getSum = (result, number) => {
+  console.log(result); // 10 42 57 60 62 57 113
+  return result + number;
+  };
+const sumNumbers = numbers.reduce(getSum, 10);
+console.log(sumNumbers); // 123
 
-// // Agora o resultado mudou para 123 , e o primeiro número impresso foi o 10 . Entendeu? Ao adicionar esse segundo parâmetro você está colocando um valor inicial na variável result , ou seja, no acumulador . Ele é o valor inicial do reduce . Caso nenhum parâmetro seja passado, o seu valor inicial será a primeira posição do array.
+// Agora o resultado mudou para 123 , e o primeiro número impresso foi o 10 . Entendeu? Ao adicionar esse segundo parâmetro você está colocando um valor inicial na variável result , ou seja, no acumulador . Ele é o valor inicial do reduce . Caso nenhum parâmetro seja passado, o seu valor inicial será a primeira posição do array.
 
-// // Neste exemplo, serão comparados valores para buscar o maior valor em um array. Tente criar essa função apenas com for e depois tente com reduce . Caso não consiga, olhe a solução abaixo:
-// const numbers = [50, 85, -30, 3, 15];
+// Neste exemplo, serão comparados valores para buscar o maior valor em um array. Tente criar essa função apenas com for e depois tente com reduce . Caso não consiga, olhe a solução abaixo:
+const numbers = [50, 85, -30, 3, 15];
 
-// // Só com for:
-// let biggestNumber = numbers[0];
-// for (i of numbers){
-//     if (i > biggestNumber){
-//         biggestNumber = i;
-//     }
-// }
-// console.log(biggestNumber);
+// Só com for:
+let biggestNumber = numbers[0];
+for (i of numbers){
+    if (i > biggestNumber){
+        biggestNumber = i;
+    }
+}
+console.log(biggestNumber);
 
-// // Só com reduce:
-// const biggestNumber = numbers.reduce((accBigger, number) => (accBigger > number) ? accBigger : number);
-// console.log(biggestNumber);
+// Só com reduce:
+const biggestNumber = numbers.reduce((accBigger, number) => (accBigger > number) ? accBigger : number);
+console.log(biggestNumber);
 
-// // OU 
+// OU 
 
-// const biggestNumber = ((bigger, number) => {
-//     return bigger > number ? bigger : number;
-// })
+const biggestNumber = ((bigger, number) => {
+    return bigger > number ? bigger : number;
+})
 
-// const bigger = numbers.reduce(biggestNumber, 100);
-// console.log(bigger);
+const bigger = numbers.reduce(biggestNumber, 100);
+console.log(bigger);
 
-// // OU 
+// OU 
 
-// const bigger = numbers.reduce((acc, number) => {
-//     return acc > number ? acc : number;
-// }, 100)
+const bigger = numbers.reduce((acc, number) => {
+    return acc > number ? acc : number;
+}, 100)
 
-// console.log(bigger);
+console.log(bigger);
 
-// // Para fixar ainda mais conceito de reduce , faça uma função que some todos os números pares do array:
-// // Solução usando filter e reduce :
-// const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
+// Para fixar ainda mais conceito de reduce , faça uma função que some todos os números pares do array:
+// Solução usando filter e reduce :
+const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
 
-// const even = numbers.filter((number) => {
-//     if(number % 2 === 0) {
-//         return number
-//     }})
-// const sum = even.reduce((acc, number) => acc + number);
-// console.log(sum);
+const even = numbers.filter((number) => {
+    if(number % 2 === 0) {
+        return number
+    }})
+const sum = even.reduce((acc, number) => acc + number);
+console.log(sum);
 
-// // Solução usando apenas reduce :
-// const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
+// Solução usando apenas reduce :
+const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
 
-// const sum = numbers.reduce((acc, number) => number % 2 === 0 ? acc += number : acc);
-// console.log(sum);
+const sum = numbers.reduce((acc, number) => number % 2 === 0 ? acc += number : acc);
+console.log(sum);
 
 // -----------------------------------------------------------------------------------------------
 
