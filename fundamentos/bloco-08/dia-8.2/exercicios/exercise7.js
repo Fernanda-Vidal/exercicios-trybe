@@ -63,19 +63,23 @@ const books = [
 
 // 7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.
 
-NÃO CONSEGUI.
-// function authorUnique() {
-//     let authorBirthYear = 0;
-//     for (let i = 0; i < books.length; i += 1) {
-//         for (let i2 = 0; i2 < books.length; i2 += 1) {
-//             if (books[i].author.birthYear === books[i2].author.birthYear){
-//                 authorBirthYear += 1;
-//             }
-//         }        
-//         if (authorBirthYear === 1){
-//         return true;
+// function authorUnique(obj) {
+//     let authorBirthYear = books[0].author.birthYear;
+//     // const valueKey = Object.values(obj)
+//     let resposta;
+//     console.log(authorBirthYear)
+//     for (let i = 0; i < books.length; i += 1){
+//         resposta = (books[i].author.birthYear === authorBirthYear) ? true : false;
 //         }
+//         return resposta;
 //     }
-//     return false;
-// }
-// console.log(authorUnique());
+  
+
+    
+    function authorUnique() {
+        return books.every((book) =>
+        !books.some((bookSome) =>
+        (bookSome.author.birthYear === book.author.birthYear) && (bookSome.author.name !== book.author.name)));
+    }
+
+    console.log(authorUnique())
