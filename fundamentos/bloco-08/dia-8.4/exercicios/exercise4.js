@@ -60,20 +60,17 @@ const books = [
       releaseYear: 1928,
     },
   ];
+  
+// Adicione o código do exercício aqui:
+// 4 - Encontre o livro com o maior nome.
+function longestNamedBook() {
+    const biggestName = books.reduce((acc, book) => {
+        if(acc > book.name){
+            return acc;
+        } 
+        return book.name;
+    })
+    return biggestName;
+  }
 
-//   4 - Ordene os livros por data de lançamento em ordem decrescente.
-
-function booksOrderedByReleaseYearDesc() {
-  return books.sort(function(a,b) {return b.releaseYear - a.releaseYear});
-}
-console.log(booksOrderedByReleaseYearDesc());
-
-// // OU
-
-let emOrdem = () => books.sort(function(a,b) {return b.releaseYear - a.releaseYear});
-console.log(emOrdem());
-
-// OU 
-
-const emOrdem = books.sort(function(a,b) {return b.releaseYear - a.releaseYear});
-console.log(emOrdem);
+console.log(longestNamedBook())

@@ -60,20 +60,33 @@ const books = [
       releaseYear: 1928,
     },
   ];
+  
+  // Adicione o código do exercício aqui:
+//   3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
 
-//   4 - Ordene os livros por data de lançamento em ordem decrescente.
-
-function booksOrderedByReleaseYearDesc() {
-  return books.sort(function(a,b) {return b.releaseYear - a.releaseYear});
+function averageAge() {
+  const age = books.reduce((acc, book) => (acc + (book.releaseYear - book.author.birthYear)), 0) / books.length;
+  return age;
 }
-console.log(booksOrderedByReleaseYearDesc());
 
-// // OU
+// // OU 
 
-let emOrdem = () => books.sort(function(a,b) {return b.releaseYear - a.releaseYear});
-console.log(emOrdem());
+function averageAge() {
+  const age = books.map((age) => age.releaseYear -  age.author.birthYear);
+  const sum = age.reduce((acc, age) => (acc + age), 0);
+  return sum / books.length;
+}
 
 // OU 
 
-const emOrdem = books.sort(function(a,b) {return b.releaseYear - a.releaseYear});
-console.log(emOrdem);
+function averageAge() {
+  const average = books.reduce((acc, book) => {
+      const age = book.releaseYear - book.author.birthYear;
+      const sum = acc;
+      const medium = age / books.length;
+      return sum + medium;
+  }, 0)
+  return average;
+}
+
+console.log(averageAge());

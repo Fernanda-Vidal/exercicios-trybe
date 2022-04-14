@@ -60,20 +60,21 @@ const books = [
       releaseYear: 1928,
     },
   ];
+  
+  // Adicione o código do exercício aqui:
 
-//   4 - Ordene os livros por data de lançamento em ordem decrescente.
+//   2 - Crie uma string com os nomes de todas as pessoas autoras.
 
-function booksOrderedByReleaseYearDesc() {
-  return books.sort(function(a,b) {return b.releaseYear - a.releaseYear});
+function reduceNames() {
+  const names = books.reduce((acc, authors, index, array) => {
+    if(index === array.length -1) {
+        return `${acc} ${authors.author.name}.`
+    };
+    return `${acc} ${authors.author.name},`
+  }, ' ');
+return names;
 }
-console.log(booksOrderedByReleaseYearDesc());
+console.log(reduceNames())
 
-// // OU
 
-let emOrdem = () => books.sort(function(a,b) {return b.releaseYear - a.releaseYear});
-console.log(emOrdem());
 
-// OU 
-
-const emOrdem = books.sort(function(a,b) {return b.releaseYear - a.releaseYear});
-console.log(emOrdem);
