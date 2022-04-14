@@ -61,32 +61,16 @@ const books = [
     },
   ];
   
-  // Adicione o código do exercício aqui:
-//   3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
+// Adicione o código do exercício aqui:
+// 4 - Encontre o livro com o maior nome.
+function longestNamedBook() {
+    const biggestName = books.reduce((acc, book) => {
+        if(acc > book.name){
+            return acc;
+        } 
+        return book.name;
+    })
+    return biggestName;
+  }
 
-function averageAge() {
-  const age = books.reduce((acc, book) => (acc + (book.releaseYear - book.author.birthYear)), 0) / books.length;
-  return age;
-}
-
-// // OU 
-
-function averageAge() {
-  const age = books.map((age) => age.releaseYear -  age.author.birthYear);
-  const sum = age.reduce((acc, age) => (acc + age), 0);
-  return sum / books.length;
-}
-
-// OU 
-
-function averageAge() {
-  const average = books.reduce((acc, book) => {
-      const age = book.releaseYear - book.author.birthYear;
-      const sum = acc;
-      const medium = age / books.length;
-      return sum + medium;
-  }, 0)
-  return average;
-}
-
-console.log(averageAge());
+console.log(longestNamedBook())
