@@ -77,4 +77,3 @@ return names;
 console.log(reduceNames())
 
 
-
