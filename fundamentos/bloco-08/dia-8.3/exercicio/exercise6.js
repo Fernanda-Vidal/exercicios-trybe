@@ -71,15 +71,15 @@ function oldBooks() {
 
 //   OU 
 
-  const oldBooks = books.filter((book) => 2022 - book.releaseYear >= 60).map((book) => book.name);
-  console.log(oldBooks)
+//   const oldBooks = books.filter((book) => 2022 - book.releaseYear >= 60).map((book) => book.name);
+//   console.log(oldBooks)
 
-//   OU 
+// //   OU 
 
-// SOLUÇÃO DO GABARITO
-function oldBooks() {
-    const currentYear = new Date().getFullYear();
-    return books.filter((book) => currentYear - book.releaseYear >= 60).map((book) => book.name);
-}
+// // SOLUÇÃO DO GABARITO
+// function oldBooks() {
+//     const currentYear = new Date().getFullYear();
+//     return books.filter((book) => currentYear - book.releaseYear >= 60).map((book) => book.name);
+// }
 
-console.log(oldBooks());
+// console.log(oldBooks());
