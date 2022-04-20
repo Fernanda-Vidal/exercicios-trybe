@@ -31,6 +31,6 @@ pushNumber(numbers, 2);
 pushNumber(numbers, 3);
 
 console.log(numbers); // O retorno é [2, 3] 
-// NÃO ENTENDI COMO FAZER PARA O 1 SER RETORNADO.
+
 
 // Observe que, além de adicionar o setTimeout , o array [1, 2, 3] foi modificado para [2, 3, 1] . Isso se dá, pois, como a função é assíncrona, o código continua rodando, mesmo que ela ainda não tenha terminado de executar. Ou seja, o array recebe primeiro o 2 , depois o 3 , e após os 3 segundos do setTimeout , ele recebe o 1 .
