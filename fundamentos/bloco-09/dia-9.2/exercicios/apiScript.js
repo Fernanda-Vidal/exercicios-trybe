@@ -1,4 +1,4 @@
-// const fetch = require('node-fetch');
+const fetch = require('node-fetch');
 const API_URL = 'https://icanhazdadjoke.com/';
 
 
@@ -13,7 +13,7 @@ const fetchJoke = () => {
   .then(data => document.getElementById('jokeContainer').innerText = data.joke)
 
 }
-fetchJoke();
+console.log(fetchJoke());
 
-window.onload = () => fetchJoke();
+// window.onload = () => fetchJoke();
      
