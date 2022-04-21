@@ -52,12 +52,3 @@ test('Testando asyncSum, soma 5 mais 10', (done) => {
   });
 });
 
-
-
-
-
-
-
-
-
-
