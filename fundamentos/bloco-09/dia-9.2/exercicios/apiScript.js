@@ -9,11 +9,15 @@ const fetchJoke = () => {
   };
 
   return fetch(API_URL, myObject)
+  // .then(response => console.log(response));
   .then(response => response.json())
+  // .then(data => console.log(data));
   .then(data => document.getElementById('jokeContainer').innerText = data.joke)
 
 }
-console.log(fetchJoke());
+// Para ver as informações no console, eu comento o window.onload, uso o require e chamo a função.
 
-// window.onload = () => fetchJoke();
+// fetchJoke();
+
+window.onload = () => fetchJoke();
      
