@@ -164,26 +164,7 @@ sendMarsTemperature(greet, handleError);
 
 // 7 - Escreva um teste que verifique a chamada da callback de uma função uppercase , que transforma as letras de uma palavra em letras maiúsculas. Lembre-se de ter cuidado com os falso-positivos em testes assíncronos.
 
-const uppercase = (str, callback) => {
-  setTimeout(() => {
-    callback(str.toUpperCase());
-  }, 500);
-};
-
-// console.log(uppercase('fernanda', ))
-
-describe('Agrupa o primeiro bloco de testes', () => {
-  test('Verifica se a função uppercase transforma as letras em maiusculas', (done) => {
-    uppercase('fernanda', (result)) => {
-      try {
-        expect(result).toBe('FERNANDA');
-        done();
-      } catch (error) {
-        done (error);
-      }
-    }
-  });
-});
+test.testes.js
 
 // 8 - Para o próximo exercício, você vai sentir na pele o primeiro dia de um treinador Pokémon! No laboratório do Professor Carvalho, você é informado de que existem três pokémons disponíveis: Bulbasaur, Charmander e Squirtle. Complete a chamada da função getPokemonDetails de modo que ela imprima no console os detalhes do pokémon que você escolheu. PS: é possível que o sistema do Professor Carvalho apresente erros caso o pokémon não exista no banco de dados, então não se esqueça de tratá-los também, combinado?
 
@@ -205,7 +186,6 @@ const pokemons = [
   },
 ];
 
-const assincrona = setTimeout (() => )
 
 function getPokemonDetails(filter, callback) {
   setTimeout(() => {
@@ -222,8 +202,38 @@ function getPokemonDetails(filter, callback) {
   }, 2000);
 }
 
-getPokemonDetails('pikachu');
+// Eu poderia fazer uma função separada e chamar ela no primeiro parametro da getPokemonDetails? Porque eu não consegui fazer isso!
+getPokemonDetails((namePoke) => namePoke.name === 'Charmander', (error, message) => error ? console.log(error) : console.log(message));
 
 module.exports = {
   getPokemonDetails,
 };
+
+// 9 - A fim de evitar que futuros treinadores sejam prejudicados, o Professor Carvalho pediu que você o ajude a escrever testes para o sistema que distribui os pokémons. Crie um novo arquivo .test.js ou .spec.js e copie o código abaixo. Complete os testes para a função getPokemonDetails de acordo com as especificações.
+
+test.testes.js
+
+
+// 10 - Para este exercício, tente adivinhar a saída dos console.log dos testes abaixo sem executá-los, e veja se compreendeu bem o funcionamento do beforeEach e do afterEach .
+beforeEach(() => console.log('1 - beforeEach'));
+afterEach(() => console.log('1 - afterEach'));
+
+test('', () => console.log('1 - test'));
+
+describe('Scoped / Nested block', () => {
+  beforeEach(() => console.log('2 - beforeEach'));
+  afterEach(() => console.log('2 - afterEach'));
+
+  test('', () => console.log('2 - test'));
+});
+
+// Solução:
+// Copiar
+// 1 - beforeEach // antes de cada teste
+// 1 - test // o teste
+// 1 - afterEach // depois de cada teste
+// 1 - beforeEach // antes de cada teste
+// 2 - beforeEach // antes de cada teste dentro do describe
+// 2 - test // o teste dentro do describe
+// 2 - afterEach // depois de cada teste dentro do describe
+// 1 - afterEach // depois de cada teste
