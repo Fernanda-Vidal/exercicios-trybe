@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 const API_URL = 'https://icanhazdadjoke.com/';
 
 
@@ -17,7 +17,7 @@ const fetchJoke = () => {
 }
 // Para ver as informações no console, eu comento o window.onload, uso o require e chamo a função.
 
-// fetchJoke();
+// console.log(fetchJoke());
 
 window.onload = () => fetchJoke();
      
