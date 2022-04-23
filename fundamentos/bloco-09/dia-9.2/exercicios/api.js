@@ -1,37 +1,53 @@
 // const fetch = require('node-fetch');
-const url = 'https://api.coincap.io/v2/assets';
 
 const fetchCoin = () => {
+    const url = 'https://api.coincap.io/v2/assets';
     const coins = fetch(url)
     .then(response => response.json())
-    .then (resultJson => percorreArray(resultJson))
+    .then (resultJson => resultJson.data)
     .catch((error) => console.log('error', error))
-    // .then(data => document.getElementById('coins').innerText = data)    
     
-
     return coins;
 };
 
-const percorreArray = (parametro) => {
-    parametro.data.forEach((coin) => {
+const fetchUsdCurrencies = () => {
+    const urlCurrencyApi = 'https://cdn.jsdelivr.net/gh/fawazahmed0/'
+    const endpoint = 'currency-api@1/latest/currencies/usd.min.json'
+    const url = urlCurrencyApi.concat(endpoint);
+
+    const usdCurrencies = fetch(url)
+    .then(response => response.json())
+    .then(data => data.usd)
+    .then(info => info.brl)
+    .catch(error => error.toString());
+
+    return usdCurrencies;
+}
+// console.log(fetchCoin());
+
+const percorreArray = async () => {
+    const usdCurrencies = await fetchUsdCurrencies();
+    const coins = await fetchCoin();
+
+    coins.forEach((coin) => {
         if (coin.rank <= 10) {
-            const coinPrice = Number(coin.priceUsd).toFixed(2);
-            const moeda = {nome: coin.id, simbolo: coin.symbol, valorUS: coinPrice};
+            const coinPrice = Number(coin.priceUsd);
+            const coinCurrency = coinPrice * usdCurrencies;
+            const moeda = {nome: coin.id, simbolo: coin.symbol, valor: coinCurrency.toFixed(2)};
         return append(moeda);
         }
     })
 }
 
-
-function append(info) {
+const append = (info) => {
     const ol = document.getElementById('coins');
     const li = document.createElement('li');
 
-    li.innerText = `${info.nome} (${info.simbolo}): ${info.valorUS}`;
+    li.innerText = `${info.nome} (${info.simbolo}): R$ ${info.valor}`;
     ol.appendChild(li);
 }
     
 
-window.onload = () => fetchCoin(); 
+window.onload = () => percorreArray(); 
 
 
