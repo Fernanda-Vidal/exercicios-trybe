@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+li {
+    text-align: center;
+    padding: 10px;
+}
+
+li:hover {
+    color: white;
+}
