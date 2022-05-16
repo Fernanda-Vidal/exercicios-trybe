@@ -1,4 +1,6 @@
 import React from 'react';
+import Describe from './Describe';
+import Select from './Select';
 
 class Form extends React.Component {
     state = {
@@ -21,15 +23,7 @@ class Form extends React.Component {
     render() {
         return (
             <div>
-                <label>
-                    Descrição
-                   <textarea
-                   className='form'
-                   name='describe'
-                   value={ this.state.describe }
-                   onChange={ this.handleChange }
-                    />
-                </label>
+                <Describe handleChange={ this.handleChange }/>
 
                 <label>
                     nome
@@ -75,17 +69,7 @@ class Form extends React.Component {
                     />
                 </label>
 
-                <label>
-                    Qual dia?
-                    <select className='form' name='select' value={ this.state.select } onChange={ this.handleChange }>
-                        <option value='segunda'>Segunda</option>
-                        <option value='terça'>Terça</option>
-                        <option value='quarta'>Quarta</option>
-                        <option value='quinta'>Quinta</option>
-                        <option value='sexta'>Sexta</option>
-                    </select>
-                </label>
-                {/* não deu certo o FileInput */}
+                <Select />
                <input type='file' />
 
 
