@@ -9,6 +9,11 @@ describe('Testa a função service', () => {
 
     it('Verifica se a função foi chamada', () => {
         randomNumber()
-        expect(randomNumber).toHaveBeenCalledTimes(2)
+        expect(randomNumber).toHaveBeenCalled()
+    })
+
+    it('Verifica se a função foi chamada', () => {
+        randomNumber()
+        expect(randomNumber).toHaveBeenCalledTimes(3)
     })
 })
