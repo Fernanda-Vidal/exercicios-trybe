@@ -1,4 +1,4 @@
-let { randomNumber } = require('./service');
+let { randomNumber, upperCase, firstLetter, concatenateStrings } = require('./service');
 
 describe('Testa a função service', () => {
     it('Verifica se a função existe', () => {
@@ -49,7 +49,31 @@ describe('Verifica se a implementação com 3 parametros funciona', () => {
         expect(randomNumber(2)).toBe(4)
         expect(randomNumber).toHaveBeenCalledTimes(1)
     })
+})
 
+describe("Verifica funções implementadas para o exercício 4", () => {
+    it('Verifica se a função upperCase teve sua implementação alterada para retornar o parâmetro em caixa baixa', () => {
+        upperCase = jest.fn().mockImplementation((string) => string.toLowerCase())
+        expect(upperCase('TESTE')).toBe('teste');
+        expect(upperCase).toHaveBeenCalled();
+        expect(upperCase).toHaveBeenCalledTimes(1)
+        expect(upperCase).toHaveBeenCalledWith('TESTE')
+    })
 
+    it("Verifica se a função 'firstLetter' teve sua implementação alterada para retornar a ultima letra do parâmetro", () => {
+        firstLetter = jest.fn().mockImplementation((string) => string[string.length - 1])
+      
+        expect(firstLetter('teste')).toBe('e');
+        expect(firstLetter).toHaveBeenCalled();
+        expect(firstLetter).toHaveBeenCalledWith('teste')
+    })
+
+    it("Verifica se a função 'concatenaString' teve sua implementação alterada para receber três strings e concatená-las", () => {
+        concatenateStrings = jest.fn().mockImplementation((first, second, third) => first + ' ' + second + ' ' + third);
+
+        expect(concatenateStrings('Fernanda', 'Vidal', 'de Jesus')).toBe('Fernanda Vidal de Jesus');
+        expect(concatenateStrings).toHaveBeenCalled();
+        expect(concatenateStrings).toHaveBeenCalledWith('Fernanda', 'Vidal', 'de Jesus')
+    })
 
 })
