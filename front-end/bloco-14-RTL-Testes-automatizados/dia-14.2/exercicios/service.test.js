@@ -88,6 +88,38 @@ describe("Exercício 4", () => {
         service.concatena.mockRestore();
         expect(service.concatena('Fernanda', 'Vidal')).toBe('Fernanda Vidal');
     })
-     
+})
 
+describe('Exercício 5', () => {
+    service.fetchApiDog = jest.fn();
+    const imagem = 'https://images.dog.ceo/breeds/briard/n02105251_5641.jpg';
+    afterEach(service.fetchApiDog.mockReset);
+
+    it('verifica se a função "fetchApiDog" se resolveu', async () => {
+        service.fetchApiDog.mockResolvedValue('request success');
+
+        service.fetchApiDog();
+        expect(service.fetchApiDog).toHaveBeenCalled();
+        expect(service.fetchApiDog).toHaveBeenCalledTimes(1)
+        await expect(service.fetchApiDog()).resolves.toBe('request success');
+        expect(service.fetchApiDog).toHaveBeenCalledTimes(2)
+    })
+
+    it('verifica se a função "fetchApiDog" é resetada, recebe nova implementação e retorna a imagem correta', () => {
+         expect(service.fetchApiDog).not.toHaveBeenCalled()
+
+        service.fetchApiDog.mockReturnValue(imagem);
+        
+        expect(service.fetchApiDog()).toBe(imagem);
+    })
+
+    it('verifica se a função "fetchApiDog" falhou', async () => {
+        service.fetchApiDog.mockRejectedValue('request failed');
+
+        service.fetchApiDog();
+        expect(service.fetchApiDog).toHaveBeenCalled();
+        await expect(service.fetchApiDog()).rejects.toMatch('request failed');
+        expect(service.fetchApiDog).toHaveBeenCalledTimes(2);
+        expect(service.fetchApiDog()).not.toBe(imagem);
+    })
 })
