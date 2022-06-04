@@ -128,4 +128,9 @@ let moradores = {
 
 //   Acesse as chaves nome, sobrenome, andar e apartamento do último morador do blocoDois e faça um console.log no seguinte formato: "O morador do bloco 2 de nome Zoey Brooks mora no 1° andar, apartamento 101"
 
-console.log(`O morador do bloco 2 de nome ${moradores.blocoDois[1].nome} ${moradores.blocoDois[1].sobrenome} mora no ${moradores.blocoDois[1].andar}° andar, apartamento ${moradores.blocoDois[1].apartamento}.`)
+// console.log(`O morador do bloco 2 de nome ${moradores.blocoDois[1].nome} ${moradores.blocoDois[1].sobrenome} mora no ${moradores.blocoDois[1].andar}° andar, apartamento ${moradores.blocoDois[1].apartamento}.`)
+
+// EXERCICIO 5 - 
+
+moradores.blocoUm.forEach(({ nome, sobrenome }) => console.log(nome + ' ' + sobrenome))
+moradores.blocoDois.forEach(({ nome, sobrenome }) => console.log(nome + ' ' + sobrenome))
