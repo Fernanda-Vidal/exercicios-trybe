@@ -132,5 +132,5 @@ let moradores = {
 
 // EXERCICIO 5 - 
 
-moradores.blocoUm.forEach(({ nome, sobrenome }) => console.log(nome + ' ' + sobrenome))
-moradores.blocoDois.forEach(({ nome, sobrenome }) => console.log(nome + ' ' + sobrenome))
+// moradores.blocoUm.forEach(({ nome, sobrenome }) => console.log(nome + ' ' + sobrenome))
+// moradores.blocoDois.forEach(({ nome, sobrenome }) => console.log(nome + ' ' + sobrenome))
