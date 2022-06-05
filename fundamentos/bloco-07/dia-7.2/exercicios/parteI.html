@@ -15,6 +15,9 @@
   <button id='button'>Somar</button>
   <p id='result'></p>
   <script>
+
+    // 1 🚀 - Crie um erro personalizado que será chamado se a pessoa usuária digitar apenas um número.
+    // 2 🚀 - Agora adicione uma outra exceção, caso a pessoa usuária digite um valor que não seja numérico.
       function verifica(valor1, valor2){
           if (valor1 === '' || valor2 === '') {
               throw new Error('Preencha todos os campos!');
@@ -25,7 +28,7 @@
             }
             
     }
-
+    // 3 🚀 - Você se lembrou de limpar os inputs após o clique do botão? Teve que repetir código para isso? Que tal refatorar sua função utilizando o finally?
     function sum() {
         try {
         const value1 = document.getElementById('value1').value;
