@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 import userEvent from '@testing-library/user-event';
+import ValidEmail from './ValidEmail';
 
 test('Verificando se existe o campo Email.', () => {
   render(<App />);
@@ -35,10 +36,9 @@ test('Verificando se o botão e o campo e-mail estão funcionando', () => {
   const email_user = 'email@email.com';
 
   const inputEmail = screen.getByRole('textbox')
-  const h2 = screen.getByRole('heading')
+  const h2 = screen.getByRole('heading', { name: /valor:/i, level: 2})
   expect(inputEmail).toBeInTheDocument()
   expect(h2).toBeInTheDocument()
-  expect(h2).toHaveTextContent(/valor:/i)
 
   const btnSend = screen.getByRole('button', { name: 'Enviar'});
   
@@ -47,4 +47,31 @@ test('Verificando se o botão e o campo e-mail estão funcionando', () => {
 
   expect(h2).toHaveTextContent(`Valor: ${email_user}`)
   expect(inputEmail).toHaveTextContent('')
+})
+
+test('Testando um componente, caso o email seja válido.', () => {
+  const email_user = 'email@email.com';
+  render(<ValidEmail email={ email_user } />);
+
+  const isValid = screen.getByText(/email válido/i)
+  expect(isValid).toBeInTheDocument()
+})
+
+test('Testando um componente, caso o email seja inválido', () => {
+  const email_user = 'emailemail.com'
+  render(<ValidEmail email={email_user} />)
+  
+  const isValid = screen.getByText(/email inválido/i)
+  expect(isValid).toBeInTheDocument()
+})
+
+test('Verificando se a mensagem aparece somente após o e-mail ser enviado', () => {
+  // const email_user = 'email@email.com';
+  render(<App />)
+  
+  const h3Valido = screen.queryByText(/email válido/i)
+  const h3Invalido = screen.queryByText(/email inválido/i)
+  expect(h3Valido).not.toBeInTheDocument()
+  expect(h3Invalido).not.toBeInTheDocument()
+
 })

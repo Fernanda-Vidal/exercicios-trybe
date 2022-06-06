@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ValidEmail from './ValidEmail';
 
 class App extends React.Component {
   state = {
@@ -26,7 +27,7 @@ class App extends React.Component {
       </label>
       <input type="button" id="btn-send" data-testid="id-send" value="Enviar" onClick={ () => this.changeSaveEmail(email) } />
       <input type="button" id="btn-back" value="Voltar" />
-      <h2 data-tesid="id-email-user" >{`Valor: ${saveEmail}`}</h2>
+      <ValidEmail email={ saveEmail } />
     </div>
   );
 }
