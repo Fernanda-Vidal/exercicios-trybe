@@ -41,7 +41,9 @@
             case '@PESSOA1/UPDATE_NAME':
                 return {
                     ...state,
-                    ...action.payload,
+                    nome: action.nome,
+                    sobrenome: action.sobrenome,
+                    // ...action.payload,
                 }
           default:
             return state;
@@ -50,6 +52,11 @@
 
       const meuSegundoReducer = (state = ESTADO_INICIAL_2, action) => {
         switch (action.type) {
+            case '@PESSOA2/UPDATE_NAME':
+                return {
+                    ...state,
+                    ...action.payload,
+                }
           default:
             return state;
         }
@@ -57,8 +64,8 @@
 
       //1. combine reducer
       const rootReducer = Redux.combineReducers({
-          person1: meuPrimeiroReducer,
-          person2: meuSegundoReducer,
+          meuPrimeiroReducer,
+          meuSegundoReducer,
         });
 
         //2. criar store
@@ -68,18 +75,42 @@
         // action: { type: ''}
         // Action Creator: () => ({ type: '' })
     
-        const createActionchangeNamePerson1 = (nome, sobrenome) => {
+        const createActionUpdatePerson1 = (nome, sobrenome) => {
             return {
                 type: '@PESSOA1/UPDATE_NAME',
-                payload: {
-                    nome,
-                    sobrenome:
-                }
+                nome,
+                sobrenome,
             }            
         }
 
+        const createActionUpdatePerson2 = (nome, sobrenome) => {
+            return {
+                type: '@PESSOA2/UPDATE_NAME',
+                    payload: {
+                        nome,
+                        sobrenome,
+                    }
+            }            
+        }
+    
+
         // 4. dispatch para alterar os dados
-        store.dispatch(createActionchangeNamePerson1('Trybers', 'Turma 21'))
+
+        window.onload = () => {
+            setTimeout(() => {
+                store.dispatch(createActionUpdatePerson1('Trybers', 'Turma 21'));
+                store.dispatch(createActionUpdatePerson2('Desenvolvedores', 'Competentes'));
+            }, 1000)            
+        }
+
+        store.subscribe(() => {
+           const { meuPrimeiroReducer, meuSegundoReducer } = store.getState();
+           document.getElementById('nome-1').innerHTML = meuPrimeiroReducer.nome;
+           document.getElementById('sobrenome-1').innerHTML = meuPrimeiroReducer.sobrenome;
+
+           document.getElementById('nome-2').innerHTML = meuSegundoReducer.nome;
+           document.getElementById('sobrenome-2').innerHTML = meuSegundoReducer.sobrenome;
+        })
 
     </script>
   </body>
