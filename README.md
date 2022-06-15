@@ -107,7 +107,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 14: Testes em React - RTL
 
-- [/] 15-1: _Testando React com a React Testing Library_
+- [X] 15-1: _Testando React com a React Testing Library_
 - [ ] 15-2: _Mocks e inputs
 - [ ] 15-3: _Testando React Router
 - [X] 15-3: _[Projeto - Testes em React]()_
