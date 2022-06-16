@@ -53,6 +53,7 @@ class Forms extends React.Component {
                     </label>
                     <br/>
                     <label id="inputSelect">
+                        Estado:
                         <select value={ inputSelect } name="inputSelect" onChange={ this.handleChange} >
                             <option value="SP">SP</option>
                             <option value="MA">MA</option>
@@ -66,6 +67,16 @@ class Forms extends React.Component {
                             <option value="GO">GO</option>
                         </select>
                     </label>
+                    <br/>
+                    <label id="apto">
+                        Apartamento
+                    <input type="radio" value="apto" name="addressType" onChange={ this.handleChange } required/>
+                    </label>
+                    <label id="house">
+                        Casa
+                        <input type="radio" value="house" name="addressType" onChange={ this.handleChange } required/>
+                    </label>
+
                 </fieldset>
             </form>
         )
