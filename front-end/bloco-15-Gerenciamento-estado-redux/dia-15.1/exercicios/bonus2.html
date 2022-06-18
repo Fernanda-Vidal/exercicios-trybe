@@ -11,12 +11,12 @@
 <body>
     <div>
       Contador: <span id="value">0</span>
-      <button id="increment">+</button>
-      <button id="decrement">-</button>
       <br/>
       Incrementar em: <input type="number" id="incrementCounter" />
+      <button id="increment">+</button>
       <br/>
       Decrementar em: <input type="number" id="decrementCounter" />
+      <button id="decrement">-</button>
       <br/>
       Número de cliques: <span id="counterClicks">X</span>
       Valores: <span id="addedValues">X</span>  
@@ -24,40 +24,47 @@
     <script>
         const INCREMENT = 'INCREMENT';
         const DECREMENT = 'DECREMENT';
-        // const INITIAL_STATE = {
-        //     counter: 0,
-        //     incrementValue:0,
-        //     decrementValue:0,
-        // };
+        const INCREMENT_VALUE = 'INCREMENT_VALUE';
+        const DECREMENT_VALUE = 'DECREMENT_VALUE';
+        const INITIAL_STATE = {
+            counter: 0,
+            incrementValue:0,
+            decrementValue:0,
+        };
 
-        const reducer = (state = 0, action) => {
-            // const value = action.type === INCREMENT ? state.incrementValue : state.decrementValue;
+        const changeState = (state, action) => {
+            const value = action.type === INCREMENT ? state.incrementValue : state.decrementValue;
+            return {
+                ...state,
+                counter: state.counter + value,
+            }
+        }
+
+        const counterReducer = (state = INITIAL_STATE, action) => {
           switch(action.type) {
             case INCREMENT:
-                return state + 1;
+                return changeState(state, action);
             case DECREMENT:
-                return state -1;
+                return changeState(state, action);
+            case INCREMENT_VALUE:
+                return { ...state, incrementValue: action.value }
+            case DECREMENT_VALUE:
+                return { ...state, decrementValue: action.value }
             default: 
              return state;
         }
     }
 
-    // const createactionCount = (number) => ({
-    // type: INCREMENT,
-    // number,
-    // })
+    const store = Redux.createStore(counterReducer);
 
-    const incrementCounter = document.getElementById('incrementCounter');
-    const store = Redux.createStore(reducer);
     const incrementButton = document.getElementById('increment');
     incrementButton.addEventListener('click', () => {
         action = {
             type: INCREMENT,
         }
-        // store.dispatch(createactionCount(incrementCounter.value))
         store.dispatch(action)
     })
-
+    
     const decrementButton = document.getElementById('decrement');
     decrementButton.addEventListener('click', () => {
         action = {
@@ -65,10 +72,28 @@
         }
         store.dispatch(action);
     })
+    
+    const incrementCounter = document.getElementById('incrementCounter');
+    incrementCounter.addEventListener('change', () => {
+        action = {
+            type: INCREMENT_VALUE,
+            value: parseInt(event.target.value),
+        }
+        store.dispatch(action);
+    })    
+
+    const decrementCounter = document.getElementById('decrementCounter');
+    decrementCounter.addEventListener('change', () => {
+        action = {
+            type: DECREMENT_VALUE,
+            value: parseInt(`-${event.target.value}`),
+        }
+        store.dispatch(action)
+    })
         
     store.subscribe(() => {
         const span = document.getElementById('value')
-        span.innerText = store.getState()
+        span.innerText = store.getState().counter;
     })
 
     </script>
