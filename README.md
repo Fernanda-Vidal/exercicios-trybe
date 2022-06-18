@@ -107,7 +107,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 14: Testes em React - RTL
 
-- [X] 15-1: _Testando React com a React Testing Library_
+##### Bloco 15: Gerenciamento de Estado com Redux
+
+- [X] 15-1: _Introdução - O estado global da aplicação_
 - [ ] 15-2: _Mocks e inputs
 - [ ] 15-3: _Testando React Router
 - [X] 15-3: _[Projeto - Testes em React]()_
