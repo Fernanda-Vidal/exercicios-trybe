@@ -102,10 +102,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 13: Metodologias Ãgeis
 
-- [ ] 14-1: _Metodologias Ãgeis_
-- [X] 14-2: _[Projeto - Frontend Online Store]()_
+- [ ] 13-1: _Metodologias Ãgeis_
+- [X] 13-2: _[Projeto - Frontend Online Store]()_
 
 ##### Bloco 14: Testes em React - RTL
+- [ ] 14-1: 
+- [X] 14-2: 
+- [ ] 14-3:
+- [X] 14-4: _[Projeto - Testes em React]()_
 
 ##### Bloco 15: Gerenciamento de Estado com Redux
 
