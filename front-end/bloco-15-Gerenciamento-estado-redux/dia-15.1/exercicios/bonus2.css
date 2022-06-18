@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body {
+    margin: 30px 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+ }
+
+ button {
+    width: 20px;
+    background-image: linear-gradient(to bottom right, #FF6F91, #F9F871 );
+    border: none;
+ }
+
+ #counter {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+ }
