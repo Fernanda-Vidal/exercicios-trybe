@@ -1,6 +1,6 @@
 Esse é um projeto para o conteúdo do Bloco 15, sobre `Redux com react`.
 
-### Antes de iniciar - Terceiro exercício não funcionou.
+### Antes de iniciar.
 
 Crie um fork desse projeto e para isso siga esse [tutorial de como realizar um fork](https://guides.github.com/activities/forking/).
 
