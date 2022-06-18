@@ -65,8 +65,6 @@
                 return { ...state, incrementValue: action.value }
             case DECREMENT_VALUE:
                 return { ...state, decrementValue: action.value }
-            // case CLICK_COUNT:
-            //     return { ...state, clickCount: state.clickCount + 1 }
             default: 
              return state;
         }
@@ -80,9 +78,6 @@
             type: INCREMENT,
         }
 
-        // actionClicks = {
-        //     type: CLICK_COUNT,
-        // }
         store.dispatch(action)
         // store.dispatch(actionClicks)
     })
@@ -93,12 +88,7 @@
             type: DECREMENT,
         }
 
-        // actionClicks = {
-        //     type: CLICK_COUNT,
-        // }
-
         store.dispatch(action);
-        // store.dispatch(actionClicks);
     })
     
     const incrementCounter = document.getElementById('incrementCounter');
@@ -126,7 +116,6 @@
         counterClicks.innerText = store.getState().clickCount;
         const addedValues = document.getElementById('addedValues');
         addedValues.innerText = store.getState().values;
-
     })
 
     </script>
