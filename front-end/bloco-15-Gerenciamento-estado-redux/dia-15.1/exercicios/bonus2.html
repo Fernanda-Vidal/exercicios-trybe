@@ -9,17 +9,27 @@
     <title>Counter</title>
 </head>
 <body>
-    <div>
-      Contador: <span id="value">0</span>
+    <div id="counter">
+        <div class="value">
+            Contador: <span id="value">0</span>
+        </div>
       <br/>
-      Incrementar em: <input type="number" id="incrementCounter" />
-      <button id="increment">+</button>
+      Incrementar em: 
+      <div>
+          <input type="number" id="incrementCounter" />
+          <button id="increment">+</button>
+        </div>
       <br/>
-      Decrementar em: <input type="number" id="decrementCounter" />
-      <button id="decrement">-</button>
+      Decrementar em: 
+      <div>
+          <input type="number" id="decrementCounter" />
+          <button id="decrement">-</button>
+      </div>
       <br/>
-      Número de cliques: <span id="counterClicks">X</span>
-      Valores: <span id="addedValues">X</span>  
+      <div>
+          Número de cliques: <span id="counterClicks">X</span>
+          Valores: <span id="addedValues">X</span>  
+      </div>
     </div>  
     <script>
         const INCREMENT = 'INCREMENT';
