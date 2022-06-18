@@ -24,38 +24,51 @@
     <script>
         const INCREMENT = 'INCREMENT';
         const DECREMENT = 'DECREMENT';
-        const INITIAL_STATE = {
-            counter: 0,
-            incrementValue:0,
-            decrementValue:0,
-        };
+        // const INITIAL_STATE = {
+        //     counter: 0,
+        //     incrementValue:0,
+        //     decrementValue:0,
+        // };
 
-        const reducer = (state = INITIAL_STATE, action) => {
-            const value = action.type === INCREMENT ? state.incrementValue : state.decrementValue;
+        const reducer = (state = 0, action) => {
+            // const value = action.type === INCREMENT ? state.incrementValue : state.decrementValue;
           switch(action.type) {
             case INCREMENT:
-             return {
-                ...state,
-                counter: state.counter + value
-            }
+                return state + 1;
+            case DECREMENT:
+                return state -1;
+            default: 
+             return state;
         }
-        return state
     }
 
-    const createactionCount = (number) => ({
-    type: INCREMENT,
-    number,
-    })
+    // const createactionCount = (number) => ({
+    // type: INCREMENT,
+    // number,
+    // })
+
     const incrementCounter = document.getElementById('incrementCounter');
     const store = Redux.createStore(reducer);
     const incrementButton = document.getElementById('increment');
     incrementButton.addEventListener('click', () => {
-        store.dispatch(createactionCount(incrementCounter.value))
+        action = {
+            type: INCREMENT,
+        }
+        // store.dispatch(createactionCount(incrementCounter.value))
+        store.dispatch(action)
+    })
+
+    const decrementButton = document.getElementById('decrement');
+    decrementButton.addEventListener('click', () => {
+        action = {
+            type: DECREMENT,
+        }
+        store.dispatch(action);
     })
         
     store.subscribe(() => {
         const span = document.getElementById('value')
-        span.innerText = store.getState().counter
+        span.innerText = store.getState()
     })
 
     </script>
