@@ -27,7 +27,7 @@
       </div>
       <br/>
       <div>
-          Número de cliques: <span id="counterClicks">X</span>
+          Número de cliques: <span id="counterClicks">0</span>
           Valores: <span id="addedValues">X</span>  
       </div>
     </div>  
@@ -36,10 +36,13 @@
         const DECREMENT = 'DECREMENT';
         const INCREMENT_VALUE = 'INCREMENT_VALUE';
         const DECREMENT_VALUE = 'DECREMENT_VALUE';
+        // const CLICK_COUNT = 'CLICK_COUNT';
         const INITIAL_STATE = {
             counter: 0,
             incrementValue:0,
             decrementValue:0,
+            clickCount:0,
+            values: []
         };
 
         const changeState = (state, action) => {
@@ -47,6 +50,8 @@
             return {
                 ...state,
                 counter: state.counter + value,
+                clickCount: state.clickCount + 1,
+                values: [...state.values, value],
             }
         }
 
@@ -60,6 +65,8 @@
                 return { ...state, incrementValue: action.value }
             case DECREMENT_VALUE:
                 return { ...state, decrementValue: action.value }
+            // case CLICK_COUNT:
+            //     return { ...state, clickCount: state.clickCount + 1 }
             default: 
              return state;
         }
@@ -72,7 +79,12 @@
         action = {
             type: INCREMENT,
         }
+
+        // actionClicks = {
+        //     type: CLICK_COUNT,
+        // }
         store.dispatch(action)
+        // store.dispatch(actionClicks)
     })
     
     const decrementButton = document.getElementById('decrement');
@@ -80,7 +92,13 @@
         action = {
             type: DECREMENT,
         }
+
+        // actionClicks = {
+        //     type: CLICK_COUNT,
+        // }
+
         store.dispatch(action);
+        // store.dispatch(actionClicks);
     })
     
     const incrementCounter = document.getElementById('incrementCounter');
@@ -102,8 +120,13 @@
     })
         
     store.subscribe(() => {
-        const span = document.getElementById('value')
+        const span = document.getElementById('value');
         span.innerText = store.getState().counter;
+        const counterClicks = document.getElementById('counterClicks');
+        counterClicks.innerText = store.getState().clickCount;
+        const addedValues = document.getElementById('addedValues');
+        addedValues.innerText = store.getState().values;
+
     })
 
     </script>
