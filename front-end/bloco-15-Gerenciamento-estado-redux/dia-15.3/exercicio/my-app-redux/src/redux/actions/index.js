@@ -1,3 +1,8 @@
-export const NEW_ACTIONS = 'NEW_ACTIONS';
+export const LOGIN_SAVED = 'LOGIN_SAVED';
 
-export const newActions = (value) => ({ type: NEW_ACTIONS, value });
+const newActions = (payload) => ({
+    type: LOGIN_SAVED,
+    payload,
+});
+
+export default newActions;

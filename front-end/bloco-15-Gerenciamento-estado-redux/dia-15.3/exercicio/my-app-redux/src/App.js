@@ -1,15 +1,19 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Home from './redux/page/Home';
 import Login from './redux/page/Login';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 function App() {
   return (
-      <BrowserRouter>
+    <Provider store={ store }>
+    <BrowserRouter>
       <Switch>
         <Route exact path="/" component={ Home } />
         <Route path="/login" component={ Login } />
       </Switch>
-      </BrowserRouter>
+    </BrowserRouter>
+    </Provider>
   );
 }
 
