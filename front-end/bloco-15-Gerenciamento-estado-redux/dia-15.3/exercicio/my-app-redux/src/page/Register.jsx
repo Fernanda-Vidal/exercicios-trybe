@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import { registerClient } from "../redux/actions";
 
 class Register extends React.Component {
@@ -40,10 +41,11 @@ class Register extends React.Component {
                     name="emailCliente"
                     onChange={ (ev) => this.setState({ emailClient: ev.target.value })} />
                 </label>
-                <button
-                  type="button"
-                  onClick={ () => this.props.registerClient({ nameClient, ageClient, emailClient })}
-                  >Send</button>
+                <Link
+                  to="/clientesCadastrados" onClick={ () => this.props.registerClient({ nameClient, ageClient, emailClient })}
+                  >
+                    Send
+                </Link>
             </div>
         )
     }
