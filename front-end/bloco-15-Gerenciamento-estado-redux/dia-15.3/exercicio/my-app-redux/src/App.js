@@ -1,6 +1,6 @@
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import Home from './redux/page/Home';
-import Login from './redux/page/Login';
+import Home from './page/Home';
+import Login from './page/Login';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 
