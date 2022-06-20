@@ -1,8 +1,14 @@
 export const LOGIN_SAVED = 'LOGIN_SAVED';
+export const REGISTER = 'REGISTER';
 
-const newActions = (value) => ({
+export const newAction = (value) => ({
     type: LOGIN_SAVED,
     value,
 });
 
-export default newActions;
+export const registerClient = (value) => ({
+    type: REGISTER,
+    value,
+})
+
+
