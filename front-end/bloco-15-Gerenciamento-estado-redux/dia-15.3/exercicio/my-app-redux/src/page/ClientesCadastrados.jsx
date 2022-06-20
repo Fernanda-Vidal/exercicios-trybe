@@ -1,8 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { deleteClient } from "../redux/actions";
 
 class ClientesCadastrados extends React.Component {
+
     render() {
         const { userLogin, registerClients } = this.props;
         if (!userLogin.email || !userLogin.password)
@@ -12,29 +14,28 @@ class ClientesCadastrados extends React.Component {
             <Link to="/register">New Client</Link>
             <Link to="/login">Login</Link>
             </div>
-        if (registerClients < 1)
+        if (registerClients.length < 1)
         return (
             <div>
                 <span>Nenhum cliente cadastrado!</span>
                 <Link to="/register">New Client</Link>
-                {/* { (!userLogin.email || !userLogin.password) && <span>Login não efetuado</span> } */}
-                {/* { registerClients.map((client) => console.log(client))} */}
                <br/>
             </div>
         );
         return (
             <div>
-                <Link to="/register">New Client</Link>
                 <div>
-                    {registerClients.map(({nameClient, ageClient, emailClient }) => (
+                    {registerClients.map((clt, i) => (
                         <div>
-                            <ul>
-                                <li>
-                          {`${nameClient} - ${ageClient} years old - ${emailClient}`}
-                                </li>
-                            </ul>
+                        <ul>
+                        <li>
+                        {`${clt.nameClient} - ${clt.ageClient} years old - ${clt.emailClient}`}
+                        <button type="button" onClick={ () => this.props.delete(clt)}>Remove</button>
+                        </li>
+                        </ul>
                         </div>
                     ))}
+                    <Link to="/register">New Client</Link>
                 </div>
             </div>
         )
@@ -46,4 +47,8 @@ const mapStateToProps = (state) => ({
     registerClients: state.registerReducer,
 })
 
-export default connect(mapStateToProps)(ClientesCadastrados);
+const mapDispatchToProps = (dispatch) => ({
+    delete: (ev) => dispatch(deleteClient(ev))
+})
+
+export default connect(mapStateToProps,mapDispatchToProps)(ClientesCadastrados);

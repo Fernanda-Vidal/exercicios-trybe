@@ -1,4 +1,4 @@
-import { LOGIN_SAVED, REGISTER } from "../actions";
+import { DELETE, LOGIN_SAVED, REGISTER } from "../actions";
 
 const INITIAL_STATE = {}
 
@@ -15,6 +15,8 @@ export const registerReducer = (state = [], action) => {
     switch (action.type) {
         case REGISTER:
             return [...state, action.value];
+        case DELETE:
+            return state.filter((register) => register !== action.value)
         default:
             return state;
     }
