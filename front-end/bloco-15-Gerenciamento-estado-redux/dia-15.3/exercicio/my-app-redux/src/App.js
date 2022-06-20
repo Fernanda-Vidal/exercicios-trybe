@@ -3,6 +3,7 @@ import Home from './page/Home';
 import Login from './page/Login';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import ClientesCadastrados from './page/ClientesCadastrados';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={ Home } />
         <Route path="/login" component={ Login } />
+        <Route path="/clientesCadastrados" component={ ClientesCadastrados } />
       </Switch>
     </BrowserRouter>
     </Provider>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import newAction from '../redux/actions';
 
 class Login extends React.Component {
@@ -24,7 +25,7 @@ class Login extends React.Component {
     // }
     render() {
         const { email, password } = this.state;
-        const { login } = this.props;
+        // const { history } = this.props;
         return (
             <div className='container-login'>
                 <form>
@@ -45,7 +46,7 @@ class Login extends React.Component {
                       name="password"
                       onChange={ (ev) => this.setState({ password: ev.target.value }) } />
                     </label>
-                    <button type="button" onClick={ () => this.props.login({ email, password }) }>Login</button>
+                    <Link to="/clientesCadastrados" onClick={ () => { this.props.login({ email, password}) } }>Login</Link>
                 </form>
             </div>
         )

@@ -8,6 +8,7 @@ class Home extends React.Component {
             <div>
             <h1>Hello World</h1>
             <Link to="/login">Login</Link>
+            <Link to="/clientesCadastrados">Clients</Link>
             </div>
         )
     }
