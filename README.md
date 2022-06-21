@@ -115,7 +115,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 15-1: _Introdução - O estado global da aplicação_
 - [X] 15-2: _Usando Redux no React_
-- [ ] 15-3: _Usando Redux no React - Prática_
+- [X] 15-3: _Usando Redux no React - Prática_
 - [ ] 15-4: _Redux no React - Actions Assíncronas_
 - [ ] 15-5:
 - [ ] 15-6:
