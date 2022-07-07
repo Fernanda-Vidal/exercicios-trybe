@@ -117,17 +117,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 15-2: _Usando Redux no React_
 - [X] 15-3: _Usando Redux no React - Prática_
 - [ ] 15-4: _Redux no React - Actions Assíncronas_
-- [ ] 15-5:
-- [ ] 15-6:
+- [ ] 15-5: _Testes em React-Redux_
+- [X] 15-6: _[Projeto - TrybeWallet]()_
 
 ##### Bloco 16: IntroduÃ§Ã£o ao Redux
 
-- [ ] 16-1: _IntroduÃ§Ã£o ao Redux_
-- [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - PrÃ¡tica_
-- [ ] 16-4: _React com Redux - Parte 2_
-- [ ] 16-5: _Testes sÃ­ncronos com React-Redux_
-- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
+- [ ] 16-1: _[Projeto - Jogo de Trivia]()_
 
 ##### Bloco 17: Projeto React
 
