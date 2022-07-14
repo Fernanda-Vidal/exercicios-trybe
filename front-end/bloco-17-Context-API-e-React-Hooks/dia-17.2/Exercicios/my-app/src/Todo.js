@@ -1,24 +1,15 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import LiTodo from './LiTodo';
+import { TodoContext } from './TodoContext';
 
 function Todo() {
-    const [inputValue, setInputValue] = useState('');
-    const [arrayTodos, setArrayTodos] = useState([]);
-
-    const handleChange = ({target: { value, name }}) => {
-        setInputValue(value)
-      }
-
-    const handleClick = () => {
-        setArrayTodos((old) => [...old, inputValue])
-        setInputValue('')
-    }
+    const { inputValue, addInput, arrayTodos, addTodo } = useContext(TodoContext)
 
       return (
         <div className="Todo">
         <h1>To Do List</h1>
-        <input type="text" value={ inputValue } name="inputValue" onChange={ handleChange } />
-        <button type="button" onClick={ handleClick }>+</button>
+        <input type="text" value={ inputValue } onChange={ (ev) => addInput(ev.target.value)} />
+        <button type="button" onClick={ () => addTodo(inputValue) }>+</button>
           <LiTodo list={ arrayTodos } />
       </div>
     );

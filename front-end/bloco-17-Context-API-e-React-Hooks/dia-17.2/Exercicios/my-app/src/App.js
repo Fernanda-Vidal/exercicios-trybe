@@ -1,11 +1,14 @@
 import './App.css';
 import React from 'react';
 import Todo from './Todo';
+import { TodoProvider } from './TodoContext';
 
 function App() {
     return (
-      <div className="App">
-      <Todo />
+      <div>
+        <TodoProvider>
+           <Todo />
+        </TodoProvider>
     </div>
   );
 }

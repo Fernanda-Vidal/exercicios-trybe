@@ -1,18 +1,18 @@
 // import PropTypes from "prop-types"
-import React from 'react';
+import React, { useContext } from 'react';
+import { TodoContext } from './TodoContext';
 
 function LiTodo({ list }) {
+    const { arrayTodos } = useContext(TodoContext)
     return (
-        <div className="LiTodo">
         <ul>
     {
-      list.map((item) => (
-      <div>
+        arrayTodos.map((item) => (
+            <div>
         <li>{item}</li>
         </div>))
     }
       </ul>
-      </div>
     )
 }
 
