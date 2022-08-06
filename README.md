@@ -129,28 +129,39 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 17-1: _Context API do React_
 - [X] 17-2: _React Hooks - useState e useContext_
 - [ ] 17-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [X] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
 ##### Bloco 19: Projeto Final de Front-end
 
-- [ ] 18-1: _[Projeto - App de Receitas]()_
+- [X] 18-1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
-##### Bloco 20: IntroduÃ§Ã£o - Bancos de dados relacionais
+##### Bloco 19: IntroduÃ§Ã£o - Docker: Utilizando Containers
 
-- [ ] 20-1: _Banco de dados SQL_
+- [X] 19-1: _Utilizando Containers - Docker_
+- [X] 19-3: _Manipulando Imagens no Docker_
+- [X] 19-4: _Orquestrando containers com Docker Compose_
+- [X] 19-5: _[Projeto - Docker Todo-List]()_
+
+##### Bloco 20: IntroduÃ§Ã£o à SQL
+
+- [ ] 20-1: _Banco de dados relacionais
 - [ ] 20-2: _Encontrando dados em um banco de dados_
 - [ ] 20-3: _Filtrando dados de forma especÃ­fica_
 - [ ] 20-4: _Manipulando tabelas_
 - [ ] 20-5: _[Projeto - All For One]()_
 
+
+
+
+
 ##### Bloco 21: Bancos de dados relacionais
 
-- [ ] 21-1: _FunÃ§Ãµes mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs e UNIONs_
-- [ ] 21-3: _Stored Routines & Subqueries_
-- [ ] 21-4: _[Projeto - Vocabulary Booster]()_
+- [ ] 21-1: _Funções mais usadas no SQL_
+- [ ] 21-2: _Descomplicando JOINs_
+- [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [ ] 21-4: _[Aula ao vivo + Projeto - One For All]()_
 
 ##### Bloco 22: Bancos de dados relacionais
 
