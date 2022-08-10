@@ -8,10 +8,22 @@ UPDATE nome_da_tabela
 SET propriedade_a_ser_alterada = 'novo valor para coluna'
 WHERE alguma_condicao; -- importantíssimo aplicar o WHERE para não alterar a tabela inteira!
 
--- SAFE UPDATES MODE
+-- SAFE UPDATES MODE (--i-am-a-dummy)
+
+SET sql_safe_updates=1, sql_select_limit=1000, max_join_size=1000000;
+-- sql_select_limit=1000: limita o conjunto de resultados 
+-- SELECT a 1.000 linhas, a menos que a instrução inclua LIMIT.
+
+-- max_join_size=1.000.000: faz com que as instruções SELECT de várias
+-- tabelas produzam um erro se o servidor estimar que deve examinar mais
+-- de 1.000.000 combinações de linhas.
+
 -- para desativar: rode o seguinte comando em uma janela de query dentro do MySQL Workbench sempre
 -- que abri-lo
 SET SQL_SAFE_UPDATES = 0;
+
+-- Ou configurar para um modo mais conveniente para você, alterando os valores das variáveis:
+SET sql_safe_updates=1, sql_select_limit=500, max_join_size=10000;
 
 UPDATE sakila.staff
 SET first_name = 'Rannveig', last_name = 'Jordan'
@@ -48,3 +60,11 @@ SET password = 'FavorResetarSuaSenha123'
 WHERE active = 1
 ORDER BY last_update
 LIMIT 2;
+
+-- PRA FIXAR
+-- 1
+SET SQL_SAFE_UPDATES = 0;
+
+UPDATE sakila.actor
+SET first_name = 'JULIA'
+WHERE first_name = 'JULES';
