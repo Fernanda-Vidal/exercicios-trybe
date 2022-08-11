@@ -8,7 +8,7 @@ UPDATE nome_da_tabela
 SET propriedade_a_ser_alterada = 'novo valor para coluna'
 WHERE alguma_condicao; -- importantíssimo aplicar o WHERE para não alterar a tabela inteira!
 
--- SAFE UPDATES MODE (--i-am-a-dummy)
+-- SAFE UPDATES MODE (ou --i-am-a-dummy)
 
 SET sql_safe_updates=1, sql_select_limit=1000, max_join_size=1000000;
 -- sql_select_limit=1000: limita o conjunto de resultados 
@@ -63,8 +63,36 @@ LIMIT 2;
 
 -- PRA FIXAR
 -- 1
+SELECT * FROM sakila.actor
+WHERE first_name = 'JULIA';
+
 SET SQL_SAFE_UPDATES = 0;
 
 UPDATE sakila.actor
-SET first_name = 'JULIA'
+SET first_name = 'JULES'
+WHERE first_name = 'JULIA';
+
+SELECT * FROM sakila.actor
 WHERE first_name = 'JULES';
+
+-- 2
+UPDATE sakila.category
+SET name = 'Science Fiction'
+WHERE name = 'Sci-fi';
+
+-- 3
+SELECT * FROM sakila.film;
+UPDATE sakila.film
+SET rental_rate = 25.00
+WHERE length > 100 AND (rating <> 'R' OR rating <> 'NC-17');
+
+-- 4
+UPDATE sakila.film
+SET rental_rate = (
+	CASE
+		WHEN length BETWEEN 1 AND 100 THEN 10.00
+        WHEN length > 100 THEN 20
+	END
+);
+SELECT * FROM sakila.film;
+
