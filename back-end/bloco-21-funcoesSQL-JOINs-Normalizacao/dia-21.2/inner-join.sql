@@ -51,9 +51,15 @@ WHERE YEAR(p.payment_date) = 2006
 GROUP BY func.first_name, func.last_name;
 
 -- 7
--- SELECT * FROM sakila.actor;
 SELECT act.actor_id, act.first_name, f_a.film_id , film.title
 FROM sakila.actor AS act
 INNER JOIN sakila.film_actor AS f_a
 INNER JOIN sakila.film AS film
 ON act.actor_id = f_a.actor_id AND f_a.film_id = film.film_id;
+
+-- OR
+
+SELECT act.actor_id, act.first_name, f_a.film_id , film.title
+FROM sakila.actor AS act
+INNER JOIN sakila.film_actor AS f_a ON act.actor_id = f_a.actor_id
+INNER JOIN sakila.film AS film ON f_a.film_id = film.film_id;
