@@ -63,3 +63,30 @@ SELECT act.actor_id, act.first_name, f_a.film_id , film.title
 FROM sakila.actor AS act
 INNER JOIN sakila.film_actor AS f_a ON act.actor_id = f_a.actor_id
 INNER JOIN sakila.film AS film ON f_a.film_id = film.film_id;
+
+-- PRA FIXAR SELF JOIN
+
+-- 1
+SELECT
+CONCAT(employee.first_name, ' ', employee.last_name) AS colaborador,
+CONCAT(manager.first_name, ' ', employee.last_name) AS gerente
+FROM hr.employees AS employee
+INNER JOIN hr.employees AS manager ON employee.manager_id = manager.employee_id
+WHERE employee.department_id <> manager.department_id;
+
+-- 2
+SELECT
+manager.manager_id,
+CONCAT(manager.first_name, ' ', manager.last_name) AS gerente,
+COUNT(employee.employee_id)
+FROM hr.employees AS manager
+JOIN hr.employees AS employee ON manager.employee_id = employee.manager_id
+GROUP BY manager.manager_id;
+
+-- sem o JOIN -- 
+SELECT manager_id,
+CONCAT(first_name, ' ', last_name) AS gerente,
+COUNT(employee_id)
+FROM hr.employees
+GROUP BY manager_id;
+
