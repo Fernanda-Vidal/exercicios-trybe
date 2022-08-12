@@ -27,3 +27,20 @@ SELECT district, COUNT(district) AS quantidade
 FROM sakila.address
 GROUP BY district
 ORDER BY quantidade DESC;
+
+-- HAVING
+-- 	pra fixar 
+
+-- 1 
+SELECT rating, AVG(length) media
+FROM sakila.film
+GROUP BY rating
+HAVING media BETWEEN 115.0 AND 121.50
+ORDER BY media DESC;
+    
+-- 2
+SELECT rating, SUM(replacement_cost) AS replacement_all
+FROM sakila.film
+GROUP by rating
+HAVING replacement_all > 3950.50
+ORDER BY replacement_all;
