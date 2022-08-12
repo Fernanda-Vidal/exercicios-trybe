@@ -146,22 +146,21 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 20: Introdução à SQL
 
-- [ ] 20-1: _Banco de dados relacionais
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma especÃ­fica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [X] 20-1: _Banco de dados relacionais
+- [X] 20-2: _Encontrando dados em um banco de dados_
+- [X] 20-3: _Filtrando dados de forma especÃ­fica_
+- [X] 20-4: _Manipulando tabelas_
+- [X] 20-5: _[Projeto - All For One]()_
 
+##### Bloco 21: Funções SQL, JOINs e Normalização
 
-
-
-
-##### Bloco 21: Bancos de dados relacionais
-
-- [ ] 21-1: _Funções mais usadas no SQL_
+- [X] 21-1: _Funções mais usadas no SQL_
 - [ ] 21-2: _Descomplicando JOINs_
 - [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
 - [ ] 21-4: _[Aula ao vivo + Projeto - One For All]()_
+
+
+
 
 ##### Bloco 22: Bancos de dados relacionais
 
