@@ -23,8 +23,17 @@ INNER JOIN pixar.box_office AS bo
 ORDER BY nota DESC;
 
 -- EXERCICIO 4
-SELECT th.name AS theater, mo.title
+SELECT
+th.id,
+th.name AS theater,
+th.location,
+mo.title
 FROM pixar.theater AS th
 	LEFT JOIN pixar.movies AS mo
 		ON th.id = mo.theater_id
 ORDER BY theater;
+
+-- EXERCICIO 5
+-- SELECT
+
+-- FROM pixar.movies AS mo
