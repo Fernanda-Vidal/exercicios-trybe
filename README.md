@@ -62,7 +62,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
-- [ ] 7-3: _Testes unitÃ¡rios em JavaScript_
+- [ ] 7-3: _Testes unitários em JavaScript_
 - [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
 ##### Bloco 8: JavaScript ES6
@@ -155,7 +155,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 21: Funções SQL, JOINs e Normalização
 
 - [X] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs_
+- [X] 21-2: _Descomplicando JOINs_
 - [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
 - [ ] 21-4: _[Aula ao vivo + Projeto - One For All]()_
 
