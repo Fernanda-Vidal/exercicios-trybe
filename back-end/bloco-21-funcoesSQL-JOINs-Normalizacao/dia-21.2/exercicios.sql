@@ -46,3 +46,19 @@ FROM pixar.theater AS th
 	RIGHT JOIN pixar.movies AS mo
 		ON mo.theater_id = th.id
 ORDER BY cinema;
+
+-- BÔNUS
+SELECT
+mo.id, 
+mo.title,
+mo.director,
+mo.year,
+mo.length_minutes,
+mo.theater_id,
+bo.rating
+FROM pixar.movies AS mo
+	INNER JOIN pixar.box_office AS bo
+		ON mo.id = bo.movie_id
+WHERE mo.theater_id IS NOT null AND bo.rating > 8;
+
+
