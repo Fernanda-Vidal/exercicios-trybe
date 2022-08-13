@@ -34,7 +34,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 4-1: _JavaScript - Primeiros passos_
 - [X] 4-2: _JavaScript - Array e loop For_
 - [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
-- [X] 4-4: _JavaScript - Objetos e funÃ§Ãµes_
+- [X] 4-4: _JavaScript - Objetos e funções_
 - [X] 4-5: _[Projeto - Playground Functions]()_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
@@ -63,7 +63,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [ ] 7-3: _Testes unitÃ¡rios em JavaScript_
-- [X] 7-4: _[Projeto - JavaScript Testes UnitÃ¡rios]()_
+- [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
 ##### Bloco 8: JavaScript ES6
 
@@ -100,9 +100,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 12-2: _React Router_
 - [X] 12-3: _[Projeto - TrybeTunes]()_
 
-##### Bloco 13: Metodologias Ãgeis
+##### Bloco 13: Metodologias Ágeis
 
-- [ ] 13-1: _Metodologias Ãgeis_
+- [ ] 13-1: _Metodologias Ágeis_
 - [X] 13-2: _[Projeto - Frontend Online Store]()_
 
 ##### Bloco 14: Testes em React - RTL
@@ -148,7 +148,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 20-1: _Banco de dados relacionais
 - [X] 20-2: _Encontrando dados em um banco de dados_
-- [X] 20-3: _Filtrando dados de forma especÃ­fica_
+- [X] 20-3: _Filtrando dados de forma específica_
 - [X] 20-4: _Manipulando tabelas_
 - [X] 20-5: _[Projeto - All For One]()_
 
