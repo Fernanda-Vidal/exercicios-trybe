@@ -34,6 +34,15 @@ FROM pixar.theater AS th
 ORDER BY theater;
 
 -- EXERCICIO 5
--- SELECT
-
--- FROM pixar.movies AS mo
+SELECT
+mo.id,
+mo.title, 
+mo.director, 
+mo.year, 
+mo.length_minutes,
+mo.theater_id,
+th.name AS cinema
+FROM pixar.theater AS th
+	RIGHT JOIN pixar.movies AS mo
+		ON mo.theater_id = th.id
+ORDER BY cinema;
