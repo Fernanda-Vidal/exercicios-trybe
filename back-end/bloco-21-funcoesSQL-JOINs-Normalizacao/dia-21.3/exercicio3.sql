@@ -30,3 +30,12 @@ VALUES('JOSEPH', 'RODRIGUES', 'JO@GMAIL.COM', '(35)99855-1445', '2020-05-05'),
     ('FERNANDA', 'MENDES', 'FERNANDAMENDES@YAHOO.COM', '(33)99200-1556', '2020-05-05');
     
 SELECT * FROM funcionarios;
+
+INSERT INTO setor(name_setor)
+VALUES ('administração'),
+	('Vendas'),
+    ('Operacional'),
+    ('Estratégico'),
+    ('Marketing');
+    
+    SELECT * FROM setor;
