@@ -18,7 +18,7 @@ CREATE TABLE setor(
 CREATE TABLE setor_func(
 	setor_id INT NOT NULL,
     funcionario_id INT NOT NULL,
-    CONSTRAINT primary key (setor_id, funcionario_id), 
+    CONSTRAINT PRIMARY KEY (setor_id, funcionario_id), 
     FOREIGN KEY (setor_id) REFERENCES setor(setor_id),
     FOREIGN KEY (funcionario_id) REFERENCES funcionarios(funcionario_id)
     );
