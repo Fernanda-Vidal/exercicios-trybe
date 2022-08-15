@@ -23,4 +23,10 @@ CREATE TABLE setor_func(
     FOREIGN KEY (funcionario_id) REFERENCES funcionarios(funcionario_id)
     );
     
-
+INSERT INTO funcionarios(nome, sobrenome, email, telefone, data_cadastro)
+VALUES('JOSEPH', 'RODRIGUES', 'JO@GMAIL.COM', '(35)99855-1445', '2020-05-05'),
+	('ANDRÉ', 'FREEMAN', 'ANDRE1990@GMAIL.COM', '(47)99522-4996', '2020-02-05'), 
+    ('CINTIA', 'DUVAL', 'CINDY@OUTLOOK.COM', '(33)99855-4669', '2020-05-05'),
+    ('FERNANDA', 'MENDES', 'FERNANDAMENDES@YAHOO.COM', '(33)99200-1556', '2020-05-05');
+    
+SELECT * FROM funcionarios;
