@@ -38,4 +38,13 @@ VALUES ('administração'),
     ('Estratégico'),
     ('Marketing');
     
-    SELECT * FROM setor;
+INSERT INTO setor_func(funcionario_id, setor_id)
+VALUES (1, 1),
+		(1,2),
+        (3,2),
+        (3,4),
+        (2,3),
+        (4,5);
+    
+    SELECT * FROM setor_func;
+
