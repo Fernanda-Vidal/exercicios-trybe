@@ -23,6 +23,8 @@ CREATE TABLE album(
         FOREIGN KEY (estilo_id) REFERENCES estilo(estilo_id)
         );
         
+ALTER TABLE album ADD preco DECIMAL NOT NULL;
+        
 CREATE TABLE cancao(
 		cancao_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
         nome_cancao VARCHAR (50) NOT NULL,
