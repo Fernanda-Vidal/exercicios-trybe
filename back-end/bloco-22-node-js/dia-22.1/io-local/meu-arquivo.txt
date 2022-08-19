@@ -1,0 +1,1 @@
+Olá, este é um arquivo para realização da atividade de fixação do bloco de Node.js do curso de programação da Trybe, módulo de backend.
