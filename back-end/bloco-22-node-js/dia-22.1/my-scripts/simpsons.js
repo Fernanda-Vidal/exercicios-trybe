@@ -40,9 +40,15 @@ const createDoc = async () => {
     return fs.writeFile('simpsonFamily.json', JSON.stringify(family));
 }
 
+const addCharacter = async () => {
+    const fileContent = await fs.readFile('./simpsonFamily.json', 'utf-8')
+    const simpsonsFam = JSON.parse(fileContent);
+    simpsonsFam.push({ id: '8', name: 'Nelson Muntz' });
+    return fs.writeFile('./simpsonFamily.json', JSON.stringify(simpsonsFam));
+}
 
 const main = () => {
-    return createDoc();
+    addCharacter();
 }
 
 main();
