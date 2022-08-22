@@ -1,3 +1,5 @@
+const { fdatasync } = require('fs');
+
 const fs = require('fs').promises;
 
 const read = async () => {
@@ -32,9 +34,15 @@ const removeCharacter = async () => {
     return simpsons.filter(({ id }) => Number(id) !== 6 && Number(id) !== 10)
 }
 
-const main = async () => {
-    const simpson = await removeCharacter();
-    console.log(simpson);
+const createDoc = async () => {
+    const simpsons = await read();
+    const family = simpsons.filter(({ id }) => Number(id) <= 4 )
+    return fs.writeFile('simpsonFamily.json', JSON.stringify(family));
+}
+
+
+const main = () => {
+    return createDoc();
 }
 
 main();
