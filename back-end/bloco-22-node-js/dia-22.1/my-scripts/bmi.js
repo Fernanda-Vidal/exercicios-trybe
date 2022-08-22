@@ -11,10 +11,12 @@ const handleBMI = (weight, height) => {
     return bmi;
 }
 
+
 const main = () => {
     const weight = readline.questionFloat('What your weight in kg?');
     const height = readline.questionInt('What your height in cm?');
     const bmi = handleBMI(weight, height)
+
 
     if (bmi <= 18.5) {  console.log(`BMI: ${bmi.toFixed(2)} - Abaixo do peso (magreza)`)}
     else if (bmi >= 18.5 && bmi <= 24.9) {  console.log(`BMI: ${bmi.toFixed(2)} - Peso normal`)}
