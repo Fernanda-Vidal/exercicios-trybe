@@ -28,4 +28,15 @@ app.get('/myActivities/:id', (req, res) => {
 
 app.get('/myActivities', (req, res) => res.status(200).json({ activities }));
 
+app.get('/filter/myActivities', (req, res) => {
+    const { status } = req.query;
+    let filteredActivities = activities; 
+
+    if (status) {
+        filteredActivities = activities.filter((act) => act.status === status);
+    }
+
+    res.status(200).json({ activities: filteredActivities });
+});
+
 module.exports = app;
