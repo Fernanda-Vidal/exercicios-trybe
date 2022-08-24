@@ -1,6 +1,7 @@
 const express = require('express');
 const { validateTeam, existingId } = require('./middlewares/middlewares');
 let { teams, nextId } = require('./files/teams');
+const apiCredentials = require('./middlewares/apiCredentials');
 
 const app = express();
 
@@ -11,6 +12,7 @@ const app = express();
 // ];
 
 app.use(express.json());
+app.use(apiCredentials);
 
 // const existingId = (req, res, next) => {
 //     const id = Number(req.params.id);
