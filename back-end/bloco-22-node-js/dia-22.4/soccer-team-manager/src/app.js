@@ -1,4 +1,5 @@
 const express = require('express');
+const validateTeam = require('./middlewares/validateTeam');
 
 const app = express();
 
@@ -27,14 +28,14 @@ app.get('/teams/:id', existingId, (req, res) => {
       res.json(team);
 });
 
-const validateTeam = (req, res, next) => {
-    const requiredProperties = ['nome', 'sigla'];
-    if (requiredProperties.every((property) => property in req.body)) {
-        next(); // Chama o próximo middleware
-    } else {
-        res.sendStatus(400); // Ou já responde avisando qe deu errado
-    }
-};
+// const validateTeam = (req, res, next) => {
+//     const requiredProperties = ['nome', 'sigla'];
+//     if (requiredProperties.every((property) => property in req.body)) {
+//         next(); // Chama o próximo middleware
+//     } else {
+//         res.sendStatus(400); // Ou já responde avisando qe deu errado
+//     }
+// };
 
 app.post('/teams', validateTeam, (req, res) => {
     const team = { id: nextId, ...req.body };
