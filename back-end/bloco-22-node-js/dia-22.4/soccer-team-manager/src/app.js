@@ -10,16 +10,21 @@ const teams = [
 
 app.use(express.json());
 
+const existingId = (req, res, next) => {
+    const id = Number(req.params.id);
+    if (teams.some((t) => t.id === id)) {
+        next();
+    } else {
+        res.sendStatus(400);
+    }
+};
+
 app.get('/teams', (req, res) => res.json(teams));
 
-app.get('/teams/:id', (req, res) => {
+app.get('/teams/:id', existingId, (req, res) => {
     const id = Number(req.params.id);
-    const team = teams.find(t => t.id === id);
-    if (team) {
+    const team = teams.find((t) => t.id === id);
       res.json(team);
-    } else {
-      res.sendStatus(404);
-    }
 });
 
 const validateTeam = (req, res, next) => {
@@ -40,7 +45,7 @@ app.post('/teams', validateTeam, (req, res) => {
 
 app.put('/teams/:id', validateTeam, (req, res) => {
     const id = Number(req.params.id);
-    const team = teams.find(t => t.id === id);
+    const team = teams.find((t) => t.id === id);
     if (team) {
       const index = teams.indexOf(team);
       const updated = { id, ...req.body };
