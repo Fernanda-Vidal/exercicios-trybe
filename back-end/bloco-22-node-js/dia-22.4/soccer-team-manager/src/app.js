@@ -1,4 +1,6 @@
 const express = require('express');
+require('express-async-errors');
+
 const { validateTeam, existingId } = require('./middlewares/middlewares');
 let { teams, nextId } = require('./files/teams');
 const apiCredentials = require('./middlewares/apiCredentials');
@@ -41,6 +43,14 @@ app.get('/teams/:id', existingId, (req, res) => {
 // };
 
 app.post('/teams', validateTeam, (req, res) => {
+    if (
+        // confere se a sigla propsota está inclusa nos time autorizados
+        !req.teams.teams.includes(req.body.sigla)
+        // confere se já não existe um time com essa sigla
+        && teams.every((t) => t.sigla !== req.body.sigla)
+    ) {
+        return res.sendStatus(401);
+    }
     const team = { id: nextId, ...req.body };
     teams.push(team);
     nextId += 1;
