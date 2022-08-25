@@ -20,5 +20,5 @@ const existingId = (req, res, next) => {
 
 module.exports = {
     validateTeam,
-    existingId,    
+    existingId,
 };

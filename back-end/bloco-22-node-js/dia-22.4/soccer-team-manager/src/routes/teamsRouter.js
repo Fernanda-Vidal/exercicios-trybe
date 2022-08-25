@@ -44,4 +44,8 @@ router.delete('/teams/:id', existingId, (req, res) => {
 
 router.use((req, res) => res.sendStatus(404));
 
+router.use((err, _req, _res, _next) => {
+    res.status(500).json({ message: `Algo deu errado! Mensagem: ${err.message}` });
+})
+
 module.exports = router;
