@@ -1,5 +1,7 @@
 const express = require('express');
 require('express-async-errors');
+const morgan = require('morgan');
+const cors = require('cors');
 
 const { validateTeam, existingId } = require('./middlewares/middlewares');
 let { teams, nextId } = require('./files/teams');
@@ -12,6 +14,14 @@ const app = express();
 //   { id: 1, nome: 'São Paulo Futebol Clube', sigla: 'SPF' },
 //   { id: 2, nome: 'Sociedade Esportiva Palmeiras', sigla: 'PAL' },
 // ];
+
+app.use(morgan('dev'));
+app.use(cors());
+
+// o express.static configura para procurar o path no diretório informado e se encontrado
+// já responde com esse aquivo. Se não encontrar, simplesmente passa para o o próximo e
+// assume que alguém vai responder essa requisição.
+app.use(express.static('./images'));
 
 app.use(express.json());
 app.use(apiCredentials);
@@ -73,5 +83,17 @@ app.delete('/teams/:id', existingId, (req, res) => {
     teams.splice(index, 1);
     res.sendStatus(200);
 });
+
+app.use((req, _res, next) => {
+    console.log('req.method:', req.method);
+    console.log('req.path:', req.path);
+    console.log('req.params:', req.params);
+    console.log('req.query:', req.query);
+    console.log('req.headers:', req.headers);
+    console.log('req.body:', req.body);
+    next();
+  });
+
+app.use((req, res) => res.sendStatus(404));
 
 module.exports = app;
