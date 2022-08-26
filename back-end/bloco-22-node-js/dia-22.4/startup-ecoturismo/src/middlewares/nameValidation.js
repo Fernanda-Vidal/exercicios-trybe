@@ -2,7 +2,7 @@ const nameValidation = (req, res, next) => {
     const activities = req.body;
     
     if(!activities.name) { 
-        return res.status(400).json({ "message": "O campo nome é obrigatório" });
+        return res.status(400).json({ "message": "O campo name é obrigatório" });
     };
 
     if(activities.name.length < 4) {
