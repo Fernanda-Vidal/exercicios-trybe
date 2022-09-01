@@ -165,7 +165,7 @@ describe('1Testando a API Cacao Trybe', () => {
         });
 
         expect(response.status).to.be.equal(200);
-        expect(response.body).to.deep.equal({
+        expect(response.body.chocolate).to.deep.equal({
           "chocolate": {
             "id": 1,
             "name": "Mint Pretty Good",
@@ -183,7 +183,7 @@ describe('1Testando a API Cacao Trybe', () => {
         });
 
         expect(response.status).to.deep.equal(404);
-        expect(response.body).to.deep.equal({ message: 'Id não existente' });
+        expect(response.body.chocolate).to.deep.equal({ message: 'chocolate not found' });
       })
     })
 });

@@ -1,3 +1,4 @@
+const { json } = require('express');
 const express = require('express');
 const cacaoTrybe = require('./cacaoTrybe');
 
@@ -30,5 +31,15 @@ app.get('/chocolates/brand/:brandId', async (req, res) => {
     const chocolates = await cacaoTrybe.getChocolatesByBrand(Number(brandId));
     res.status(200).json({ chocolates });
 });
+
+app.put('/chocolates/:id', async (req, res) => {
+    const { id } = req.params;
+    const changeChocs = await cacaoTrybe.editChocolates(Number(id), req.body);
+
+    console.log(req)
+
+    if(changeChocs) return res.status(200).json({ chocolate: changeChocs });
+    return res.status(404).json({ message: 'chocolate not found' });
+})
 
 module.exports = app;
