@@ -1,6 +1,7 @@
 const fs = require('fs').promises;
 const { join } = require('path');
 
+
 const readCacaoTrybeFile = async () => {
     const path = '/files/cacaoTrybeFile.json';
     try {
@@ -28,8 +29,43 @@ const getChocolatesByBrand = async (brandId) => {
     .filter((chocolate) => chocolate.brandId === brandId);
 };
 
+const getChocolatesBySearch = async (q) => {
+    const cacaoTrybe = await readCacaoTrybeFile();
+    return cacaoTrybe.chocolates.filter((chocolate) => chocolate.name.includes(q));
+}
+
+const writeCacaoTrybe = async (content) => {
+    const path = '/files/cacaoTrybeFile.json';
+    try {
+        const completePath = join(__dirname, path);
+        await fs.writeFile(completePath, JSON.stringify(content));
+    } catch (error) {
+        return null;
+    }
+};
+
+const editChocolates = async (id, change) => {
+    const cacaoTrybe = await readCacaoTrybeFile();
+    const chocolateToUpdate = cacaoTrybe.chocolates.find((chocolate) => chocolate.id === id)
+console.log(chocolateToUpdate)
+    if (chocolateToUpdate) {
+        cacaoTrybe.chocolates = cacaoTrybe.chocolates.map((chocolate) => {
+            if (chocolate.id === id) return { ...chocolate, ...change };
+            return chocolate;
+        });
+
+        await writeCacaoTrybe(cacaoTrybe);
+        return { ...chocolateToUpdate, ...change };
+    }
+
+    return false;
+}
+
+
 module.exports = {
     getAllChocolates,
     getChocolateById,
     getChocolatesByBrand,
+    getChocolatesBySearch,
+    editChocolates,
 }

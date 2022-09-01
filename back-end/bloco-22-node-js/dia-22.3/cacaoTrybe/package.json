@@ -1,10 +1,14 @@
 {
-  "name": "cacaoTrybe",
+  "name": "cacaotrybe",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
-    "test": "mocha ./tests/integration --exit"
+    "test": "mocha ./tests/integration --exit",
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -15,8 +19,8 @@
   "devDependencies": {
     "chai": "^4.3.6",
     "chai-http": "^4.3.0",
-    "eslint": "^6.8.0",
-    "eslint-config-trybe-backend": "^1.0.1",
-    "mocha": "^10.0.0"
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.19",
+    "sinon": "^14.0.0"
   }
 }
