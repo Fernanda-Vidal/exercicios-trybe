@@ -7,8 +7,8 @@ app.listen(port, async () => {
     console.log(`API TrybeCash está sendo executada na porta ${port}`)
 
     // Código que testa a comunicação com o MySQL
-    const [ result ] = await connection.execute('SELECT 1');
-    if (result) {
-        console.log('MySQL connection Ok');
-    }
+    // const [ result ] = await connection.execute('SELECT 1');
+    // if (result) {
+    //     console.log('MySQL connection Ok');
+    // }
 });
