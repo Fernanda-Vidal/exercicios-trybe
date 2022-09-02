@@ -166,7 +166,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 22-3: _Node.js: Testes de Integração_
 - [ ] 22-4: _Node.js: Middlewares_
 - [ ] 22-5: _Node.js: Express e Mysql_
-- [ ] 22-6: _[Projeto - Talker Manager]()_
+- [X] 22-6: _[Projeto - Talker Manager]()_
 
 
 
