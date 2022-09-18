@@ -6,7 +6,11 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/books', bookRoute);
+app.use('/books', bookRoute)
+
+// app.get('/books', (req, res) =>{
+//     res.status(200).json({ message: 'entrou'})
+// });
 
 
 module.exports = app;

@@ -1,5 +1,5 @@
 const BooksModel = (sequelize, DataTypes) => {
-    const BooksTable = sequelize.define('Book', {
+    const Book = sequelize.define('Book', {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true },
@@ -13,7 +13,7 @@ const BooksModel = (sequelize, DataTypes) => {
         underscored: true
     });
 
-    return BooksTable;
+    return Book;
 };
 
 module.exports = BooksModel;
