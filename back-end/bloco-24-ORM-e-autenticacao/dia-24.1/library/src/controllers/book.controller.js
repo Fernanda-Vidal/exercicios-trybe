@@ -26,10 +26,22 @@ const insertBook = async(req, res) => {
     try {
         const { title, author, pageQuantity } = req.body;
     
-        const book = await insert({ title, author, pageQuantity });
+        const book = await bookService.insert({ title, author, pageQuantity });
         return res.status(200).json(book);
     } catch (e) {
         res.status(500).json({ message: 'Não rolou' })
+    }
+};
+
+const callUpdateBook = async (req, res) => {
+    try {
+        const { title, author, pageQuantity } = req.body;
+        const { id } = req.params;
+
+        const book = await bookService.updateBook(id, title, author, pageQuantity);
+        return res.status(200).json(book);
+    } catch (e) {
+        res.status(500).json({ message: 'Tente mais uma vez' });
     }
 }
 
@@ -37,4 +49,5 @@ module.exports = {
     callGetBooks,
     callGetById,
     insertBook,
+    callUpdateBook,
 }

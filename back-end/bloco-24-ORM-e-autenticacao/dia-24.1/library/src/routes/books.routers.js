@@ -6,5 +6,6 @@ const routers = Router();
 routers.get('/', booksControlers.callGetBooks);
 routers.get('/:id', booksControlers.callGetById);
 routers.post('/', booksControlers.insertBook);
+routers.put('/:id', booksControlers.callUpdateBook);
 
 module.exports = routers;

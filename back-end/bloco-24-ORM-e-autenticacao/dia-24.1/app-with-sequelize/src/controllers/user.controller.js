@@ -5,7 +5,7 @@ const getAll = async (_req, res) => {
         const users = await UserService.getAll();
         return res.status(200).json(users);
     } catch (e) {
-        console.log('oi', e.message);
+        console.log('oi',e.message);
         res.status(500).json({ message: 'Ocorreu um erro' });
     }
 };
