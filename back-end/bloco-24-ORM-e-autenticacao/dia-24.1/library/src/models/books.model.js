@@ -1,6 +1,8 @@
 const BooksModel = (sequelize, DataTypes) => {
-    const BooksTable = sequelize.define('Books', {
-        id: DataTypes.INTEGER,
+    const BooksTable = sequelize.define('Book', {
+        id: {
+            type: DataTypes.INTEGER,
+            primaryKey: true },
         title: DataTypes.STRING,
         author: DataTypes.STRING,
         pageQuantity: DataTypes.INTEGER,
