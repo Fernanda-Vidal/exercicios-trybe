@@ -45,9 +45,21 @@ const callUpdateBook = async (req, res) => {
     }
 }
 
+const callDeleteBook = async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        await bookService.deleteBook(id);
+        return res.status(200).json({ message: 'livro deletado com sucesso' });
+    } catch (e) {
+        res.status(500).json({ message: 'Nope.' });
+    }
+};
+
 module.exports = {
     callGetBooks,
     callGetById,
     insertBook,
     callUpdateBook,
+    callDeleteBook,
 }
