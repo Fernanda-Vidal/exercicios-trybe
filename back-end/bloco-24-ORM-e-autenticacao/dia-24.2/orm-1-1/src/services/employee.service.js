@@ -8,13 +8,22 @@ const getAll = async () => {
     return users;
 };
 
+// **Função em Eager Loading**
+// const getById = async (id) => {
+//     const employee = await Employee.findOne({
+//         where: { id },
+//         include: [{ model: Address, as: 'addresses', attributes: { exclude: ['number'] } }],
+//     });
+//     return employee;
+// };
+
+// **Função em Lazy Loading**
 const getById = async (id) => {
     const employee = await Employee.findOne({
         where: { id },
-        include: [{ model: Address, as: 'addresses', attributes: { exclude: ['number'] } }],
     });
     return employee;
-}
+};
 
 module.exports = {
     getAll,
