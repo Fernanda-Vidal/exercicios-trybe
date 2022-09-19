@@ -29,7 +29,7 @@ module.exports = {
         onDelete: 'CASCADE',
         field: 'employee_id',
         references: {
-          model: 'employees',
+          model: 'employees', // Este é o nome da tabela //
           key: 'id',
         },
       },
