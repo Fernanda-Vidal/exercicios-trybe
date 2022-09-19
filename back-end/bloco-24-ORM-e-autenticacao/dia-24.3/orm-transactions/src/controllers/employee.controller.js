@@ -18,12 +18,10 @@ const getById = async (req, res) => {
 
         if (!employee) return res.status(404).json({ message: 'Colaborador não encontrado' });
         
-        // **Adaptação para o Lazy Loading** 
         if (req.query.includeAddresses === 'true') {
             const addresses = await AddressService.getAllByEmployeeId(id);
             return res.status(200).json({ employee, addresses })
         }
-        // **Fim da adaptação para o Lazy Loading**
 
         return res.status(200).json(employee);
     } catch (e) {
