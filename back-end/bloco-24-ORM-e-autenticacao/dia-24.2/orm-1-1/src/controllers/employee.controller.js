@@ -12,7 +12,6 @@ const getAll = async (_req, res) => {
 };
 
 const getById = async (req, res) => {
-    console.log('req', req)
     try {
         const { id } = req.params;
         const employee = await EmployeeService.getById(id);
