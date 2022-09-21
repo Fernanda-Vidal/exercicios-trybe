@@ -5,6 +5,6 @@ const app = express();
 app.use(express.json());
 
 app.get('/userbooks/:id', userBookController.getUserBooksById);
-app.get('/userbooks', userBookController.getUser);
+// app.get('/userbooks', userBookController.getUser);
 
 module.exports = app;
