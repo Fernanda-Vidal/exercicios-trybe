@@ -48,13 +48,17 @@ const updateCourse = async (id, { name, description, active, duration }) => {
         { name, description, active, duration },
         { where: { id } },
     );
+    
+    if (qtdUpdated <= 0) throw errorGenerate(400, 'Id not found', 'ID_NOT_FOUND');
 
     return qtdUpdated > 0;
 };
 
 const removeCourse = async (id) => {
     const qtdRemoved = await Course.destroy({ where: { id } });
+    console.log(qtdRemoved)
 
+    if (qtdRemoved <= 0) throw errorGenerate(400, 'Id not found', 'ID_NOT_FOUND');
     return qtdRemoved > 0;
 }
 

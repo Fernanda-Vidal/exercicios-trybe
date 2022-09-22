@@ -36,12 +36,14 @@ const updateCourse = async (req, res, next) => {
     }
 }
 
-const removeCourse = async (req, res) => {
-    const { id } = req.params;
-
-    const isRemoved = await courseService.removeCourse(id);
-    if (isRemoved) return res.status(200).json({ message: `Curso ${id} removido com sucesso` });
-    return res.status(400).json({ message: `Curso ${id} não encontrado` });
+const removeCourse = async (req, res, next) => {
+    try {
+        const { id } = req.params;
+        await courseService.removeCourse(id);
+        return res.status(200).json({ message: `Curso ${id} removido com sucesso` });
+    } catch (err) {
+        next(err)
+    }
 }
 
 module.exports = {
