@@ -1,4 +1,4 @@
-const error = (err, req, res, next) => {
+const error = (err, _req, res, _next) => {
     const status = err.status || 500;
     const message = err.message || 'Erro inesperado. Por favor, tente mais tarde';
 

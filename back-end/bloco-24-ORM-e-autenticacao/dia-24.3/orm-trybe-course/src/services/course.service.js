@@ -1,6 +1,10 @@
 const { Course, Student, Module, sequelize } = require('../models');
+const { errorGenerate } = require('../utils/errorGenerate');
 
 const createCourse = async ({ name, description, active, duration, modules }) => {
+    const courseExist = await Course.findOne({ where: { name } });
+    if (courseExist !== null) throw errorGenerate(400, 'Course exists already', 'COURSE_EXISTS_ALREADY')
+
     const result = await sequelize.transaction(async (t) => {
         const newCourse = await Course.create(
             { name, description, active, duration, modules },
@@ -33,7 +37,7 @@ const getCourseById = async (id) => {
     const course = await Course.findByPk(id);
 
     if (course === null) {
-        return null;
+        throw errorGenerate(400, 'Id not found', 'ID_NOT_FOUND');
     } else {
         return course;
     }
