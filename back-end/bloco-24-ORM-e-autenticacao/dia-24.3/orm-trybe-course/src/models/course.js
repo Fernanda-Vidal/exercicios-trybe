@@ -13,7 +13,7 @@ const CourseSchema = (sequelize, DataTypes) => {
     CourseTable.associate = (models) => {
         CourseTable.hasMany(models.Student, {
             as: "students",
-            foreignKey: "id" //referencia a tabela que está no model Student.
+            foreignKey: "idCourse" //referencia a tabela que está no model Student.
         })
     }
     

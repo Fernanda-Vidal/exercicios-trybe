@@ -1,14 +1,23 @@
-const { Course, Student } = require('../models');
+const { Course, Student, Module } = require('../models');
 
-const createCourse = async ({ name, description, active, duration }) => {
-    return Course.create({ name, description, active, duration });
+const createCourse = async ({ name, description, active, duration, modules }) => {
+    return Course.create(
+        { name, description, active, duration, modules },
+        { include: [{ model: Module, as: "modules" }]}
+        );
 };
 
 const getCourses = async () => Course.findAll({
     include: [
         {
             model: Student,
-            as: "students"
+            as: "students",
+            attributes: { exclude: ["idCourse", "password"] } // usa-se qdo é uma coluna
+        }, 
+        {
+            model: Module,
+            as: "modules",
+            through: { attributes: [] } // estou dizendo: "na tabela que é o através, não traga nenhuma coluna"
         }
     ]
 });
