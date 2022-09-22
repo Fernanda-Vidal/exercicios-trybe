@@ -1,10 +1,17 @@
-const { Course, Student, Module } = require('../models');
+const { Course, Student, Module, sequelize } = require('../models');
 
 const createCourse = async ({ name, description, active, duration, modules }) => {
-    return Course.create(
-        { name, description, active, duration, modules },
-        { include: [{ model: Module, as: "modules" }]}
-        );
+    const result = await sequelize.transaction(async (t) => {
+        const newCourse = await Course.create(
+            { name, description, active, duration, modules },
+            {
+                include: [{ model: Module, as: "modules" }],
+                transaction: t
+            }
+            );
+            return newCourse;
+        });
+        return result;
 };
 
 const getCourses = async () => Course.findAll({
