@@ -1,10 +1,17 @@
-const { Course } = require('../models');
+const { Course, Student } = require('../models');
 
 const createCourse = async ({ name, description, active, duration }) => {
     return Course.create({ name, description, active, duration });
 };
 
-const getCourses = async () => Course.findAll();
+const getCourses = async () => Course.findAll({
+    include: [
+        {
+            model: Student,
+            as: "students"
+        }
+    ]
+});
 
 const getCourseById = async (id) => {
     const course = await Course.findByPk(id);
