@@ -168,9 +168,20 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [ ] 22-5: _Node.js: Express e Mysql_
 - [X] 22-6: _[Projeto - Talker Manager]()_
 
+##### Sessão 5: Arquitetura de Software: Model, Service e Controller
 
+- [ ] 5-1: _Arquitetura de Software: Camada Model_
+- [ ] 5-2: _Arquitetura de Software: Camada Service_
+- [ ] 5-3: _Arquitetura de Software: Camada Controller_
+- [X] 5-4: _[Projeto - Store Manager]()_
 
+##### Sessão 6: Node.js: ORM e Autenticação
 
+- [ ] 6-1: _Interface da aplicação com o banco de dados_
+- [ ] 6-2: _Associations 1:1 e 1:N_
+- [ ] 6-3: _Associations N:N e Transactions_
+- [ ] 6-4: _JWT - (JSON Web Token)_
+- [X] 6-5: _[Projeto - Blog's API Manager]()_
 
 ##### Bloco 23: IntroduÃ§Ã£o - NoSQL
 
