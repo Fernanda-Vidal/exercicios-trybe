@@ -7,7 +7,7 @@ const generateToken = ({ id, name, email }) => {
     const payload = { id, name, email };
 
     const jwtConfig = {
-        expiresIn: '10s',
+        expiresIn: '10m',
         algorithm: 'HS256',
     };
 
