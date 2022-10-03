@@ -45,3 +45,5 @@ console.log(Exercises.trapeze(80, 150, 120));
 console.log(Exercises.circle(25));
 console.log(Exercises.circle(100));
 console.log(Exercises.circle(12.5));
+let days = Exercises.WeekDays.Monday;
+console.log(days);

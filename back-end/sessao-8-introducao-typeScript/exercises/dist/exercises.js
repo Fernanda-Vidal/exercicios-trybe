@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.circle = exports.trapeze = exports.losangle = exports.rectangle = exports.square = exports.triangle = exports.sumArray = exports.add = exports.personAge = exports.greeter = void 0;
+exports.WeekDays = exports.circle = exports.trapeze = exports.losangle = exports.rectangle = exports.square = exports.triangle = exports.sumArray = exports.add = exports.personAge = exports.greeter = void 0;
 function greeter(name) {
     return `Olá ${name}!`;
 }
@@ -42,3 +42,13 @@ function circle(r) {
     return (r ** 2) * PI;
 }
 exports.circle = circle;
+var WeekDays;
+(function (WeekDays) {
+    WeekDays[WeekDays["Sunday"] = 1] = "Sunday";
+    WeekDays[WeekDays["Monday"] = 2] = "Monday";
+    WeekDays[WeekDays["Tuesday"] = 3] = "Tuesday";
+    WeekDays[WeekDays["Wednesday"] = 4] = "Wednesday";
+    WeekDays[WeekDays["Thursday"] = 5] = "Thursday";
+    WeekDays[WeekDays["Friday"] = 6] = "Friday";
+    WeekDays[WeekDays["Saturday"] = 7] = "Saturday";
+})(WeekDays = exports.WeekDays || (exports.WeekDays = {}));

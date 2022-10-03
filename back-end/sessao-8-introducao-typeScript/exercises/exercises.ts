@@ -39,3 +39,13 @@ export function circle(r: number): number {
     const PI:number = 3.14;
     return (r ** 2) * PI;
 }
+
+export enum WeekDays {
+    Sunday = 1,
+    Monday,
+    Tuesday, 
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday
+}
