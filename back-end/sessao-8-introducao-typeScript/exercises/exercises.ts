@@ -27,3 +27,15 @@ export function square(side: number): number {
 export function rectangle(base: number, height: number): number {
     return base * height;
 }
+
+export function losangle(diagonB: number, diagonS: number): number {
+    return (diagonB * diagonS) / 2 ;
+}
+
+export function trapeze(height: number, B: number, b: number): number {
+    return ((B + b) * height) / 2;
+}
+export function circle(r: number): number {
+    const PI:number = 3.14;
+    return (r ** 2) * PI;
+}
