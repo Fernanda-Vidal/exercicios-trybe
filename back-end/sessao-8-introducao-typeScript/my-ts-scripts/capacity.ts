@@ -1,10 +1,8 @@
-import readline from 'readline-sync';
+const unitsCapacity = ["kl", "hl", "dal", "l", "dl", "cl", "ml"]
 
-const units = ["kl", "hl", "dal", "l", "dl", "cl", "ml"]
-
-function convert (value: number, from: string, to: string): number {
-    const fromIndex = units.indexOf(from);
-    const toIndex = units.indexOf(to);
+function convertCapacity (value: number, from: string, to: string): number {
+    const fromIndex = unitsCapacity.indexOf(from);
+    const toIndex = unitsCapacity.indexOf(to);
     const exponent = (toIndex - fromIndex);
 
     return value * Math.pow(10, exponent);
