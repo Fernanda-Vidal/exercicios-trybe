@@ -10,7 +10,7 @@ function convert (value: number, from: string, to: string): number {
     return value * Math.pow(10, exponent);
 }
 
-console.log(convert(20, 'm', 'km'))
+// console.log(convert(20, 'm', 'km'))
 
 function exec() {
     const value = readline.questionFloat('Digite o valor a ser convertido: \n');

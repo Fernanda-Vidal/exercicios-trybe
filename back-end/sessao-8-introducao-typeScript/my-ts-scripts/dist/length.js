@@ -11,7 +11,7 @@ function convert(value, from, to) {
     const exponent = (toIndex - fromIndex);
     return value * Math.pow(10, exponent);
 }
-console.log(convert(20, 'm', 'km'));
+// console.log(convert(20, 'm', 'km'))
 function exec() {
     const value = readline_sync_1.default.questionFloat('Digite o valor a ser convertido: \n');
     const fromUnitChoiceIndex = readline_sync_1.default.keyInSelect(units, 'Escolha um número para a unidade base:');
