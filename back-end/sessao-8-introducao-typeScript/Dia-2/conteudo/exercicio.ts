@@ -27,3 +27,16 @@ type Address = {
     city: string,
     state: string,
 };
+
+// Aula
+export type User = {
+    name: string,
+    cpf: string,
+    age: string,
+    address: Address
+}
+
+export type Doctor = {
+    crm: string,
+    specialist: string,
+} & User;
