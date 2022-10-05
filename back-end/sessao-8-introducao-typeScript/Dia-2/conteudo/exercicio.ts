@@ -1,4 +1,4 @@
-// Conteudo
+// Conteudo Aliases
 type Point = {
     x: number,
     y: number,
@@ -41,7 +41,7 @@ export type Doctor = {
     specialist: string,
 } & User;
 
-// Conteudo
+// Conteudo Type Union
 function imprimirCPF(cpf: number | string) {
     console.log('Seu CPF é:' + cpf);
 }
@@ -57,3 +57,72 @@ type rg = string | number;
 type OS = 'linux' | 'mac' | 'windowns';
 
 type vowels = 'a' | 'e' | 'i' | 'o' | 'u';
+
+//  Conteúdo Classes
+class Person {
+    name: string;
+    birthDate: Date;
+    age?: number;
+    constructor(name: string, birthDate: Date, age?: number) {
+        this.name = name;
+        this.birthDate = birthDate;
+        this.age = age;
+    }
+
+    speak(): void {
+        console.log(`${this.name} está falando.`);
+    }
+
+    eat(): void {
+        console.log(`${this.name} está comendo.`);
+    }
+
+    walk(): void {
+        console.log(`${this.name} está andando.`);
+    }
+}
+
+const person1 = new Person('Jane Doe', new Date('1986-01-01'), 27);
+const person2 = new Person('Jon Doe', new Date('1980-08-05'), 42);
+const person3 = new Person('Jhony Doe', new Date('1987-03-09'));
+
+console.log(person1);
+person1.speak();
+
+console.log(person2);
+person2.walk();
+
+console.log(person3);
+person3.eat();
+
+// Exercício
+
+class Dog {
+    name: string;
+    color: string;
+    age: number;
+    breed?: string;
+    constructor(name: string, color: string, age: number, breed?: string) {
+        this.name = name;
+        this.color = color;
+        this.age = age;
+        this.breed = breed;
+    }
+}
+
+class House {
+    kitchen: boolean;
+    bathroom: number;
+    leavingRoom: boolean;
+    diningRoom: boolean;
+    bedroom: number;
+    laundry: boolean;
+    constructor(kitchen: boolean, bathroom: number, leavingRoom: boolean, diningRoom: boolean, bedroom: number, laundry: boolean) {
+        this.kitchen = kitchen;
+        this.bathroom = bathroom;
+        this.leavingRoom = leavingRoom;
+        this.diningRoom = diningRoom;
+        this.bedroom = bedroom;
+        this.laundry = laundry;
+    }
+}
