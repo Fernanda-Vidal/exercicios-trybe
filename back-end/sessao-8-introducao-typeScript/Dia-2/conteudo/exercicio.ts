@@ -40,3 +40,20 @@ export type Doctor = {
     crm: string,
     specialist: string,
 } & User;
+
+// Conteudo
+function imprimirCPF(cpf: number | string) {
+    console.log('Seu CPF é:' + cpf);
+}
+
+imprimirCPF(11111111111);
+imprimirCPF('111.111.111-11')
+
+// Exercicio
+type StatsOfMatter = 'liquid' | 'solid' | 'gaseous';
+
+type rg = string | number;
+
+type OS = 'linux' | 'mac' | 'windowns';
+
+type vowels = 'a' | 'e' | 'i' | 'o' | 'u';
