@@ -11,7 +11,7 @@ function imprimirCPF(cpf) {
 }
 imprimirCPF(11111111111);
 imprimirCPF('111.111.111-11');
-//  Conteúdo Classes
+//  Conteúdo CLASSES
 var Person = /** @class */ (function () {
     function Person(name, birthDate, age) {
         this.name = name;
@@ -38,3 +38,41 @@ console.log(person2);
 person2.walk();
 console.log(person3);
 person3.eat();
+// Exercício pra fixar
+var Dog = /** @class */ (function () {
+    function Dog(name, color, age, breed) {
+        this.name = name;
+        this.color = color;
+        this.age = age;
+        this.breed = breed;
+    }
+    return Dog;
+}());
+var House = /** @class */ (function () {
+    function House(kitchen, bathroom, leavingRoom, diningRoom, bedroom, laundry) {
+        this.kitchen = kitchen;
+        this.bathroom = bathroom;
+        this.leavingRoom = leavingRoom;
+        this.diningRoom = diningRoom;
+        this.bedroom = bedroom;
+        this.laundry = laundry;
+    }
+    return House;
+}());
+var employee = {
+    firstName: 'John',
+    lastName: 'Doe',
+    fullName: function () {
+        return this.firstName + ' ' + this.lastName;
+    }
+};
+var teacher = {
+    firstName: 'John',
+    lastName: 'Doe',
+    fullName: function () { return this.firstName + ' ' + this.lastName; },
+    subject: 'Matemática',
+    sayHello: function () {
+        return "Ol\u00E1, eu sou ".concat(this.fullName(), " e leciono ").concat(this.subject, ".");
+    }
+};
+console.log(teacher);

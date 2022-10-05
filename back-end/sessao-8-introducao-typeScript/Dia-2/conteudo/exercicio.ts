@@ -11,7 +11,7 @@ function printCoord(pt: Point) {
 
 printCoord({ x: 200, y: 100 })
 
-// Pra fixar
+// Exercicio pra fixar
 type Bird = {
     wings: 2,
     beaks: 1,
@@ -49,7 +49,7 @@ function imprimirCPF(cpf: number | string) {
 imprimirCPF(11111111111);
 imprimirCPF('111.111.111-11')
 
-// Exercicio
+// Exercicio pra fixar
 type StatsOfMatter = 'liquid' | 'solid' | 'gaseous';
 
 type rg = string | number;
@@ -58,7 +58,7 @@ type OS = 'linux' | 'mac' | 'windowns';
 
 type vowels = 'a' | 'e' | 'i' | 'o' | 'u';
 
-//  Conteúdo Classes
+//  Conteúdo CLASSES
 class Person {
     name: string;
     birthDate: Date;
@@ -95,7 +95,7 @@ person2.walk();
 console.log(person3);
 person3.eat();
 
-// Exercício
+// Exercício pra fixar
 
 class Dog {
     name: string;
@@ -126,3 +126,36 @@ class House {
         this.laundry = laundry;
     }
 }
+
+// Conteudo - INTERFACE
+
+interface Employee {
+    firstName: string;
+    lastName: string;
+    fullName(): string;
+}
+
+let employee: Employee = {
+    firstName: 'John',
+    lastName: 'Doe',
+    fullName(): string {
+        return this.firstName + ' ' + this.lastName;
+    }
+}
+
+interface Teacher extends Employee {
+    subject: string;
+    sayHello(): string;
+}
+
+let teacher: Teacher = {
+    firstName: 'John',
+    lastName: 'Doe',
+    fullName(): string { return this.firstName + ' ' + this.lastName; },
+    subject: 'Matemática',
+    sayHello(): string {
+        return `Olá, eu sou ${this.fullName()} e leciono ${this.subject}.`;
+    },
+}
+
+console.log(teacher);
