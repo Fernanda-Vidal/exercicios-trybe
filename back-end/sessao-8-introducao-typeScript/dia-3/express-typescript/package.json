@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node ./dist/index.js",
+    "dev": "tsnd index.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +19,9 @@
     "typescript": "^4.8.4"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "@types/restify-errors": "^4.3.4",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "restify-errors": "^8.0.2"
   }
 }
