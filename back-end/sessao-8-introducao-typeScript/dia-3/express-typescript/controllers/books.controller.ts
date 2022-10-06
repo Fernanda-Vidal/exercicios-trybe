@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import StatusCodes from '../StatusCode';
 import BookService from '../services/books.service';
-import IBook from '../interfaces/book.interface';
+// import IBook from '../interfaces/book.interface';
 
 export default class BookController {
     private service: BookService;
