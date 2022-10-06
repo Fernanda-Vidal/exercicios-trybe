@@ -1,6 +1,7 @@
 import express, { NextFunction, Request, Response } from 'express';
-import statusCodes from './statusCode';
+import statusCodes from './StatusCode';
 import 'express-async-errors';
+import BooksRoutes from './routes/books.routes';
 
 const app = express();
 
@@ -8,9 +9,10 @@ app.use(express.json());
 
 const PORT = 8000;
 
-app.get('/', (req: Request, res: Response) => {
-    res.status(statusCodes.OK).send('Express + TypeScript')
-});
+// app.get('/', (req: Request, res: Response) => {
+//     res.status(statusCodes.OK).send('Express + TypeScript')
+// });
+app.use(BooksRoutes);
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     const { name, message, details } = err as any;
@@ -30,6 +32,6 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     }
 
     next();
-})
+});
 
 app.listen(PORT, () => console.log(`Server is running at http://localhost:${PORT}`));
