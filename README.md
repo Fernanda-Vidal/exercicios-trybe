@@ -75,7 +75,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
-- [X] 9-1: _JavaScript AssÃ­ncrono e Callbacks_
+- [X] 9-1: _JavaScript Assíncrono e Callbacks_
 - [X] 9-2: _JavaScript Promises_Fetch API e async/await
 - [X] 9-3: _Jest - Testes Assíncronos
 - [X] 9-4: _[Projeto - Carrinho de Compras]()_
@@ -183,6 +183,12 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [ ] 6-4: _JWT - (JSON Web Token)_
 - [X] 6-5: _[Projeto - Blog's API Manager]()_
 
+##### Sessão 7: Deployment
+
+- [ ] 7-1: _Infraestrutura - Deploy no Heroku_
+- [ ] 7-2: _Deploy Docker & Heroku_
+- [X] 7-3: _[Projeto - Stranger Things]()_
+
 ##### Bloco 23: IntroduÃ§Ã£o - NoSQL
 
 - [ ] 23-1: _MongoDB - IntroduÃ§Ã£o_
@@ -270,5 +276,5 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [ ] 35-2: _Testes e ExceÃ§Ãµes_
 - [ ] 35-3: _Entrada e SaÃ­da de dados_
 - [ ] 36-4: _Entrada e SaÃ­da de dados_
-- [ ] 35-5: _[Projeto - Tech news]()_
+- [ ] 35-5: _[Projeto - Tech news]()_ 
 
