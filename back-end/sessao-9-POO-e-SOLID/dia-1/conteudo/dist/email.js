@@ -29,7 +29,7 @@ class MailList {
     constructor(mailList = []) {
         this.mailList = mailList;
     }
-    get all() { return this.mailList; }
+    get all() { return [...this.mailList]; }
     getEmailsSentBy(mailAddress) {
         return this.mailList.filter((mail) => mail.from === mailAddress);
     }
