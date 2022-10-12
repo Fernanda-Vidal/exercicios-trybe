@@ -18,3 +18,11 @@ const tiger = new Mammal('Tigre', new Date(Date.parse('May 03, 2021')));
 const main = (animal) => console.log(animal.age);
 main(tiger);
 tiger.walk();
+class Bird extends Animal {
+    fly() {
+        console.log(`${this.name} está voando!`);
+    }
+}
+const parrot = new Bird('Papagaio', new Date(Date.parse('Jun 07, 2017')));
+console.log(parrot.age);
+parrot.fly();
