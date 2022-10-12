@@ -189,6 +189,14 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [ ] 7-2: _Deploy Docker & Heroku_
 - [X] 7-3: _[Projeto - Stranger Things]()_
 
+
+##### Sessão 8: Introdução a TypeScript
+
+- [ ] 8-1: _Introdução ao TypeScript_
+- [ ] 8-2: _Tipagem Estática e Generics_
+- [ ] 8-3: _Express com TypeScript_
+- [X] 8-4: _[Projeto - TrybeSmith]()_
+
 ##### Bloco 23: IntroduÃ§Ã£o - NoSQL
 
 - [ ] 23-1: _MongoDB - IntroduÃ§Ã£o_
