@@ -197,6 +197,15 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [ ] 8-3: _Express com TypeScript_
 - [X] 8-4: _[Projeto - TrybeSmith]()_
 
+
+##### Sessão 9: Programação Orienteaa a Objetos (POO) e SOLID
+- [ ] 9-1: _Introdução à Orientação a Objetos_
+- [ ] 9-2: _Herança e Interfaces_
+- [ ] 9-3: _Polimorfismo_
+- [ ] 9-4: _SOLID - Introdução e Princípios S, O e D_
+- [ ] 9-5: _SOLID - Princípios L e I_
+- [ ] 9-6: _[Projeto - Trybers and Dragons]_
+
 ##### Bloco 23: IntroduÃ§Ã£o - NoSQL
 
 - [ ] 23-1: _MongoDB - IntroduÃ§Ã£o_
