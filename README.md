@@ -137,36 +137,36 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
-##### Bloco 19: Introdução - Docker: Utilizando Containers
+##### Sessão 1: Introdução - Docker: Utilizando Containers
 
-- [X] 19-1: _Utilizando Containers - Docker_
-- [X] 19-3: _Manipulando Imagens no Docker_
-- [X] 19-4: _Orquestrando containers com Docker Compose_
-- [X] 19-5: _[Projeto - Docker Todo-List]()_
+- [X] 1-1: _Utilizando Containers - Docker_
+- [X] 1-3: _Manipulando Imagens no Docker_
+- [X] 1-4: _Orquestrando containers com Docker Compose_
+- [X] 1-5: _[Projeto - Docker Todo-List]()_
 
-##### Bloco 20: Introdução à SQL
+##### Sessão 2: Introdução à SQL
 
-- [X] 20-1: _Banco de dados relacionais
-- [X] 20-2: _Encontrando dados em um banco de dados_
-- [X] 20-3: _Filtrando dados de forma específica_
-- [X] 20-4: _Manipulando tabelas_
-- [X] 20-5: _[Projeto - All For One]()_
+- [X] 2-1: _Banco de dados relacionais
+- [X] 2-2: _Encontrando dados em um banco de dados_
+- [X] 2-3: _Filtrando dados de forma específica_
+- [X] 2-4: _Manipulando tabelas_
+- [X] 2-5: _[Projeto - All For One]()_
 
-##### Bloco 21: Funções SQL, JOINs e Normalização
+##### Sessão 3: Funções SQL, JOINs e Normalização
 
-- [X] 21-1: _Funções mais usadas no SQL_
-- [X] 21-2: _Descomplicando JOINs_
-- [X] 21-3: _Transformando ideias em um modelo de banco de dados_
-- [X] 21-4: _[Aula ao vivo + Projeto - One For All]()_
+- [X] 3-1: _Funções mais usadas no SQL_
+- [X] 3-2: _Descomplicando JOINs_
+- [X] 3-3: _Transformando ideias em um modelo de banco de dados_
+- [X] 3-4: _[Aula ao vivo + Projeto - One For All]()_
 
-##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
+##### Sessão 4: Introdução ao desenvolvimento Web com Node.js
 
-- [X] 22-1: _Node.js: Runtime Assíncrono_
-- [X] 22-2: _Node.js: API Rest com Express_
-- [X] 22-3: _Node.js: Testes de Integração_
-- [ ] 22-4: _Node.js: Middlewares_
-- [ ] 22-5: _Node.js: Express e Mysql_
-- [X] 22-6: _[Projeto - Talker Manager]()_
+- [X] 4-1: _Node.js: Runtime Assíncrono_
+- [X] 4-2: _Node.js: API Rest com Express_
+- [X] 4-3: _Node.js: Testes de Integração_
+- [ ] 4-4: _Node.js: Middlewares_
+- [ ] 4-5: _Node.js: Express e Mysql_
+- [X] 4-6: _[Projeto - Talker Manager]()_
 
 ##### Sessão 5: Arquitetura de Software: Model, Service e Controller
 
