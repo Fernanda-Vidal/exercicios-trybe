@@ -42,7 +42,7 @@ class MailList {
   // É um atalho para declarar e automaticamente atribuir o valor que será recebido via parâmetro ao atributo privado `mailList`
     constructor(private mailList: Email[] = []) {}
 
-    get all(): Email[] { return this.mailList; }
+    get all(): Email[] { return [...this.mailList]; }
 
     getEmailsSentBy(mailAddress: string): Email[] {
         return this.mailList.filter((mail) => mail.from === mailAddress);
