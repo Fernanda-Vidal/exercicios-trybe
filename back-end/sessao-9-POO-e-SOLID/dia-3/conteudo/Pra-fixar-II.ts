@@ -18,7 +18,7 @@ interface IModel {
 }
 
 class LocalDbModel implements IModel {
-    create = async (character: ICharacter) => {
+    create = async (character: Omit<ICharacter, 'id'>) => {
     const lastId = db.length > 0 ? db[db.length - 1].id : 0;
     const newCharacter = { id: lastId + 1, ...character };
     db.push(newCharacter);
@@ -108,3 +108,13 @@ class MockDbModel implements IModel {
         return { id: 1, name: 'Mario', specialMove2: 'Fireball' };
     }
 }
+
+
+const A = new CharacterService(new LocalDbModel());
+A.create({ name: 'Chun-Li', specialMove2: 'kicks' })
+A.getAll().then(console.log);
+A.getById(1).then(console.log);
+
+const B = new CharacterService(new MockDbModel());
+B.getAll().then(console.log);
+B.getById(1).then(console.log);
