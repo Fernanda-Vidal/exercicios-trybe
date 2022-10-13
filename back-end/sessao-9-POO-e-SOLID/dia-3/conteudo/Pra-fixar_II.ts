@@ -52,3 +52,31 @@ class LocalDbModel implements IModel {
     }
 }
 
+class CharacterService {
+    constructor(readonly model: LocalDbModel) {}
+
+    async create(character: ICharacter) {
+        const newCharacter = await this.model.create(character);
+        return ({ status: 201, data: newCharacter });
+    }
+
+    async getAll() {
+        const allCharacter = await this.model.getAll();
+        return ({ status: 200, data: allCharacter });
+    }
+
+    async getById(id:number) {
+        const character = await this.model.getById(id);
+        return ({ status: 200, data: character });
+    }
+
+    async update(id: number, character: ICharacter) {
+        const updateCharacter = await this.model.update(id, character);
+        return ({ status: 200, data: updateCharacter });
+    }
+
+    async delete (id: number) {
+        const charDel = await this.model.delete(id);
+        return ({ status: 200, data: charDel });
+    }
+}
