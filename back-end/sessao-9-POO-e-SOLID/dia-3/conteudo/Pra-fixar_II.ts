@@ -53,7 +53,7 @@ class LocalDbModel implements IModel {
 }
 
 class CharacterService {
-    constructor(readonly model: LocalDbModel) {}
+    constructor(readonly model: IModel) {}
 
     async create(character: ICharacter) {
         const newCharacter = await this.model.create(character);
@@ -78,5 +78,33 @@ class CharacterService {
     async delete (id: number) {
         const charDel = await this.model.delete(id);
         return ({ status: 200, data: charDel });
+    }
+}
+
+class MockDbModel implements IModel {
+    async create(character: ICharacter) {
+        console.log('character created');
+        return { id: 1, name: 'Peach', specialMove2: 'Toad' };
+    }
+
+    async update(id:number, character: ICharacter) {
+        console.log('character updated');
+        return { id: 1, name: 'Yoshi', specialMove2: 'Egg Lay' };
+    }
+
+    async delete(id: number) {
+        console.log('character deleted');
+        return true;
+    }
+
+    async getAll() {
+        return [
+            { id: 1, name: 'Samus', specialMove2: 'Charge Shot' },
+            { id: 2, name: 'Kirby', specialMove2: 'Inhale' },
+        ];
+    }
+
+    async getById(id: number) {
+        return { id: 1, name: 'Mario', specialMove2: 'Fireball' };
     }
 }
