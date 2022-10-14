@@ -82,6 +82,7 @@ class Root extends Piece {
     }
 }
 
+
 class Board {
     pieces: Piece[] = [];
 
