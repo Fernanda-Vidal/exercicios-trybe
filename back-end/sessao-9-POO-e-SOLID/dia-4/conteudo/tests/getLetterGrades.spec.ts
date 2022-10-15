@@ -1,6 +1,6 @@
 import 'mocha';
 import { expect } from 'chai';
-import { getLetterGrades } from '../src';
+import { getLetterGrades } from '../src/SOLID';
 
 const disciplinesDict = {
   mathematics: 'matemática',

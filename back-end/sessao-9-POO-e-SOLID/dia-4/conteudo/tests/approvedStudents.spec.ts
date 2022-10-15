@@ -1,6 +1,6 @@
 import 'mocha';
 import { expect } from "chai";
-import { approvedStudents } from "../src";
+import { approvedStudents } from "../src/SOLID";
 
 const disciplinesDict = {
   mathematics: 'matemática',
@@ -16,7 +16,8 @@ describe('Testando a função "approvedStudents"', function () {
         ];
         const student = {
           name: "test",
-          disciplines: disciplines
+          disciplines: disciplines,
+          school: { name: 'Standard', approvalGrade: 0.7 },
         };
         const result = approvedStudents(student);
   
@@ -32,7 +33,8 @@ describe('Testando a função "approvedStudents"', function () {
           ];
           const student = {
             name: "test",
-            disciplines: disciplines
+            disciplines: disciplines,
+            school: { name: 'Standard', approvalGrade: 0.7 },
           };
           const result = approvedStudents(student);
     
@@ -48,7 +50,8 @@ describe('Testando a função "approvedStudents"', function () {
           ];
           const student = {
             name: "test",
-            disciplines: disciplines
+            disciplines: disciplines,
+          school: { name: 'Standard', approvalGrade: 0.7 },
           };
           const result = approvedStudents(student);
     
