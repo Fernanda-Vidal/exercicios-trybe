@@ -6,12 +6,14 @@ export interface ConnectorConstructor {
     password?: string;
   }
 
-  export interface Connector {
-  getCount(token: string): number | Promise<number>;
+  export interface ReadOnlyConnector {
+    getCount(token: string): number | Promise<number>;
 
+    closeConnection(): void;
+  }
+
+  export interface Connector extends ReadOnlyConnector {
   incrementCount(token: string): void;
-  
-  closeConnection(): void;
 
   clearCount(token: string): void;
 
