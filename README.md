@@ -8,18 +8,18 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
-##### Bloco 1: Introdução - Unix & Shell
+##### Sessão 1: Introdução - Unix & Shell
 
 - [X] 1-3: _Unix & Shell- Part 1_
 - [X] 1-4: _Unix & Shell- Part 2_
 
-##### Bloco 2: Git & GitHub
+##### Sessão 2: Git & GitHub
 
 - [X] 2-1: _O que são e para que serve?_
 - [X] 2-2: _Entendendo os comandos_
 - [X] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: Introdução - HTML & CSS
+##### Sessão 3: Introdução - HTML & CSS
 
 - [X] 3-1: _HTML & CSS - Estruturas de página_
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
@@ -29,7 +29,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [X] 3-4: _HTML Semântico_
 - [X] 3-5: _[Projeto - HTML & CSS]()_
 
-##### Bloco 4: Introdução - JavaScript
+##### Sessão 4: Introdução - JavaScript
 
 - [X] 4-1: _JavaScript - Primeiros passos_
 - [X] 4-2: _JavaScript - Array e loop For_
@@ -37,7 +37,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [X] 4-4: _JavaScript - Objetos e funções_
 - [X] 4-5: _[Projeto - Playground Functions]()_
 
-##### Bloco 5: Introdução - JavaScript - Projetos
+##### Sessão 5: Introdução - JavaScript - Projetos
 
 - [X] 5-1: _JavaScript - DOM e seletores_
 - [X] 5-2: _JavaScript - Trabalhando com elementos_
@@ -47,9 +47,9 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [X] 5-6: _[Projeto - Lista de tarefas]()_
 - [X] 5-7: _[Projeto - Meme Generator]()_
 - [X] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
+- [X] 5-7: _[Projeto - Carta Misteriosa]()_
 
-##### Bloco 6: HTML & CSS avançado
+##### Sessão 6: HTML & CSS avançado
 
 - [X] 6-1: _HTML & CSS - Forms_
 - [X] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
@@ -58,14 +58,14 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [X] 6-5: _CSS Responsivo - Mobile First_
 - [X] 6-6: _[Projeto - Trybewarts]()_
 
-##### Bloco 7: JavaScript ES6 & Testes Unitários
+##### Sessão 7: JavaScript ES6 & Testes Unitários
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [X] 7-3: _Testes unitários em JavaScript_
 - [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
-##### Bloco 8: JavaScript ES6
+##### Sessão 8: JavaScript ES6
 
 - [X] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 - [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
@@ -73,7 +73,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [X] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [X] 8-5: _[Projeto - Zoo functions]()_
 
-##### Bloco 9: Assincronicidade & Callbacks
+##### Sessão 9: Assincronicidade & Callbacks
 
 - [X] 9-1: _JavaScript Assíncrono e Callbacks_
 - [X] 9-2: _JavaScript Promises_Fetch API e async/await
@@ -82,58 +82,58 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### Bloco 10: Introdução à React
+##### Sessão 1: Introdução à React
 
-- [X] 10-1: _'Hello, World!' no React!
-- [X] 10-2: _Componentes React
-- [X] 10-4: _[Projeto - Sistema Solar]()_
+- [X] 1-1: _'Hello, World!' no React!
+- [X] 1-2: _Componentes React
+- [X] 1-4: _[Projeto - Sistema Solar]()_
 
-##### Bloco 11: Componentes com estado e eventos
+##### Sessão 2: Componentes com estado e eventos
 
-- [X] 11-1: _Componentes com estado e eventos_
-- [ ] 11-2: _Formulário no React_
-- [X] 11-3: _[Projeto - Tryunfo]()_
+- [X] 2-1: _Componentes com estado e eventos_
+- [X] 2-2: _Formulário no React_
+- [X] 2-3: _[Projeto - Tryunfo]()_
 
-##### Bloco 12: React
+##### Sessão 3: React
 
-- [X] 12-1: _Ciclo de vida de componentes_
-- [X] 12-2: _React Router_
-- [X] 12-3: _[Projeto - TrybeTunes]()_
+- [X] 3-1: _Ciclo de vida de componentes_
+- [X] 3-2: _React Router_
+- [X] 3-3: _[Projeto - TrybeTunes]()_
 
-##### Bloco 13: Metodologias Ágeis
+##### Sessão 4: Metodologias Ágeis
 
-- [ ] 13-1: _Metodologias Ágeis_
-- [X] 13-2: _[Projeto - Frontend Online Store]()_
+- [X] 4-1: _Metodologias Ágeis_
+- [X] 4-2: _[Projeto - Frontend Online Store]()_
 
-##### Bloco 14: Testes em React - RTL
-- [ ] 14-1: RTL - Primeiros passos
-- [X] 14-2: RTL - Mocks e Inputs
-- [ ] 14-3:RTL - Testando React Router
-- [X] 14-4: _[Projeto - Testes em React]()_
+##### Sessão 5: Testes em React - RTL
+- [X] 5-1: RTL - Primeiros passos
+- [X] 5-2: RTL - Mocks e Inputs
+- [X] 5-3:RTL - Testando React Router
+- [X] 5-4: _[Projeto - Testes em React]()_
 
-##### Bloco 15: Gerenciamento de Estado com Redux
+##### Sessão 6: Gerenciamento de Estado com Redux
 
-- [X] 15-1: _Introdução - O estado global da aplicação_
-- [X] 15-2: _Usando Redux no React_
-- [X] 15-3: _Usando Redux no React - Prática_
-- [ ] 15-4: _Redux no React - Actions Assíncronas_
-- [ ] 15-5: _Testes em React-Redux_
-- [X] 15-6: _[Projeto - TrybeWallet]()_
+- [X] 6-1: _Introdução - O estado global da aplicação_
+- [X] 6-2: _Usando Redux no React_
+- [X] 6-3: _Usando Redux no React - Prática_
+- [X] 6-4: _Redux no React - Actions Assíncronas_
+- [X] 6-5: _Testes em React-Redux_
+- [X] 6-6: _[Projeto - TrybeWallet]()_
 
-##### Bloco 16: Projeto - Jogo de Trivia
+##### Sessão 7: Projeto - Jogo de Trivia
 
-- [X] 16-1: _[Projeto - Jogo de Trivia]()_
+- [X] 7-1: _[Projeto - Jogo de Trivia]()_
 
-##### Bloco 17: Context API e React Hooks
+##### Sessão 8: Context API e React Hooks
 
-- [X] 17-1: _Context API do React_
-- [X] 17-2: _React Hooks - useState e useContext_
-- [ ] 17-3: _React Hooks - useEffect e Hooks customizados_
-- [X] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [X] 8-1: _Context API do React_
+- [X] 8-2: _React Hooks - useState e useContext_
+- [X] 8-3: _React Hooks - useEffect e Hooks customizados_
+- [X] 8-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
-##### Bloco 19: Projeto Final de Front-end
+##### Sessão 9: Projeto Final de Front-end
 
-- [X] 18-1: _[Projeto - App de Receitas]()_
+- [X] 9-1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
@@ -164,47 +164,52 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [X] 4-1: _Node.js: Runtime Assíncrono_
 - [X] 4-2: _Node.js: API Rest com Express_
 - [X] 4-3: _Node.js: Testes de Integração_
-- [ ] 4-4: _Node.js: Middlewares_
-- [ ] 4-5: _Node.js: Express e Mysql_
+- [X] 4-4: _Node.js: Middlewares_
+- [X] 4-5: _Node.js: Express e Mysql_
 - [X] 4-6: _[Projeto - Talker Manager]()_
 
 ##### Sessão 5: Arquitetura de Software: Model, Service e Controller
 
-- [ ] 5-1: _Arquitetura de Software: Camada Model_
-- [ ] 5-2: _Arquitetura de Software: Camada Service_
-- [ ] 5-3: _Arquitetura de Software: Camada Controller_
+- [X] 5-1: _Arquitetura de Software: Camada Model_
+- [X] 5-2: _Arquitetura de Software: Camada Service_
+- [X] 5-3: _Arquitetura de Software: Camada Controller_
 - [X] 5-4: _[Projeto - Store Manager]()_
 
 ##### Sessão 6: Node.js: ORM e Autenticação
 
-- [ ] 6-1: _Interface da aplicação com o banco de dados_
-- [ ] 6-2: _Associations 1:1 e 1:N_
-- [ ] 6-3: _Associations N:N e Transactions_
-- [ ] 6-4: _JWT - (JSON Web Token)_
+- [X] 6-1: _Interface da aplicação com o banco de dados_
+- [X] 6-2: _Associations 1:1 e 1:N_
+- [X] 6-3: _Associations N:N e Transactions_
+- [X] 6-4: _JWT - (JSON Web Token)_
 - [X] 6-5: _[Projeto - Blog's API Manager]()_
 
 ##### Sessão 7: Deployment
 
-- [ ] 7-1: _Infraestrutura - Deploy no Heroku_
-- [ ] 7-2: _Deploy Docker & Heroku_
+- [X] 7-1: _Infraestrutura - Deploy no Heroku_
+- [X] 7-2: _Deploy Docker & Heroku_
 - [X] 7-3: _[Projeto - Stranger Things]()_
 
 
 ##### Sessão 8: Introdução a TypeScript
 
-- [ ] 8-1: _Introdução ao TypeScript_
-- [ ] 8-2: _Tipagem Estática e Generics_
-- [ ] 8-3: _Express com TypeScript_
+- [X] 8-1: _Introdução ao TypeScript_
+- [X] 8-2: _Tipagem Estática e Generics_
+- [X] 8-3: _Express com TypeScript_
 - [X] 8-4: _[Projeto - TrybeSmith]()_
 
 
 ##### Sessão 9: Programação Orienteaa a Objetos (POO) e SOLID
-- [ ] 9-1: _Introdução à Orientação a Objetos_
-- [ ] 9-2: _Herança e Interfaces_
-- [ ] 9-3: _Polimorfismo_
-- [ ] 9-4: _SOLID - Introdução e Princípios S, O e D_
-- [ ] 9-5: _SOLID - Princípios L e I_
-- [X] 9-6: _[Projeto - Trybers and Dragons]_
+- [X] 9-1: _Introdução à Orientação a Objetos_
+- [X] 9-2: _Herança e Interfaces_
+- [X] 9-3: _Polimorfismo_
+- [X] 9-4: _SOLID - Introdução e Princípios S, O e D_
+- [X] 9-5: _SOLID - Princípios L e I_
+- [X] 9-6: _[Projeto - Trybers and Dragons]()_
+
+#### Sessão 10: Projeto TFC
+
+- [X] 10-1: _[Projeto - Trybe Futebol Clube]()_
+
 
 ##### Bloco 23: IntroduÃ§Ã£o - NoSQL
 
