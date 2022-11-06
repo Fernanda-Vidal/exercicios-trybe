@@ -47,7 +47,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [X] 5-6: _[Projeto - Lista de tarefas]()_
 - [X] 5-7: _[Projeto - Meme Generator]()_
 - [X] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [X] 5-7: _[Projeto - Carta Misteriosa]()_
+- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
 ##### Sessão 6: HTML & CSS avançado
 
