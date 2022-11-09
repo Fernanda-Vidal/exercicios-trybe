@@ -1,0 +1,55 @@
+use('cinema');
+db.movies.find()
+
+// 1
+use('cinema');
+db.movies.find({ category: { $all: ['action', 'adventure'] } });
+
+// 2
+use('cinema');
+db.movies.find({
+    category: { $all: ['action', 'sci-fi'] },
+    imdbRating: { $gt: 7 }
+})
+
+// 3
+use('cinema');
+db.movies.find({ ratings: {
+    $elemMatch: { $gt: 103 }
+    }
+}, { title: 1, ratings: 1, _id: 0 })
+
+// 4
+use('cinema');
+db.movies.find({ ratings: {
+    $elemMatch: { $gte: 100, $lte: 105 }
+    }
+}, { title: 1, ratings: 1, _id: 0 })
+
+// 5
+use('cinema');
+db.movies.find({ ratings: {
+    $elemMatch: { $gte: 64, $lte: 105, $mod: [9,0] }
+    }
+}, { title: 1, ratings: 1, _id: 0 })
+
+// 6
+use('cinema');
+db.movies.find( {
+    category: { $all: ['adventure']},
+    ratings: { $elemMatch: { $gt: 103 } }
+    }, { title: 1, ratings: 1, _id: 0 })
+
+// 7
+use('cinema');
+db.movies.find({
+    category: { $size: 2}
+}, { title: 1, _id: 0 })
+
+// 8
+use('cinema');
+db.movies.find({
+    ratings: { $size: 4 }
+}, { title: 1, _id: 0 })
+
+// 9
