@@ -12,7 +12,6 @@ class Classe:
 
     @classmethod
     def método_de_classe(cls):
-        
         print(cls)
 
     @staticmethod
