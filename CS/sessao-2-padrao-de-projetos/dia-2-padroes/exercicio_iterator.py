@@ -16,3 +16,4 @@ next(obj_iter)
 # >>>
 # KeyboardInterrupt
 # >>>
+
