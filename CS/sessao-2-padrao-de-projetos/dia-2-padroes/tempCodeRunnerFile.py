@@ -1,1 +1,2 @@
-strategy
+
+        except IndexError:
