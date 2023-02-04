@@ -218,12 +218,16 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [X] 11-5: _Updates Complexos - Arrays_
 - [X] 11-6: _[Projeto - Commerce]()_
 
-
-##### Bloco 23: Introdução - APIs OO e  NoSQL
+##### Bloco 12: Introdução - APIs OO e  NoSQL
 
 - [X] 12-1: _APIs orientadas a objetos e NoSQL: POO e ODMs_
 - [X] 12-2: _APIs orientadas a objetos e NoSQL: Herança e Abstração_
 - [X] 12-3: _[Projeto - Car Shop]()_
+
+
+#### Sessão 13: App de Delivery
+
+- [X] 13-1: _[Projeto - App de Delivery]()_
 
 ##### Bloco 24: Updates
 
