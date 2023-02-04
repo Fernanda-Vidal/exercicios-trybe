@@ -219,12 +219,11 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [X] 11-6: _[Projeto - Commerce]()_
 
 
+##### Bloco 23: Introdução - APIs OO e  NoSQL
 
-##### Bloco 23: IntroduÃ§Ã£o - NoSQL
-
-- [ ] 23-1: _MongoDB - IntroduÃ§Ã£o_
-- [ ] 23-2: _Filter Operators_
-- [ ] 23-3: _[Projeto - Data Flights]()_
+- [X] 12-1: _APIs orientadas a objetos e NoSQL: POO e ODMs_
+- [X] 12-2: _APIs orientadas a objetos e NoSQL: Herança e Abstração_
+- [X] 12-3: _[Projeto - Car Shop]()_
 
 ##### Bloco 24: Updates
 
