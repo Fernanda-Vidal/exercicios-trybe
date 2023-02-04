@@ -231,18 +231,18 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ## CiÃªncia da ComputaÃ§Ã£o :hourglass_flowing_sand:
 
-##### Bloco 35: IntroduÃ§Ã£o - CiÃªncia da ComputaÃ§Ã£o
+##### Sessão 1: Introdução à Phyton
 
-- [ ] 35-1: _Arquitetura de Computadores_
-- [ ] 35-2: _Arquitetura de redes_
-- [ ] 35-3: _Redes de computadores, ferramentas e seguranÃ§a_
-- [ ] 35-4: _[Projeto - Explorando os protocolos]()_
+- [ ] 1-1: _Aprendendo Python_
+- [ ] 1-2: _Entrada e Saída de Dados_
+- [ ] 1-3: _Testes_
+- [X] 1-4: _[Projeto - Job Insights]()_
 
-##### Bloco 36: Python
+##### Sessão 2: Padrão de Projeto
 
-- [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e ExceÃ§Ãµes_
-- [ ] 35-3: _Entrada e SaÃ­da de dados_
-- [ ] 36-4: _Entrada e SaÃ­da de dados_
-- [ ] 35-5: _[Projeto - Tech news]()_ 
+- [ ] 2-1: _POO em Python_
+- [ ] 2-2: _Padrões - Iterador, Adapter, Strategy_
+- [ ] 2-3: _Padrões - Decorator, Observer, Factory_
+- [ ] 2-4: _[Projeto - Relatório de Estoque]()_ 
+
 
