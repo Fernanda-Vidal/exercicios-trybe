@@ -210,6 +210,15 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 - [X] 10-1: _[Projeto - Trybe Futebol Clube]()_
 
+#### Sessão 11: Introdução MongoDB
+- [X] 11-1: _Introdução MongoDB_
+- [X] 11-2: _Filter Operators_
+- [X] 11-3: _Operadores de consulta_
+- [X] 11-4: _Updates Simples_
+- [X] 11-5: _Updates Complexos - Arrays_
+- [X] 11-6: _[Projeto - Commerce]()_
+
+
 
 ##### Bloco 23: IntroduÃ§Ã£o - NoSQL
 
