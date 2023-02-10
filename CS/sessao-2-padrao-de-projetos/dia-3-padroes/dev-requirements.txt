@@ -1,0 +1,4 @@
+factory-boy==3.2.1
+Faker==16.6.1
+pytest==7.0.1
+rich==13.2.0

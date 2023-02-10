@@ -1,2 +1,1 @@
-
-        except IndexError:
+# except IndexError:
