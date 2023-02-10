@@ -1,0 +1,5 @@
+black==22.6.0
+flake8==4.0.1
+parsel==1.6.0
+requests==2.28.0
+fastapi[all]
