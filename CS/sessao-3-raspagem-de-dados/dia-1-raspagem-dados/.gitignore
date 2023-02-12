@@ -1,0 +1,37 @@
+.DS_Store
+.vscode
+node_modules
+
+
+# Python 
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# virtual environments
+.venv*
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# packaging
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
