@@ -25,3 +25,8 @@ for product in selector.css(".product_pod"):
 
 # Assim como temos a função css que faz a busca por seletores CSS, temos
 # também a função xpath, que faz a busca com base em XPath.
+
+# Existe uma classe next, que podemos recuperar a url através do seu elemento
+# âncora
+next_page_url = selector.css(".next a::attr(href)").get()
+print(next_page_url)
