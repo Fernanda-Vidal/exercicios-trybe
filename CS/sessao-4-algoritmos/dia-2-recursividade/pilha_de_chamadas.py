@@ -1,4 +1,5 @@
-# Toda vez que chamamos uma função em um programa, o sistema operacional reserva memória para as variáveis e parâmetros da função;
+# Toda vez que chamamos uma função em um programa, o sistema operacional
+# reserva memória para as variáveis e parâmetros da função;
 # Sempre quando uma função é executada, ela é guardada na pilha;
 # Quando uma função termina de ser executada, ela sai da pilha.
 
