@@ -243,6 +243,11 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [ ] 2-1: _POO em Python_
 - [ ] 2-2: _Padrões - Iterador, Adapter, Strategy_
 - [ ] 2-3: _Padrões - Decorator, Observer, Factory_
-- [ ] 2-4: _[Projeto - Relatório de Estoque]()_ 
+- [X] 2-4: _[Projeto - Relatório de Estoque]()_ 
 
 
+##### Sessão 3: Raspagem de Dados
+
+- [X] 3-1: _Raspagem de Dados_
+- [X] 3-2: _Outras Ferramentas de Raspagem de Dados_
+- [X] 3-3: _[Projeto - Tech news]()_ 
