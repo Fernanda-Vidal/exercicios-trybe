@@ -229,7 +229,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 - [X] 13-1: _[Projeto - App de Delivery]()_
 
-## CiÃªncia da ComputaÃ§Ã£o :hourglass_flowing_sand:
+## Ciência da Computação :hourglass_flowing_sand:
 
 ##### Sessão 1: Introdução à Phyton
 
