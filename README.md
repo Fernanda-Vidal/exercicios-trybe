@@ -266,11 +266,11 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [X] 5-3: _Arrays_
 - [X] 5-4: _Nó e Listas Encadeadas_
 - [ ] 5-5: _Pilhas e Filas_
-- [ ] 5-4: _[Projeto - TNG - Trybe Is Not Google]()
+- [ ] 5-6: _[Projeto - TNG - Trybe Is Not Google]()
 
 
 ##### Sessão 6: Estrutura de Dados II: Hashmaps e Sets
 
 - [ ] 6-1: _Hashmap e Dict_
 - [ ] 6-2: _Set_
-- [ ] 5-4: _[Projeto - Restaurant Orders]()
+- [ ] 6-3: _[Projeto - Restaurant Orders]()
