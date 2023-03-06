@@ -251,3 +251,12 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [X] 3-1: _Raspagem de Dados_
 - [X] 3-2: _Outras Ferramentas de Raspagem de Dados_
 - [X] 3-3: _[Projeto - Tech news]()_ 
+
+##### Sessão 4: Algoritmos
+
+- [X] 4-1: _Complexidade de Algoritmos_
+- [X] 4-2: _Recursividade e Estratégias para Solução de Problemas_
+- [X] 4-3: _Algoritmos de ordenação e busca_
+- [X] 4-4: _[Projeto - Algoritmos]()_ 
+
+
