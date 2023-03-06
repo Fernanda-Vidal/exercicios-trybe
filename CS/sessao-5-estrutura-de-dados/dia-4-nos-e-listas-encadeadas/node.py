@@ -101,15 +101,56 @@ class LinkedList:
                 value_returned = Node(value_to_be_returned.value)
         return value_returned
 
+        # Um ponto de atenção para as verificações constantes presentes no
+        # código,
+        # elas indicam que:
+        # - Caso não haja elementos em nossa estrutura será retornado None;
+        # - Caso a posição seja menor igual a 0, será retornado o primeiro
+        # elemento;
+        # - Caso a posição seja maior igual a N, onde N é o tamanho da lista,
+        # será
+        # retornado o último elemento.
+        # Por fim, retornamos um novo Node com o mesmo valor do existente em
+        # nossa
+        # estrutura. Isto é necessário para que retornemos apenas o valor, e
+        # não a
+        # referência aos demais elementos.
 
-# Um ponto de atenção para as verificações constantes presentes no código,
-# elas indicam que:
-# - Caso não haja elementos em nossa estrutura será retornado None;
-# - Caso a posição seja menor igual a 0, será retornado o primeiro elemento;
-# - Caso a posição seja maior igual a N, onde N é o tamanho da lista, será
-# retornado o último elemento.
-# Por fim, retornamos um novo Node com o mesmo valor do existente em nossa
-# estrutura. Isto é necessário para que retornemos apenas o valor, e não a
-# referência aos demais elementos.
+    def is_empty(self):
+        return not self.__length
 
-Está vazia
+
+if __name__ == "__main__":
+    linked_list = LinkedList()
+
+    print(linked_list.is_empty())  # saída: True
+    linked_list.insert_first(1)
+    print(linked_list)  # saída:LinkedList(len=1 value=Node(value=1 next=None))
+
+    linked_list.insert_first(2)
+    print(linked_list)  # saída: LinkedList(len=2 value=Node(value=2 next=Node(
+    # value=1 next=None)))
+
+    linked_list.insert_last(3)
+    print(linked_list)  # saída: LinkedList(len=3 value=Node(value=2 next=Node(
+    # value=1 next=Node(value=3 next=None))))
+
+    linked_list.remove_last()
+    print(linked_list)  # saída: LinkedList(len=2 value=Node(value=2 next=Node(
+    # value=1 next=None)))
+
+    linked_list.remove_first()
+    print(linked_list)  # saída:LinkedList(len=1 value=Node(value=1 next=None))
+
+    linked_list.insert_at(5, 1)
+    print(linked_list)  # saída: LinkedList(len=2 value=Node(value=1 next=Node(
+    # value=5 next=None)))
+
+    linked_list.remove_at(0)
+    print(linked_list)  # saída:LinkedList(len=1 value=Node(value=5 next=None))
+
+    linked_list.insert_at(6, 1)
+    linked_list.insert_at(7, 2)
+    linked_list.insert_at(8, 3)
+    linked_list.insert_at(9, 4)
+    print(linked_list.get_element_at(3))  # saída: Node(value=8 next=None)
